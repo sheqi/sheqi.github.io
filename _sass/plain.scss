@@ -554,14 +554,14 @@ footer {
   }
 
   .analytics {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
     margin-top: 20px;
-    filter: none !important;
+    filter: invert(1) hue-rotate(180deg) !important;
     display: inline-block;
-    color: #000000 !important;
+    color: #ffffff !important;
   }
 }
 
