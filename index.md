@@ -4,14 +4,18 @@ title:  Qi She (佘琪)
 date:   2020-12-14 21:03:36 +0530
 ---
 
-### **Recent Focus**
+### **About / 关于我**
+Qi She (佘琪) is leading the Applied Algorithm team in Business Integrity at ByteDance, focusing on multimodal Large Language Models, Machine Learning and Computer Vision in real-world AI products. Previously, he was a Research Scientist at Intel Labs, working on statistical machine learning, deep learning and lifelong robotic vision.
+
+### **Recent Focus / 当前工作方向**
 I am currently leading Applied Algorithm team in Business Integrity at ByteDance, focusing on applying (Multi Modal) Large Language Model、Machine Learning and Computer Vision techniques in AI products. Before that, I was a research scientist at Intel Labs.
 
 [**<font color="#dd0000">Hiring!</font>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model at Beijing, Shanghai and Hangzhou ～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
 - [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中
 - [实习] 多模态大模型、计算机视觉、自然语言处理等「算法研究实习生」招聘中
 
-### **News**
+### **News / 动态**
+- Selected recent news and activities since 2020.
 - [2023-08-25] I am invited as the reviewer for **ICLR 2024**.
 
 - [2023-08-01] [**<font color="#dd0000">Paper</font>**] Our work "Background-aware Classification Activation Map for Weakly Supervised Object Localization" is accepted into IEEE Transactions on Pattern Analysis and Machine Intelligence（**PAMI 2023**） ! 
@@ -71,7 +75,7 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 - At byetedance, I launched several ranking models/computer vision solutions as baselines; and at Intel Labs, I am the first contributor of [Lifelong Robotic Vision].
 -->
 
-## **Awards**
+## **Awards / 奖项**
 - Bytedance Monetization Product and Technolog Q2/Q4 Inspire Award (<b>团队奖</b>), Sept. 2023 & March. 2024
 - 3rd Place (3/383) in Google Landmark Recognition 2021, the kaggle competition
 - 5 times Intel China Awards, 2018 Q4、2019 Q1、2019 Q3、2020 Q1、& 2020 Q2
