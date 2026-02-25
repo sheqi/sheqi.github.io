@@ -83,14 +83,14 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 ## **Awards / 奖项**
 <div class="news-list">
   <ul>
-    <li><span class="news-date">2024-03</span> <span class="news-tag news-tag-award">Award</span> Bytedance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
-    <li><span class="news-date">2023-09</span> <span class="news-tag news-tag-award">Award</span> Bytedance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
-    <li><span class="news-date">2021</span> <span class="news-tag news-tag-award">Award</span> 3rd Place (3/383) in Google Landmark Recognition 2021, the kaggle competition.</li>
-    <li><span class="news-date">2020</span> <span class="news-tag news-tag-award">Award</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
-    <li><span class="news-date">2020</span> <span class="news-tag news-tag-award">Award</span> Annual Intel Labs Gordy Awards (the highest annual research award named after Intel’s co-founder Gordon Earle Moore, <b>戈登·摩尔奖</b>, famous for <b>摩尔定律</b>).</li>
-    <li><span class="news-date">2018-2020</span> <span class="news-tag news-tag-award">Award</span> 5 times Intel China Awards (2018 Q4、2019 Q1、2019 Q3、2020 Q1、& 2020 Q2).</li>
-    <li><span class="news-date">2016</span> <span class="news-tag news-tag-award">Award</span> 2nd place in the <a href="https://www.youtube.com/watch?v=u0RCcuZpmxg">10th Global Artificial Intelligence Hackathon</a> by Korea ministry of ICT.</li>
-    <li><span class="news-date">2016</span> <span class="news-tag news-tag-award">Award</span> Outstanding Academic Performance Award.</li>
+    <li><span class="news-date">2024-03</span> Bytedance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
+    <li><span class="news-date">2023-09</span> Bytedance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
+    <li><span class="news-date">2021</span> 3rd Place (3/383) in Google Landmark Recognition 2021, the kaggle competition.</li>
+    <li><span class="news-date">2020</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
+    <li><span class="news-date">2020</span> Annual Intel Labs Gordy Awards (the highest annual research award named after Intel’s co-founder Gordon Earle Moore, <b>戈登·摩尔奖</b>, famous for <b>摩尔定律</b>).</li>
+    <li><span class="news-date">2018-2020</span> 5 times Intel China Awards (2018 Q4、2019 Q1、2019 Q3、2020 Q1、& 2020 Q2).</li>
+    <li><span class="news-date">2016</span> 2nd place in the <a href="https://www.youtube.com/watch?v=u0RCcuZpmxg">10th Global Artificial Intelligence Hackathon</a> by Korea ministry of ICT.</li>
+    <li><span class="news-date">2016</span> Outstanding Academic Performance Award.</li>
   </ul>
 </div>
 
