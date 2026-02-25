@@ -296,6 +296,21 @@ table {
   }
 }
 
+/* Details/summary styling for collapsible sections (e.g., older news) */
+details {
+  margin-top: 0.5rem;
+}
+
+details summary {
+  cursor: pointer;
+  font-style: italic;
+  color: #555;
+}
+
+details[open] summary {
+  font-weight: 600;
+}
+
 footer {
   display: none;
 }

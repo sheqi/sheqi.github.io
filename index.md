@@ -53,16 +53,16 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 - [2020-08-14] I join the **Bytedance AI Lab** as a research scientist.
 
 
-<ul>
 <details>
-	<summary style="cursor: pointer;"><i>------ Click for More Information ------</i></summary>
-		<li>[2020-06-14] We have successfully organized the 1st "Continual Learning in Computer Vision" workshop at <b>CVPR 2020</b>.</li>
-		<li>[2020-06-10] [<b><font color="#dd0000">Paper</font></b>] Our paper "IROS 2019 Lifelong Robotic Vision: Object Recognition Challenge [Competitions]" has been published at IEEE Robotics & Automation Magazine (IEEE RAM). The journal is one of four top-tier journals in robotics field.</li>
-		<li>[2020-06-01] [<b><font color="#dd0000">Paper</font></b>] Our paper is accepted as the **Oral** presentation at the conference of Uncertainty in Artificial Intelligence (UAI).</li>
-		<li>[2020-05-22] [<b><font color="#dd0000">Paper</font></b>] Our paper “Synthetic-Neuroscore: Using a neuro-AI interface for evaluating generative adversarial networks” has been accepted by <b>Neurocomputing</b>.</li>
-		<li>[2020-01-22] [<b><font color="#dd0000">Paper</font></b>] We have <b>2</b> papers regarding <b>lifelong robotic vision</b> accepted by <b>ICRA 2020</b>.</li>
+  <summary>Older News / 更早的动态（2016–2020）</summary>
+  <ul>
+    <li>[2020-06-14] We have successfully organized the 1st "Continual Learning in Computer Vision" workshop at <b>CVPR 2020</b>.</li>
+    <li>[2020-06-10] [<b><font color="#dd0000">Paper</font></b>] Our paper "IROS 2019 Lifelong Robotic Vision: Object Recognition Challenge [Competitions]" has been published at IEEE Robotics & Automation Magazine (IEEE RAM). The journal is one of four top-tier journals in robotics field.</li>
+    <li>[2020-06-01] [<b><font color="#dd0000">Paper</font></b>] Our paper is accepted as the <b>Oral</b> presentation at the conference of Uncertainty in Artificial Intelligence (UAI).</li>
+    <li>[2020-05-22] [<b><font color="#dd0000">Paper</font></b>] Our paper “Synthetic-Neuroscore: Using a neuro-AI interface for evaluating generative adversarial networks” has been accepted by <b>Neurocomputing</b>.</li>
+    <li>[2020-01-22] [<b><font color="#dd0000">Paper</font></b>] We have <b>2</b> papers regarding <b>lifelong robotic vision</b> accepted by <b>ICRA 2020</b>.</li>
+  </ul>
 </details>
-</ul>
 
 
 <!--
