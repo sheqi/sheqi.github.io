@@ -1,0 +1,9 @@
+- title: "Background-aware Classification Activation Map for Weakly Supervised Object Localization"
+  url: "https://ieeexplore.ieee.org/abstract/document/10234096"
+  authors: "Lei Zhu, <b>Qi She</b>, Qian Chen, Xiangxi Meng, Mufeng Geng, Lujia Jin, Yibao Zhang, Qiushi Ren, Yanye Lu"
+  venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)"
+  year: 2023
+  pdf: "https://sheqi.github.io/pdf/TPAMI2023_backgroundaware.pdf"
+  bibtex: "https://sheqi.github.io/bibtex/TPAMI23_backgroundaware.bib.txt"
+  code: "https://github.com/zh460045050/BCAM"
+  category: "journal"

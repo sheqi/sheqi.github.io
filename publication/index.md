@@ -14,33 +14,41 @@ subtitle: publication
 <div class="row">
 <div class="col-xs-12 col-md-12">
 <ul> 
+{% for pub in site.data.publications %}
 <li>
 <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span itemprop="name">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10234096"><i>Background-aware Classification Activation Map for Weakly Supervised Object Localization</i></a>  
+        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
     </span>
     <div class="pub-authors" itemprop="author">
-        Lei Zhu, <b>Qi She</b>, Qian Chen, Xiangxi Meng, Mufeng Geng, Lujia Jin, Yibao Zhang, Qiushi Ren, Yanye Lu
+        {{ pub.authors }}
     </div>
     <div class="pub-publication">
-    IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2023. 
+    {{ pub.venue }}, {{ pub.year }}. 
     </div>
 
 <p>
-<a class="btn btn-default" href="https://sheqi.github.io/pdf/TPAMI2023_backgroundaware.pdf">
+{% if pub.pdf %}
+<a class="btn btn-default" href="{{ pub.pdf }}">
 PDF
 </a>
+{% endif %}
 
-<a class="btn btn-default" href="https://sheqi.github.io/bibtex/TPAMI23_backgroundaware.bib.txt">
+{% if pub.bibtex %}
+<a class="btn btn-default" href="{{ pub.bibtex }}">
 BibTex
 </a>
+{% endif %}
 
-<a class="btn btn-default" href="https://github.com/zh460045050/BCAM">
+{% if pub.code %}
+<a class="btn btn-default" href="{{ pub.code }}">
 Code
 </a>
+{% endif %}
 
 </p>
 </li>
+{% endfor %}
 </ul> 
 
 <ul> 
