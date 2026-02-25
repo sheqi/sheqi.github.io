@@ -476,6 +476,11 @@ footer {
     color: #f5f5f7;
   }
 
+  strong, b {
+    color: #f5f5f7;
+    background-color: transparent !important;
+  }
+
   a {
     color: #f5f5f7;
     border-bottom-color: #444;
