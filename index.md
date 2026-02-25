@@ -16,45 +16,44 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 
 ### **News / 动态**
 - Selected recent news and activities since 2020.
-- [2023-08-25] I am invited as the reviewer for **ICLR 2024**.
 
-- [2023-08-01] [**<font color="#dd0000">Paper</font>**] Our work "Background-aware Classification Activation Map for Weakly Supervised Object Localization" is accepted into IEEE Transactions on Pattern Analysis and Machine Intelligence（**PAMI 2023**） ! 
+<div class="news-list">
+  <h4 class="news-year">2023</h4>
+  <ul>
+    <li><span class="news-date">2023-08-25</span> Invited as a reviewer for <b>ICLR 2024</b>.</li>
+    <li><span class="news-date">2023-08-01</span> <span class="news-tag news-tag-paper">Paper</span> Our work "Background-aware Classification Activation Map for Weakly Supervised Object Localization" is accepted into <b>IEEE TPAMI 2023</b>.</li>
+    <li><span class="news-date">2023-03-28</span> Invited as a reviewer for <b>NeurIPS 2023</b>.</li>
+    <li><span class="news-date">2023-01-29</span> Invited as a reviewer for <b>ICML 2023</b>.</li>
+  </ul>
 
-- [2023-03-28] I am invited as the reviewer for **NeurIPS 2023**.
+  <h4 class="news-year">2022</h4>
+  <ul>
+    <li><span class="news-date">2022-11-02</span> Invited as a reviewer for <b>CVPR 2023</b>.</li>
+    <li><span class="news-date">2022-07-30</span> Invited as a reviewer for <b>ICLR 2023</b>.</li>
+    <li><span class="news-date">2022-05-15</span> <span class="news-tag news-tag-paper">Paper</span> Our work "PDO-e3DCNNs" is accepted into <b>ICML 2022</b>.</li>
+    <li><span class="news-date">2022-03-03</span> <span class="news-tag news-tag-paper">Paper</span> We have <b>3</b> papers accepted into <b>CVPR 2022</b>.</li>
+    <li><span class="news-date">2022-02-16</span> <span class="news-tag news-tag-paper">Paper</span> "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
+  </ul>
 
-- [2023-01-29] I am invited as the reviewer for **ICML 2023**.
+  <h4 class="news-year">2021</h4>
+  <ul>
+    <li><span class="news-date">2021-07-24</span> <span class="news-tag news-tag-paper">Paper</span> We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
+    <li><span class="news-date">2021-07-23</span> Invited as a reviewer for <b>ACM MM 2021</b> industrial track.</li>
+    <li><span class="news-date">2021-06-13</span> Invited as a reviewer for <b>ICLR 2022</b>.</li>
+    <li><span class="news-date">2021-04-12</span> <span class="news-tag news-tag-paper">Paper</span> "An Efficient and Flexible Spike Train Model via Empirical Bayes" is accepted into <b>IEEE TSP</b>.</li>
+    <li><span class="news-date">2021-04-06</span> Invited as a reviewer for <b>NeurIPS 2021</b>.</li>
+    <li><span class="news-date">2021-03-04</span> <span class="news-tag news-tag-paper">Paper</span> We have <b>3</b> papers accepted into <b>CVPR 2021</b>.</li>
+  </ul>
 
-- [2022-11-02] I am invited as the reviewer for **CVPR 2023**.
-
-- [2022-07-30] I am invited as the reviewer for **ICLR 2023**.
-
-- [2022-05-15] [**<font color="#dd0000">Paper</font>**] Our work "PDO-e3DCNNs" is accepted into **ICML 2022** ! 
-
-- [2022-03-03] [**<font color="#dd0000">Paper</font>**] We have **3** paper accepted into **CVPR 2022** ! 
-
-- [2022-02-16] [**<font color="#dd0000">Paper</font>**] Glad to know that "Newton Design: Designing CNNs with the Family of Newton's Methods" has been accepted into Science China (Information Sciences).
-
-- [2021-07-24] [**<font color="#dd0000">Paper</font>**] We have **3** paper accepted into **ICCV 2021** !  
-
-- [2021-07-23] I am invited as the reviewer for **ACM MM 2021** industrial track.
-
-- [2021-06-13] I am invited as the reviewer for **ICLR 2022**.
-
-- [2021-04-12] [**<font color="#dd0000">Paper</font>**] Our paper "An Efficient and Flexible Spike Train Model via Empirical Bayes" has be accepted into **IEEE Transactions on Signal Processing (TSP)**.
-
-- [2021-04-06] I am invited as the reviewer for **NeurIPS 2021**.
-
-- [2021-03-04] [**<font color="#dd0000">Paper</font>**] We have **3** paper accepted into **CVPR 2021** !
-
-- [2020-12-14] Our workshop proposal "Continual Learnig in Computer Vision" has been accepted by **CVPR 2021**, which is selected out of 109 proposals.
-
-- [2020-12-09] I am invited as the **expert reviewer** for **ICML 2021**.
-
-- [2020-11-24] [**<font color="#dd0000">Paper</font>**] Our paper ["Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy"][GAN Survey] has been accepted by [ACM Computing Surveys][ACM Computing Surveys]. The journal is ranked 3/221 in Computer Science Theory & Methods (Impact Factor: 7.99):
-
-- [2020-10-21] I am pleased to receive the recognition of **top 10%** high-scoring reviewers from **NeurIPS 2020**.
-
-- [2020-08-14] I join the **Bytedance AI Lab** as a research scientist.
+  <h4 class="news-year">2020</h4>
+  <ul>
+    <li><span class="news-date">2020-12-14</span> Workshop proposal "Continual Learning in Computer Vision" is accepted by <b>CVPR 2021</b> (selected from 109 proposals).</li>
+    <li><span class="news-date">2020-12-09</span> Invited as an <b>expert reviewer</b> for <b>ICML 2021</b>.</li>
+    <li><span class="news-date">2020-11-24</span> <span class="news-tag news-tag-paper">Paper</span> Our survey "Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy" is accepted by <b>ACM Computing Surveys</b>.</li>
+    <li><span class="news-date">2020-10-21</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
+    <li><span class="news-date">2020-08-14</span> Joined <b>ByteDance AI Lab</b> as a Research Scientist.</li>
+  </ul>
+</div>
 
 
 <details>
