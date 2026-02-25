@@ -53,9 +53,10 @@ plainwhite:
   # generate social links in footer
   social_links:
     researchgate: profile/Qi-She-3
-    github:  sheqi
+    #github:  sheqi
     linkedIn: in/qi-she-57ab259a
-    twitter: sheqi1991
+    #twitter: sheqi1991
+    google_scholar: citations?user=zY2e9n8AAAAJ&hl=en
   analytics_id: "G-G9J3D02VP5"
     #rss: rss
     #dribbble: jekyll
