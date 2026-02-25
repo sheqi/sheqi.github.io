@@ -20,13 +20,11 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 <div class="news-list">
   <h4 class="news-year">2024</h4>
   <ul>
-    <li><span class="news-date">2024-03</span> <span class="news-tag news-tag-award">Award</span> Received Bytedance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
     <li><span class="news-date">2024-02</span> Invited as a reviewer for <b>ICML 2024</b>.</li>
   </ul>
 
   <h4 class="news-year">2023</h4>
   <ul>
-    <li><span class="news-date">2023-09</span> <span class="news-tag news-tag-award">Award</span> Received Bytedance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
     <li><span class="news-date">2023-08-25</span> Invited as a reviewer for <b>ICLR 2024</b>.</li>
     <li><span class="news-date">2023-08-01</span> <span class="news-tag news-tag-paper">Paper</span> Our work "Background-aware Classification Activation Map for Weakly Supervised Object Localization" is accepted into <b>IEEE TPAMI 2023</b>.</li>
     <li><span class="news-date">2023-03-28</span> Invited as a reviewer for <b>NeurIPS 2023</b>.</li>
@@ -57,7 +55,6 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
     <li><span class="news-date">2020-12-14</span> Workshop proposal "Continual Learning in Computer Vision" is accepted by <b>CVPR 2021</b> (selected from 109 proposals).</li>
     <li><span class="news-date">2020-12-09</span> Invited as an <b>expert reviewer</b> for <b>ICML 2021</b>.</li>
     <li><span class="news-date">2020-11-24</span> <span class="news-tag news-tag-paper">Paper</span> Our survey "Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy" is accepted by <b>ACM Computing Surveys</b>.</li>
-    <li><span class="news-date">2020-10-21</span> <span class="news-tag news-tag-award">Award</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
     <li><span class="news-date">2020-08-14</span> Joined <b>ByteDance AI Lab</b> as a Research Scientist.</li>
   </ul>
 </div>
@@ -65,13 +62,15 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
 
 <details>
   <summary>Older News / 更早的动态（2016–2020）</summary>
+  <div class="news-list">
   <ul>
-    <li>[2020-06-14] We have successfully organized the 1st "Continual Learning in Computer Vision" workshop at <b>CVPR 2020</b>.</li>
-    <li>[2020-06-10] [<b><font color="#dd0000">Paper</font></b>] Our paper "IROS 2019 Lifelong Robotic Vision: Object Recognition Challenge [Competitions]" has been published at IEEE Robotics & Automation Magazine (IEEE RAM). The journal is one of four top-tier journals in robotics field.</li>
-    <li>[2020-06-01] [<b><font color="#dd0000">Paper</font></b>] Our paper is accepted as the <b>Oral</b> presentation at the conference of Uncertainty in Artificial Intelligence (UAI).</li>
-    <li>[2020-05-22] [<b><font color="#dd0000">Paper</font></b>] Our paper "Synthetic-Neuroscore: Using a neuro-AI interface for evaluating generative adversarial networks" has been accepted by <b>Neurocomputing</b>.</li>
-    <li>[2020-01-22] [<b><font color="#dd0000">Paper</font></b>] We have <b>2</b> papers regarding <b>lifelong robotic vision</b> accepted by <b>ICRA 2020</b>.</li>
+    <li><span class="news-date">2020-06-14</span> We have successfully organized the 1st "Continual Learning in Computer Vision" workshop at <b>CVPR 2020</b>.</li>
+    <li><span class="news-date">2020-06-10</span> <span class="news-tag news-tag-paper">Paper</span> Our paper "IROS 2019 Lifelong Robotic Vision: Object Recognition Challenge [Competitions]" has been published at IEEE Robotics & Automation Magazine (IEEE RAM). The journal is one of four top-tier journals in robotics field.</li>
+    <li><span class="news-date">2020-06-01</span> <span class="news-tag news-tag-paper">Paper</span> Our paper is accepted as the <b>Oral</b> presentation at the conference of Uncertainty in Artificial Intelligence (UAI).</li>
+    <li><span class="news-date">2020-05-22</span> <span class="news-tag news-tag-paper">Paper</span> Our paper "Synthetic-Neuroscore: Using a neuro-AI interface for evaluating generative adversarial networks" has been accepted by <b>Neurocomputing</b>.</li>
+    <li><span class="news-date">2020-01-22</span> <span class="news-tag news-tag-paper">Paper</span> We have <b>2</b> papers regarding <b>lifelong robotic vision</b> accepted by <b>ICRA 2020</b>.</li>
   </ul>
+  </div>
 </details>
 
 
@@ -87,6 +86,7 @@ I am currently leading Applied Algorithm team in Business Integrity at ByteDance
     <li><span class="news-date">2024-03</span> <span class="news-tag news-tag-award">Award</span> Bytedance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
     <li><span class="news-date">2023-09</span> <span class="news-tag news-tag-award">Award</span> Bytedance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
     <li><span class="news-date">2021</span> <span class="news-tag news-tag-award">Award</span> 3rd Place (3/383) in Google Landmark Recognition 2021, the kaggle competition.</li>
+    <li><span class="news-date">2020</span> <span class="news-tag news-tag-award">Award</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
     <li><span class="news-date">2020</span> <span class="news-tag news-tag-award">Award</span> Annual Intel Labs Gordy Awards (the highest annual research award named after Intel’s co-founder Gordon Earle Moore, <b>戈登·摩尔奖</b>, famous for <b>摩尔定律</b>).</li>
     <li><span class="news-date">2018-2020</span> <span class="news-tag news-tag-award">Award</span> 5 times Intel China Awards (2018 Q4、2019 Q1、2019 Q3、2020 Q1、& 2020 Q2).</li>
     <li><span class="news-date">2016</span> <span class="news-tag news-tag-award">Award</span> 2nd place in the <a href="https://www.youtube.com/watch?v=u0RCcuZpmxg">10th Global Artificial Intelligence Hackathon</a> by Korea ministry of ICT.</li>
