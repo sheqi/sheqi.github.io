@@ -18,6 +18,11 @@
 
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <!-- <title>{{ page.title | default: site.title }}</title> -->
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}">
+{% elsif site.keywords %}
+<meta name="keywords" content="{{ site.keywords }}">
+{% endif %}
 {% seo %}
 {% if site.plainwhite.dark_mode %}
 <script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>

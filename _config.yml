@@ -3,7 +3,23 @@ author: Qi She
 email: sheqi1991@gmail.com
 url: "https://qi-she.net"
 description: > # this means to ignore newlines until "show_exerpts:"
-  Qi She, Research Scientist, machine learning, deep learning, computer vision, robotics, artificial intelligence
+  Personal website of Qi She (佘琪), a Research Scientist specializing in machine learning, deep learning, computer vision, robotics, and artificial intelligence.
+keywords: "Qi She, 佘琪, Research Scientist, Machine Learning, Deep Learning, Computer Vision, Robotics, AI, ByteDance, Intel Labs"
+lang: en
+image: assets/img/portfolio.png
+twitter:
+  username: sheqi1991
+author:
+  name: Qi She
+  email: sheqi1991@gmail.com
+  twitter: sheqi1991
+social:
+  name: Qi She
+  links:
+    - https://www.linkedin.com/in/qi-she-57ab259a
+    - https://www.researchgate.net/profile/Qi-She-3
+    - https://github.com/sheqi
+    - https://twitter.com/sheqi1991
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -37,9 +53,9 @@ plainwhite:
   # generate social links in footer
   social_links:
     researchgate: profile/Qi-She-3
-    #github:  sheqi
+    github:  sheqi
     linkedIn: in/qi-she-57ab259a
-    #twitter: sheqi1991
+    twitter: sheqi1991
   analytics_id: "G-G9J3D02VP5"
     #rss: rss
     #dribbble: jekyll
