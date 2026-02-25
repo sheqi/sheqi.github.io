@@ -69,7 +69,7 @@ main {
   }
 
   .content {
-    @media screen and (min-width: $mobileW + 1) {
+    @media screen and (min-width: #{$mobileW + 1}) {
       max-width: calc(100% - #{$leftWidth});
       margin-left: $leftWidth;
       width: 100%;
@@ -86,7 +86,7 @@ main {
     @media screen and (max-width: $smallMobileW) {
       padding: 5vh 20px;
     }
-    @media screen and (min-width: $mobileW + 1) {
+    @media screen and (min-width: #{$mobileW + 1}) {
       position: fixed;
       max-width: 280px;
     }
@@ -271,15 +271,18 @@ main {
 
 /* News section layout */
 .news-list {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .news-year {
-  margin: 1.2rem 0 0.4rem;
-  font-size: 0.9rem;
+  margin: 2rem 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: #555;
+  letter-spacing: 0.05em;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
 }
 
 .news-list ul {
@@ -289,14 +292,66 @@ main {
 }
 
 .news-list li {
-  margin: 0.15rem 0;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.news-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news-date {
   display: inline-block;
-  min-width: 7rem;
+  min-width: 8rem;
   font-weight: 600;
-  color: #333;
+  color: #0a59b0;
+  font-size: 0.95rem;
+}
+
+.news-tag {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.news-tag-paper {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.news-tag-award {
+  background-color: #e8f5e8;
+  color: #388e3c;
+}
+
+.news-tag-reviewer {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+/* Responsive adjustments for news section */
+@media screen and (max-width: $mobileW) {
+  .news-list li {
+    padding: 0.8rem;
+  }
+  
+  .news-date {
+    min-width: 7rem;
+    font-size: 0.85rem;
+  }
+  
+  .news-year {
+    font-size: 1rem;
+    margin: 1.5rem 0 0.8rem;
+  }
 }
 
 .news-tag {
