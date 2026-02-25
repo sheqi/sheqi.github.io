@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Qi She（佘琪）'s publication
+title: Qi She（佘琪）'s Publications
 subtitle: publication
+description: "A comprehensive list of publications by Qi She (佘琪) in Machine Learning, Computer Vision, and Robotics. Includes top-tier conference papers (CVPR, ICCV, ICML) and journal articles (TPAMI, TNNLS)."
+keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep Learning, Robotics, CVPR, ICCV, TPAMI"
 ---
 
 ### **Selected Top-tier Publication**
