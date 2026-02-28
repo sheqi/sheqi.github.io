@@ -83,8 +83,6 @@ plainwhite:
 # - about.md
 
 # Build settings
-theme: jekyll-theme-cayman
-
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
