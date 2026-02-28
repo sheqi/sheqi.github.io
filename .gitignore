@@ -1,0 +1,30 @@
+# Editor temporary files
+.history/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+*.gem
+*.rbc
+Gemfile.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Node
+node_modules/
+
+# Logs
+*.log
