@@ -1,3 +1,59 @@
+- title: "Video-KTR: Reinforcing Video Reasoning via Key Token Attribution"
+  url: ""
+  authors: "Z Wang, S Jin, Z Zuo, J Wu, H Qiu, <b>Qi She</b>, H Zhang, X Jiang"
+  venue: "International Conference on Learning Representations (<b>ICLR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "Beyond Attention or Similarity: Maximizing Conditional Diversity for Token Pruning in MLLMs"
+  url: ""
+  authors: "Q Zhang, M Liu, L Li, M Lu, Y Zhang, J Pan, <b>Qi She</b>, S Zhang"
+  venue: "Neural Information Processing Systems (<b>NeurIPS</b>)"
+  year: 2025
+  category: "conference"
+
+- title: "TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning"
+  url: ""
+  authors: "J Pan, Q Zhang, R Zhang, M Lu, X Wan, Y Zhang, C Liu, <b>Qi She</b>"
+  venue: "International Conference on Learning Representations (<b>ICLR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "Branchgrpo: Stable and efficient grpo with structured branching in diffusion models"
+  url: ""
+  authors: "Y Li, Y Wang, Y Zhu, Z Zhao, M Lu, <b>Qi She</b>, S Zhang"
+  venue: "International Conference on Learning Representations (<b>ICLR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning"
+  url: ""
+  authors: "Q Song, H Li, Y Yu, H Zhou, L Yang, S Bai, <b>Qi She</b>, Z Huang, Y Zhao"
+  venue: "Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding, Editing and Verifying"
+  url: ""
+  authors: "C Bai, J Chen, X Bai, Y Chen, <b>Qi She</b>, M Lu, S Zhang"
+  venue: "Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "ThinkGen: Generalized Thinking for Visual Generation"
+  url: ""
+  authors: "S Jiao, Y Lin, Y Zhong, <b>Qi She</b>, W Zhou, X Lan, Z Huang, F Yu, Y Yu, ..."
+  venue: "Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)"
+  year: 2026
+  category: "conference"
+
+- title: "Beyond text-visual attention: Exploiting visual cues for effective token pruning in vlms"
+  url: ""
+  authors: "Q Zhang, A Cheng, M Lu, R Zhang, Z Zhuo, J Cao, S Guo, <b>Qi She</b>, ..."
+  venue: "International Conference on Computer Vision (<b>ICCV</b>)"
+  year: 2025
+  category: "conference"
+
 - title: "Background-aware Classification Activation Map for Weakly Supervised Object Localization"
   url: "https://ieeexplore.ieee.org/abstract/document/10234096"
   authors: "Lei Zhu, <b>Qi She</b>, Qian Chen, Xiangxi Meng, Mufeng Geng, Lujia Jin, Yibao Zhang, Qiushi Ren, Yanye Lu"
