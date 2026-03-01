@@ -20,6 +20,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 {% if pub.category == 'journal' %}
 <li>
 <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+    <span class="pub-emoji">�</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
     </span>
@@ -94,6 +95,7 @@ arXiv
 {% if pub.category == 'conference' %}
 <li>
 <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+    <span class="pub-emoji">🎓</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
     </span>
@@ -168,6 +170,7 @@ arXiv
 {% if pub.category == 'workshop' %}
 <li>
 <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+    <span class="pub-emoji">�️</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
     </span>
