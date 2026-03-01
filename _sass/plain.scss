@@ -577,7 +577,7 @@ body.dark {
   @include dark-mode-styles;
 }
 
-/* Back to Top Button */
+/* Back to Top Button - Mobile Style (Default) */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -615,4 +615,68 @@ body.dark .back-to-top {
 
 body.dark .back-to-top:hover {
   background-color: #0a84ff;
+}
+
+/* Back to Top Button - Desktop Enhanced Style */
+@media screen and (min-width: $mobileW) {
+  .back-to-top {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    bottom: 40px;
+    right: 40px;
+    background: linear-gradient(135deg, #0a59b0 0%, #0066cc 50%, #0a59b0 100%);
+    background-size: 200% 200%;
+    box-shadow: 0 8px 25px rgba(10, 89, 176, 0.3), 
+                0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: gradientShift 3s ease infinite;
+  }
+
+  .back-to-top::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+    z-index: -1;
+  }
+
+  .back-to-top:hover {
+    background: linear-gradient(135deg, #08458a 0%, #0052a3 50%, #08458a 100%);
+    background-size: 200% 200%;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(10, 89, 176, 0.4), 
+                0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .back-to-top:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 5px 15px rgba(10, 89, 176, 0.3);
+  }
+
+  /* Desktop Dark Mode */
+  body.dark .back-to-top {
+    background: linear-gradient(135deg, #2997ff 0%, #0a84ff 50%, #2997ff 100%);
+    background-size: 200% 200%;
+    box-shadow: 0 8px 25px rgba(41, 151, 255, 0.3), 
+                0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  body.dark .back-to-top:hover {
+    background: linear-gradient(135deg, #0a84ff 0%, #0066cc 50%, #0a84ff 100%);
+    background-size: 200% 200%;
+    box-shadow: 0 12px 35px rgba(41, 151, 255, 0.4), 
+                0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
