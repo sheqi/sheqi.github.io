@@ -90,8 +90,8 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 ## **Awards / 奖项**
 <div class="news-list">
   <ul>
-    <li><span class="news-date">2024-03</span> Bytedance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
-    <li><span class="news-date">2023-09</span> Bytedance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
+    <li><span class="news-date">2024-03</span> ByteDance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
+    <li><span class="news-date">2023-09</span> ByteDance Monetization Product and Technology Q2 Inspire Award (<b>团队奖</b>).</li>
     <li><span class="news-date">2021</span> 3rd Place (3/383) in Google Landmark Recognition 2021, the kaggle competition.</li>
     <li><span class="news-date">2020</span> Recognized as <b>top 10%</b> high-scoring reviewer at <b>NeurIPS 2020</b>.</li>
     <li><span class="news-date">2020</span> Annual Intel Labs Gordy Awards (the highest annual research award named after Intel’s co-founder Gordon Earle Moore, <b>戈登·摩尔奖</b>, famous for <b>摩尔定律</b>).</li>

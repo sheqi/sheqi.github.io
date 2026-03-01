@@ -6,7 +6,7 @@ subtitle: Brief Introduction
 
 ### **About me**
 
-Qi She was born in Yangzhou (扬州), Jiangsu (江苏) province. He is now leading the Applied Algorithm (应用算法) department in Business Integrity at <a href="https://www.bytedance.com/zh/"><strong>Bytedance</strong></a>, focusing on landing multi-modal Large Language Models, machine learning, and computer vision techniques in Bytedance AI products.
+Qi She was born in Yangzhou (扬州), Jiangsu (江苏) province. He is now leading the Applied Algorithm (应用算法) department in Business Integrity at <a href="https://www.bytedance.com/zh/"><strong>ByteDance</strong></a>, focusing on landing multi-modal Large Language Models, machine learning, and computer vision techniques in ByteDance AI products.
 
 He previously worked as a Research Scientist at <a href="https://www.intel.com/content/www/us/en/research/overview.html"><strong>Intel Labs</strong></a> (2018-2020), studying statistical machine learning and deep learning with applications in computer vision and robotics.
 
