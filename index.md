@@ -46,17 +46,17 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
   <h4 class="news-year">2022</h4>
   <ul>
     <li><span class="news-date">2022-11</span> 📢 Reviewer service: <b>CVPR 2023</b>, <b>ICLR 2023</b>.</li>
-    <li><span class="news-date">2022-05-15</span> 📄 Our work "PDO-e3DCNNs" is accepted into <b>ICML 2022</b>.</li>
-    <li><span class="news-date">2022-03-03</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2022</b>.</li>
-    <li><span class="news-date">2022-02-16</span> 📄 "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
+    <li><span class="news-date">2022-05</span> 📄 Our work "PDO-e3DCNNs" is accepted into <b>ICML 2022</b>.</li>
+    <li><span class="news-date">2022-03</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2022</b>.</li>
+    <li><span class="news-date">2022-02</span> 📄 "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
   </ul>
 
   <h4 class="news-year">2021</h4>
   <ul>
-    <li><span class="news-date">2021-07-24</span> 📄 We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
+    <li><span class="news-date">2021-07</span> 📄 We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
     <li><span class="news-date">2021-07</span> 📢 Reviewer service: <b>ACM MM 2021</b> (industrial track), <b>ICLR 2022</b>, <b>NeurIPS 2021</b>.</li>
-    <li><span class="news-date">2021-04-12</span> 📄 "An Efficient and Flexible Spike Train Model via Empirical Bayes" is accepted into <b>IEEE TSP</b>.</li>
-    <li><span class="news-date">2021-03-04</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2021</b>.</li>
+    <li><span class="news-date">2021-04</span> 📄 "An Efficient and Flexible Spike Train Model via Empirical Bayes" is accepted into <b>IEEE TSP</b>.</li>
+    <li><span class="news-date">2021-03</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2021</b>.</li>
   </ul>
 
   <h4 class="news-year">2020</h4>
