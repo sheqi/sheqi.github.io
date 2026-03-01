@@ -9,13 +9,13 @@ keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal 
 ### **About / 关于我**
 Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Business Integrity, where he spearheads the large-scale industrialization of **Multimodal Large Language Models (MLLMs)** and **Agentic Foundation** capabilities. Since 2023, his work has focused on the end-to-end deployment of AI Agents.
 
-A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including TPAMI, NeurIPS, ICLR，ICML, CVPR, and ICCV.
+A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR，ICML, CVPR, and ICCV**.
 
 ### **Recent Focus / 工作方向**
 Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s Business Integrity ecosystem:
-- **Architecting Agentic Foundations**: Developing specialized LLMs optimized for reasoning, planning, and autonomous decision-making in high-stakes security scenarios.
+- **Architecting Agentic Foundations**: Developing specialized (M)LLMs optimized for reasoning, planning, and autonomous decision-making in high-stakes security scenarios.
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
-- **Advancing MLLM-Agent Synergy**: Pioneering the fusion of Multimodal LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
+- **Advancing MLLM-Agent Synergy**: Pioneering the fusion of (M)LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
 
 [**<font color="#dd0000">Hiring!</font>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model & Agentic AI Fooundation at Beijing, Shanghai, Singapore and San Jose～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
 - [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中
