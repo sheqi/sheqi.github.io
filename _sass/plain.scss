@@ -576,3 +576,43 @@ footer {
 body.dark {
   @include dark-mode-styles;
 }
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #0a59b0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #08458a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  display: flex;
+}
+
+/* Dark mode for back to top button */
+body.dark .back-to-top {
+  background-color: #2997ff;
+}
+
+body.dark .back-to-top:hover {
+  background-color: #0a84ff;
+}

@@ -3,7 +3,7 @@ layout: page
 title:  Qi She (佘琪)
 date:   2020-12-14 21:03:36 +0530
 description: "Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundationteam in Business Integrity. Expert in Multimodal LLMs, Agentic AI, Machine Learning, Computer Vision, and Robotics."
-keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal Large Language Model, Machine Learning, Computer Vision, AI, Research Scientist, Intel Labs"
+keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal Large Language Model, Machine Learning, Computer Vision, AI, Research Scientist, Intel Labs, LLM, MLLM, VLM, Seed, I2V, T2V, T2I, Video Generation, Generative AI, AIGC"
 ---
 
 ### **About / 关于我**
@@ -18,8 +18,8 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 - **Advancing MLLM-Agent Synergy**: Pioneering the fusion of (M)LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
 
 [**<font color="#dd0000">Hiring!</font>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model & Agentic AI Fooundation at Beijing, Shanghai, Singapore and San Jose～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
-- [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中
-- [实习] 多模态大模型、计算机视觉、自然语言处理等「算法研究实习生」招聘中
+- [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中（长期有效）
+- [实习] 多模态大模型、计算机视觉、自然语言处理等「算法研究实习生」招聘中（长期有效）
 
 ### **News / 动态**
 - Selected recent news and activities since 2020.
