@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title:  Qi She (佘琪)
 date:   2026-03-01 21:03:36 +0530
 description: "Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundationteam in Business Integrity. Expert in Multimodal LLMs, Agentic AI, Machine Learning, Computer Vision, and Robotics."
