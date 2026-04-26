@@ -1,9 +1,9 @@
-title: Qi She (佘琪)'s website
+title: Qi She (佘琪) | Research Scientist at ByteDance
 author: Qi She
 email: sheqi1991@gmail.com
 url: "https://qi-she.net"
-description: > # this means to ignore newlines until "show_exerpts:"
-  Personal website of Qi She (佘琪), a Research Scientist specializing in machine learning, deep learning, computer vision, robotics, and artificial intelligence.
+description: >
+  Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundation team. Expert in Multimodal Large Language Models, Agentic AI, Computer Vision, and Machine Learning. PhD from City University of Hong Kong, former Intel Labs. Winner of 2025 CityU Young Alumni Award and 2020 Intel Gordy Award.
 keywords: "Qi She, 佘琪, Research Scientist, Machine Learning, Deep Learning, Computer Vision, Robotics, AI, ByteDance, Intel Labs, LLM, MLLM, VLM, Seed, I2V, T2V, T2I, Video Generation, Generative AI, AIGC"
 lang: en
 image: assets/img/portfolio.png

@@ -266,6 +266,7 @@
   bibtex: /bibtex/ICCV21_mine.bib.txt
   code: https://github.com/vincentfung13/MINE
   arxiv: https://arxiv.org/abs/2103.14910
+  papers_with_code: https://paperswithcode.com/paper/mine-towards-continuous-depth-mpi-with-nerf
   category: conference
 - title: 'Involution: Inverting the Inherence of Convolution for Visual Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Li_Involution_Inverting_the_Inherence_of_Convolution_for_Visual_Recognition_CVPR_2021_paper.html
@@ -278,6 +279,7 @@
   bibtex: /bibtex/CVPR21_involution.bib.txt
   code: https://github.com/d-li14/involution
   arxiv: https://arxiv.org/abs/2103.06255
+  papers_with_code: https://paperswithcode.com/paper/involution-inverting-the-inherence-of
   category: conference
 - title: 'ACTION-Net: Multipath Excitation for Action Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Wang_ACTION-Net_Multipath_Excitation_for_Action_Recognition_CVPR_2021_paper.html

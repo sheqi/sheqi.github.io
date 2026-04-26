@@ -5,22 +5,38 @@
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono"> -->
 <link rel="stylesheet" href="{{ "/assets/css/hugo-academic.css" | relative_url }}">
 
-<link rel="alternate" href="https://sheqi.github.io/publication/index.xml" type="application/rss+xml" title="Welcome to Qi She&#39;s Homepage">
-<link rel="feed" href="https://sheqi.github.io/publication/index.xml" type="application/rss+xml" title="Welcome to Qi She&#39;s Homepage">
+<link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml" title="{{ site.title }}">
 <link rel="icon" type="image/png" href="/assets/img/icon.png">
 <link rel="apple-touch-icon" type="image/png" href="/assets/img/apple-touch-icon.png">
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans:400,700" rel="stylesheet"> -->
-
-
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-<!-- <title>{{ page.title | default: site.title }}</title> -->
+
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}">
 {% elsif site.keywords %}
 <meta name="keywords" content="{{ site.keywords }}">
 {% endif %}
+
 {% seo %}
+
+<!-- Open Graph -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.plainwhite.name }} | {{ site.plainwhite.name }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/portfolio.png">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.twitter.username }}">
+<meta name="twitter:creator" content="@{{ site.twitter.username }}">
+<meta name="twitter:title" content="{{ page.title | default: site.plainwhite.name }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
+<meta name="twitter:image" content="{{ site.url }}/assets/img/portfolio.png">
+
+<!-- Schema.org structured data -->
+{% include schema.html %}

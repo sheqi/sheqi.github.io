@@ -6,6 +6,40 @@ description: "A comprehensive list of publications by Qi She (佘琪) in Machine
 keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep Learning, Robotics, CVPR, ICCV, TPAMI"
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Publications by Qi She",
+  "author": {
+    "@type": "Person",
+    "name": "Qi She",
+    "url": "https://qi-she.net"
+  },
+  "itemListElement": [
+    {% assign idx = 1 %}
+    {% for pub in site.data.publications %}
+    {% if pub.category == 'journal' or pub.category == 'conference' %}
+    {
+      "@type": "ListItem",
+      "position": {{ idx }},
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "{{ pub.title | strip_html | escape }}",
+        "author": "{{ pub.authors | strip_html | escape }}",
+        "isPartOf": "{{ pub.venue | strip_html | escape }}",
+        "datePublished": "{{ pub.year }}"
+        {% if pub.url %}, "url": "{{ pub.url }}"{% endif %}
+        {% if pub.arxiv %}, "sameAs": "{{ pub.arxiv }}"{% endif %}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% assign idx = idx | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
 ### **Selected Top-tier Publication**
 
 [Note] Selected peer-reviewed papers listed below. For the full and most up-to-date publication list, see [Google Scholar: Qi She](https://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=zh-CN)
@@ -76,11 +110,17 @@ arXiv
 </a>
 {% endif %}
 
+{% if pub.papers_with_code %}
+<a class="btn btn-default" href="{{ pub.papers_with_code }}">
+Papers With Code
+</a>
+{% endif %}
+
 </p>
 </li>
 {% endif %}
 {% endfor %}
-</ul> 
+</ul>
 </div>
 </div>
 </div>
@@ -151,11 +191,17 @@ arXiv
 </a>
 {% endif %}
 
+{% if pub.papers_with_code %}
+<a class="btn btn-default" href="{{ pub.papers_with_code }}">
+Papers With Code
+</a>
+{% endif %}
+
 </p>
 </li>
 {% endif %}
 {% endfor %}
-</ul> 
+</ul>
 </div>
 </div>
 </div>
@@ -226,11 +272,17 @@ arXiv
 </a>
 {% endif %}
 
+{% if pub.papers_with_code %}
+<a class="btn btn-default" href="{{ pub.papers_with_code }}">
+Papers With Code
+</a>
+{% endif %}
+
 </p>
 </li>
 {% endif %}
 {% endfor %}
-</ul> 
+</ul>
 </div>
 </div>
 </div>
