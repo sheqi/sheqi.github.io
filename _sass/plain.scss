@@ -432,7 +432,17 @@ details[open] summary {
 footer {
   display: none;
 }
+
+.analytics {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 @media screen and (max-width: $mobileW) {
+  body {
+    overflow-x: hidden;
+  }
+
   .about {
     .about-header.condensed {
       align-items: start;
@@ -652,7 +662,9 @@ footer {
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
     margin-top: 20px;
     filter: invert(1) hue-rotate(180deg) !important;
-    display: inline-block;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
     color: #ffffff !important;
   }
 }
