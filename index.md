@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  Qi She (佘琪)
 date:   2026-03-01 21:03:36 +0530
 description: "Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundationteam in Business Integrity. Expert in Multimodal LLMs, Agentic AI, Machine Learning, Computer Vision, and Robotics."
@@ -109,6 +109,20 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 [IEEE RAM]: https://ieeexplore.ieee.org/document/9113359
 [AI hackathon]: https://www.youtube.com/watch?v=u0RCcuZpmxg
 [Lifelong Robotic Vision]: https://lifelong-robotic-vision.github.io/
+
+## **📝 Blog / 博文**
+
+<div class="blog-list">
+{% for post in site.posts %}
+<div class="blog-card">
+  <div class="blog-card-header">
+    <a class="blog-card-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="blog-card-date">{{ post.date | date: "%Y-%m" }}</span>
+  </div>
+  {% if post.description %}<p class="blog-card-excerpt">{{ post.description | truncate: 200 }}</p>{% endif %}
+</div>
+{% endfor %}
+</div>
 
 <div class="analytics">
 	{% include clastrmap.html %}
