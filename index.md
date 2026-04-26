@@ -17,7 +17,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
 - **Advancing MLLM-Agent Synergy**: Pioneering the fusion of (M)LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
 
-[**<font color="#dd0000">Hiring!</font>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model & Agentic AI Fooundation at Beijing, Shanghai, Singapore and San Jose～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
+[**<span style="color:#dd0000">Hiring!</span>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model & Agentic AI Foundation at Beijing, Shanghai, Singapore and San Jose～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
 - [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中（长期有效）
 - [实习] 多模态大模型、计算机视觉、自然语言处理等「算法研究实习生」招聘中（长期有效）
 
@@ -27,7 +27,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 <div class="news-list">
   <h4 class="news-year">2025</h4>
   <ul>
-    <li><span class="news-date">2025-08</span> 🚀 Our team is pushing the boundaries of <b>Agentic AI</b> foundation! We are focusing on the large-scale industrialization of autonomous agents and MLLMs for complex Business Integrity scenarios.</li>
+    <li><span class="news-date">2025-08</span> 🚀 Our team has been advancing <b>Agentic AI</b> foundations at scale, driving the large-scale industrialization of autonomous agents and MLLMs for complex Business Integrity scenarios.</li>
     <li><span class="news-date">2025-06</span> 🎉 Honored to receive the <b>2025 CityU Young Alumni Award</b>! Grateful to my alma mater, CityU EE, for this recognition of my journey from research to industry.</li>
   </ul>
 

@@ -1,3 +1,126 @@
+- title: 'Video-KTR: Reinforcing Video Reasoning via Key Token Attribution'
+  url: ''
+  authors: Z Wang, S Jin, Z Zuo, J Wu, H Qiu, <b>Qi She</b>, H Zhang, X Jiang
+  venue: International Conference on Learning Representations (<b>ICLR</b>)
+  year: 2026
+  category: conference
+- title: 'ThinkGen: Generalized Thinking for Visual Generation'
+  url: ''
+  authors: S Jiao, Y Lin, Y Zhong, <b>Qi She</b>, W Zhou, X Lan, Z Huang, F Yu, Y Yu, ...
+  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
+  year: 2026
+  category: conference
+- title: 'CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning'
+  url: ''
+  authors: Q Song, H Li, Y Yu, H Zhou, L Yang, S Bai, <b>Qi She</b>, Z Huang, Y Zhao
+  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
+  year: 2026
+  category: conference
+- title: 'UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding, Editing and Verifying'
+  url: ''
+  authors: C Bai, J Chen, X Bai, Y Chen, <b>Qi She</b>, M Lu, S Zhang
+  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
+  year: 2026
+  category: conference
+- title: 'TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning'
+  url: ''
+  authors: J Pan, Q Zhang, R Zhang, M Lu, X Wan, Y Zhang, C Liu, <b>Qi She</b>
+  venue: International Conference on Learning Representations (<b>ICLR</b>)
+  year: 2026
+  category: conference
+- title: 'Branchgrpo: Stable and efficient grpo with structured branching in diffusion models'
+  url: ''
+  authors: Y Li, Y Wang, Y Zhu, Z Zhao, M Lu, <b>Qi She</b>, S Zhang
+  venue: International Conference on Learning Representations (<b>ICLR</b>)
+  year: 2026
+  category: conference
+- title: 'Object identification based on adaptive learning'
+  url: ''
+  authors: SG Manepalli, SW Chin, P Guo, <b>Qi She</b>, Y Shen, L ZHANG, Y Zhang
+  venue: US Patent 12,511,887
+  year: 2025
+  category: patent
+- title: 'MammothModa2: A Unified AR-Diffusion Framework for Multimodal Understanding and Generation'
+  url: 'https://arxiv.org/abs/2511.18262'
+  authors: T Shen, X Wan, T Chen, R Zhang, J Pan, D Lu, F Lei, Z Lu, Y Yang, ...
+  venue: arXiv preprint arXiv:2511.18262
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2511.18262'
+  category: preprint
+- title: 'ChainV: Atomic Visual Hints Make Multimodal Reasoning Shorter and Better'
+  url: 'https://arxiv.org/abs/2511.17106'
+  authors: Y Zhang, M Lu, J Pan, T Huang, K Cheng, <b>Qi She</b>, S Zhang
+  venue: arXiv preprint arXiv:2511.17106
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2511.17106'
+  category: preprint
+- title: 'On the Faithfulness of Visual Thinking: Measurement and Enhancement'
+  url: 'https://arxiv.org/abs/2510.23482'
+  authors: Z Liu, J Pan, <b>Qi She</b>, Y Gao, G Xia
+  venue: arXiv preprint arXiv:2510.23482
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2510.23482'
+  category: preprint
+- title: 'Loss-Oriented Ranking for Automated Visual Prompting in LVLMs'
+  url: 'https://arxiv.org/abs/2506.16112'
+  authors: Y Zhang, CK Fan, T Huang, M Lu, S Yu, J Pan, K Cheng, <b>Qi She</b>, S Zhang
+  venue: arXiv preprint arXiv:2506.16112
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2506.16112'
+  category: preprint
+- title: 'FastInit: Fast Noise Initialization for Temporally Consistent Video Generation'
+  url: 'https://arxiv.org/abs/2506.16119'
+  authors: C Bai, Y Li, Z Zhao, J Chen, P Jia, <b>Qi She</b>, M Lu, S Zhang
+  venue: arXiv preprint arXiv:2506.16119
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2506.16119'
+  category: preprint
+- title: 'Beyond Attention or Similarity: Maximizing Conditional Diversity for Token Pruning in MLLMs'
+  url: ''
+  authors: Q Zhang, M Liu, L Li, M Lu, Y Zhang, J Pan, <b>Qi She</b>, S Zhang
+  venue: Neural Information Processing Systems (<b>NeurIPS</b>)
+  year: 2025
+  category: conference
+- title: 'TimeSearch: Hierarchical video search with spotlight and reflection for human-like long video understanding'
+  url: 'https://arxiv.org/abs/2504.01407'
+  authors: J Pan, R Zhang, X Wan, Y Zhang, M Lu, <b>Qi She</b>
+  venue: arXiv preprint arXiv:2504.01407
+  year: 2025
+  arxiv: 'https://arxiv.org/abs/2504.01407'
+  category: preprint
+- title: 'Trajectory prediction using directed graph and destination features'
+  url: ''
+  authors: L ZHANG, <b>Qi She</b>, P Guo
+  venue: US Patent 12,198,460
+  year: 2025
+  category: patent
+- title: 'Beyond text-visual attention: Exploiting visual cues for effective token pruning in vlms'
+  url: ''
+  authors: Q Zhang, A Cheng, M Lu, R Zhang, Z Zhuo, J Cao, S Guo, <b>Qi She</b>, ...
+  venue: International Conference on Computer Vision (<b>ICCV</b>)
+  year: 2025
+  category: conference
+- title: 'ASGDiffusion: Parallel High-Resolution Generation with Asynchronous Structure Guidance'
+  url: 'https://arxiv.org/abs/2412.06163'
+  authors: Y Li, P Jia, D Hong, Y Jia, <b>Qi She</b>, R Zhao, M Lu, S Zhang
+  venue: arXiv preprint arXiv:2412.06163
+  year: 2024
+  arxiv: 'https://arxiv.org/abs/2412.06163'
+  category: preprint
+- title: 'MC-LLaVA: Multi-concept personalized vision-language model'
+  url: 'https://arxiv.org/abs/2411.11706'
+  authors: R An, S Yang, M Lu, R Zhang, K Zeng, Y Luo, J Cao, H Liang, Y Chen, ...
+  venue: arXiv preprint arXiv:2411.11706
+  year: 2024
+  arxiv: 'https://arxiv.org/abs/2411.11706'
+  category: preprint
+- title: 'Mammothmoda: Multi-modal large language model'
+  url: 'https://arxiv.org/abs/2406.18193'
+  authors: <b>Qi She</b>, J Pan, X Wan, R Zhang, D Lu, K Huang
+  venue: arXiv preprint arXiv:2406.18193
+  year: 2024
+  arxiv: 'https://arxiv.org/abs/2406.18193'
+  category: preprint
 - title: Background-aware Classification Activation Map for Weakly Supervised Object
     Localization
   url: https://ieeexplore.ieee.org/abstract/document/10234096
@@ -5,8 +128,8 @@
     Yibao Zhang, Qiushi Ren, Yanye Lu
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)
   year: 2023
-  pdf: https://sheqi.github.io/pdf/TPAMI2023_backgroundaware.pdf
-  bibtex: https://sheqi.github.io/bibtex/TPAMI23_backgroundaware.bib.txt
+  pdf: /pdf/TPAMI2023_backgroundaware.pdf
+  bibtex: /bibtex/TPAMI23_backgroundaware.bib.txt
   code: https://github.com/zh460045050/BCAM
   category: journal
 - title: 'Generative Adversarial Networks in <b>Time Series</b>: A Systematic Literature
@@ -15,8 +138,8 @@
   authors: Eoin Brophy, Zhengwei Wang, <b> Qi She </b>, Tomas E Ward.
   venue: ACM Computing Surveys (<b>CSUR</b>)
   year: 2023
-  pdf: https://sheqi.github.io/pdf/CSUR23.pdf
-  bibtex: https://sheqi.github.io/bibtex/CSUR23.bib.txt
+  pdf: /pdf/CSUR23.pdf
+  bibtex: /bibtex/CSUR23.bib.txt
   arxiv: https://arxiv.org/abs/2107.11098
   category: journal
 - title: 'Power Law in Deep Neural Networks: Sparse Network Generation and Continual
@@ -25,7 +148,7 @@
   authors: Fan Feng, Lu Hou, <b> Qi She </b>, Rosa H. M. Chan, James T Kwok
   venue: IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>)
   year: 2022
-  bibtex: https://sheqi.github.io/bibtex/TNNLS22_powerlaw.bib.txt
+  bibtex: /bibtex/TNNLS22_powerlaw.bib.txt
   category: journal
 - title: 'Generative Adversarial Networks in <b>Computer Vision</b>: A Survey and
     Taxonomy'
@@ -33,19 +156,19 @@
   authors: Zhengwei Wang, <b> Qi She </b>, Tomas E Ward.
   venue: ACM Computing Surveys (<b>CSUR</b>)
   year: 2021
-  pdf: https://sheqi.github.io/pdf/CSUR20.pdf
-  bibtex: https://sheqi.github.io/bibtex/CSUR20.bib.txt
+  pdf: /pdf/CSUR20.pdf
+  bibtex: /bibtex/CSUR20.bib.txt
   code: https://github.com/sheqi/GAN_Review
   arxiv: https://arxiv.org/abs/1906.01529
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/sheqi/GAN_Review?label=Stars&style=social">
   category: journal
-- title: An Effcient and Flexible Spike Train Model via Empirical Bayes
+- title: An Efficient and Flexible Spike Train Model via Empirical Bayes
   url: https://ieeexplore.ieee.org/abstract/document/9420306
   authors: <b> Qi She </b>, Xiaoli Wu, Beth Jelfs, Adam S. Charles, Rosa H. M. Chan.
   venue: IEEE Transactions on Signal Processing (<b>TSP</b>)
   year: 2021
-  pdf: https://sheqi.github.io/pdf/TSP21.pdf
-  bibtex: https://sheqi.github.io/bibtex/TSP21.bib.txt
+  pdf: /pdf/TSP21.pdf
+  bibtex: /bibtex/TSP21.bib.txt
   code: https://github.com/cuckoong/EB_spikes_trains
   arxiv: https://arxiv.org/abs/1605.02869
   category: journal
@@ -55,8 +178,8 @@
   authors: Zhengwei Wang, <b> Qi She </b>, Alan F Smeaton, Tomas E Ward, Graham Healy.
   venue: Neurocomputing
   year: 2020
-  pdf: https://sheqi.github.io/pdf/NC20.pdf
-  bibtex: https://sheqi.github.io/bibtex/NC20.bib.txt
+  pdf: /pdf/NC20.pdf
+  bibtex: /bibtex/NC20.bib.txt
   code: https://github.com/villawang/Neuro-AI-Interface
   arxiv: https://arxiv.org/abs/1905.04243
   category: journal
@@ -66,72 +189,19 @@
   authors: <b> Qi She </b>, Guanrong Chen, Rosa H. M. Chan.
   venue: <b>Nature Scientific Reports</b>
   year: 2016
-  pdf: https://sheqi.github.io/pdf/NSR2016.pdf
-  bibtex: https://sheqi.github.io/bibtex/NSR21.bib.txt
+  pdf: /pdf/NSR2016.pdf
+  bibtex: /bibtex/NSR21.bib.txt
   project_page: https://www.nature.com/articles/srep21468
   project_page_title: Nature Scientific Reports
   category: journal
-- title: 'Video-KTR: Reinforcing Video Reasoning via Key Token Attribution'
-  url: ''
-  authors: Z Wang, S Jin, Z Zuo, J Wu, H Qiu, <b>Qi She</b>, H Zhang, X Jiang
-  venue: International Conference on Learning Representations (<b>ICLR</b>)
-  year: 2026
-  category: conference
-- title: 'TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding
-    via Self-Verification Reinforcement Learning'
-  url: ''
-  authors: J Pan, Q Zhang, R Zhang, M Lu, X Wan, Y Zhang, C Liu, <b>Qi She</b>
-  venue: International Conference on Learning Representations (<b>ICLR</b>)
-  year: 2026
-  category: conference
-- title: 'Branchgrpo: Stable and efficient grpo with structured branching in diffusion
-    models'
-  url: ''
-  authors: Y Li, Y Wang, Y Zhu, Z Zhao, M Lu, <b>Qi She</b>, S Zhang
-  venue: International Conference on Learning Representations (<b>ICLR</b>)
-  year: 2026
-  category: conference
-- title: 'CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning'
-  url: ''
-  authors: Q Song, H Li, Y Yu, H Zhou, L Yang, S Bai, <b>Qi She</b>, Z Huang, Y Zhao
-  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
-  year: 2026
-  category: conference
-- title: 'UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding,
-    Editing and Verifying'
-  url: ''
-  authors: C Bai, J Chen, X Bai, Y Chen, <b>Qi She</b>, M Lu, S Zhang
-  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
-  year: 2026
-  category: conference
-- title: 'ThinkGen: Generalized Thinking for Visual Generation'
-  url: ''
-  authors: S Jiao, Y Lin, Y Zhong, <b>Qi She</b>, W Zhou, X Lan, Z Huang, F Yu, Y
-    Yu, ...
-  venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
-  year: 2026
-  category: conference
-- title: 'Beyond Attention or Similarity: Maximizing Conditional Diversity for Token
-    Pruning in MLLMs'
-  url: ''
-  authors: Q Zhang, M Liu, L Li, M Lu, Y Zhang, J Pan, <b>Qi She</b>, S Zhang
-  venue: Neural Information Processing Systems (<b>NeurIPS</b>)
-  year: 2025
-  category: conference
-- title: 'Beyond text-visual attention: Exploiting visual cues for effective token
-    pruning in vlms'
-  url: ''
-  authors: Q Zhang, A Cheng, M Lu, R Zhang, Z Zhuo, J Cao, S Guo, <b>Qi She</b>, ...
-  venue: International Conference on Computer Vision (<b>ICCV</b>)
-  year: 2025
-  category: conference
+
 - title: 'PDO-s3DCNNs: Partial Differential Operator Based Steerable 3D CNNs'
   url: https://proceedings.mlr.press/v162/shen22c.html
   authors: Zhenyang Shen, Tao Hong, <b>Qi She</b>, Jinwei Ma, Zhouchen Lin
   venue: International Conference on Machine Learning (<b>ICML</b>)
   year: 2022
-  pdf: https://sheqi.github.io/pdf/ICML2022_PDO.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICML22_PDO.bib.txt
+  pdf: /pdf/ICML2022_PDO.pdf
+  bibtex: /bibtex/ICML22_PDO.bib.txt
   arxiv: https://arxiv.org/pdf/2208.03720
   category: conference
 - title: Weakly Supervised Object Localization as Domain Adaption
@@ -140,8 +210,8 @@
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2022
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/zh460045050/DA-WSOL_CVPR2022?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/CVPR2022_WDA.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR22_WDA.bib.txt
+  pdf: /pdf/CVPR2022_WDA.pdf
+  bibtex: /bibtex/CVPR22_WDA.bib.txt
   code: https://github.com/zh460045050/DA-WSOL_CVPR2022
   category: conference
 - title: On Learning Contrastive Representations for Learning with Noisy Labels
@@ -149,8 +219,8 @@
   authors: Li Yi, Sheng Liu, <b>Qi She</b>, Lei Zhu, A. Ian McLeod, Boyu Wang
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2022
-  pdf: https://sheqi.github.io/pdf/CVPR2022_noisylabel.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR22_noisylabel.bib.txt
+  pdf: /pdf/CVPR2022_noisylabel.pdf
+  bibtex: /bibtex/CVPR22_noisylabel.bib.txt
   arxiv: https://arxiv.org/abs/2203.01785
   category: conference
 - title: Learning from Temporal Gradient for Semi-supervised Action Recognition
@@ -159,8 +229,8 @@
     Alan Yuille, Yingwei Li
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2022
-  pdf: https://sheqi.github.io/pdf/CVPR2022_temporalgradient.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR22_temporalgradient.bib.txt
+  pdf: /pdf/CVPR2022_temporalgradient.pdf
+  bibtex: /bibtex/CVPR22_temporalgradient.bib.txt
   category: conference
 - title: Unifying Nonlocal Blocks for Neural Networks
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Unifying_Nonlocal_Blocks_for_Neural_Networks_ICCV_2021_paper.html
@@ -169,8 +239,8 @@
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/zh460045050/SNL_ICCV2021?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/ICCV2021_nonlocal.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICCV21_nolocal.bib.txt
+  pdf: /pdf/ICCV2021_nonlocal.pdf
+  bibtex: /bibtex/ICCV21_nolocal.bib.txt
   code: https://github.com/zh460045050/SNL_ICCV2021
   arxiv: https://arxiv.org/abs/2108.02451
   category: conference
@@ -180,8 +250,8 @@
     Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming.
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
-  pdf: https://sheqi.github.io/pdf/ICCV2021_mtorl.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICCV21_mtorl.bib.txt
+  pdf: /pdf/ICCV2021_mtorl.pdf
+  bibtex: /bibtex/ICCV21_mtorl.bib.txt
   code: https://github.com/fengpanhe/MT-ORL
   arxiv: https://arxiv.org/abs/2108.05722
   category: conference
@@ -192,8 +262,8 @@
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/vincentfung13/MINE?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/ICCV2021_mine.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICCV21_mine.bib.txt
+  pdf: /pdf/ICCV2021_mine.pdf
+  bibtex: /bibtex/ICCV21_mine.bib.txt
   code: https://github.com/vincentfung13/MINE
   arxiv: https://arxiv.org/abs/2103.14910
   category: conference
@@ -204,8 +274,8 @@
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/d-li14/involution?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/CVPR2021_involution.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR21_involution.bib.txt
+  pdf: /pdf/CVPR2021_involution.pdf
+  bibtex: /bibtex/CVPR21_involution.bib.txt
   code: https://github.com/d-li14/involution
   arxiv: https://arxiv.org/abs/2103.06255
   category: conference
@@ -215,8 +285,8 @@
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/V-Sense/ACTION-Net?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/CVPR2021_actionnet.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR21_actionnet.bib.txt
+  pdf: /pdf/CVPR2021_actionnet.pdf
+  bibtex: /bibtex/CVPR21_actionnet.bib.txt
   code: https://github.com/V-Sense/ACTION-Net
   arxiv: https://arxiv.org/abs/2103.07372
   category: conference
@@ -226,8 +296,8 @@
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/zh460045050/LNSNet?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/CVPR2021_superpixel.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPR21_superpixel.bib.txt
+  pdf: /pdf/CVPR2021_superpixel.pdf
+  bibtex: /bibtex/CVPR21_superpixel.bib.txt
   code: https://github.com/zh460045050/LNSNet
   category: conference
 - title: 'OpenLORIS-Object: A Robotic Vision Dataset and Benchmark for Lifelong Deep
@@ -239,8 +309,8 @@
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
   year: 2020
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/lifelong-robotic-vision/lifelong-robotic-vision.github.io?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/ICRA2020_obj.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICRA20_obj.bib.txt
+  pdf: /pdf/ICRA2020_obj.pdf
+  bibtex: /bibtex/ICRA20_obj.bib.txt
   project_page: https://lifelong-robotic-vision.github.io/dataset/object
   code: https://github.com/lifelong-robotic-vision/OpenLORIS-Object
   arxiv: https://arxiv.org/abs/1911.06487
@@ -254,8 +324,8 @@
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
   year: 2020
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/lifelong-robotic-vision/lifelong-robotic-vision.github.io?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/ICRA2020_Scene.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICRA20_scene.bib.txt
+  pdf: /pdf/ICRA2020_Scene.pdf
+  bibtex: /bibtex/ICRA20_scene.bib.txt
   project_page: https://lifelong-robotic-vision.github.io/dataset/scene
   arxiv: https://arxiv.org/abs/1911.05603
   category: conference
@@ -266,10 +336,10 @@
   year: 2019
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/sheqi/GP-RNN_UAI2019?label=Stars&style=social">
   oral: https://www.youtube.com/watch?v=oEIIFZRjObc
-  pdf: https://sheqi.github.io/pdf/UAI2019.pdf
-  bibtex: https://sheqi.github.io/bibtex/UAI19.bib.txt
+  pdf: /pdf/UAI2019.pdf
+  bibtex: /bibtex/UAI19.bib.txt
   code: https://github.com/sheqi/GP-RNN_UAI2019
-  supp: https://sheqi.github.io/sm/UAI2019.pdf
+  supp: /sm/UAI2019.pdf
   arxiv: https://arxiv.org/abs/1907.00650
   category: conference
 - title: Reduced-Rank Linear Dynamical Systems
@@ -277,8 +347,8 @@
   authors: <b> Qi She </b>, Yuan Gao, Kai Xu, and Rosa H.M. Chan.
   venue: AAAI Conference on Artificial Intelligence (<b>AAAI</b>)
   year: 2018
-  pdf: https://sheqi.github.io/pdf/AAAI2018.pdf
-  bibtex: https://sheqi.github.io/bibtex/AAAI18.bib.txt
+  pdf: /pdf/AAAI2018.pdf
+  bibtex: /bibtex/AAAI18.bib.txt
   category: conference
 - title: Stochastic Dynamical Systems Based Latent Structure Discovery in High-dimensional
     Time Series
@@ -286,27 +356,28 @@
   authors: <b> Qi She </b>, Rosa H.M. Chan.
   venue: The international Conference on Acoustics, Speech, & Signal Processing (<b>ICASSP</b>)
   year: 2018
+  bibtex: /bibtex/ICASSP18.bib.txt
   category: conference
 - title: 'Avalanche: an End-to-End Library for Continual Learning'
   url: https://openaccess.thecvf.com/content/CVPR2021W/CLVision/html/Lomonaco_Avalanche_An_End-to-End_Library_for_Continual_Learning_CVPRW_2021_paper.html
   venue: <b>CVPR</b> 2021, Workshop on Continual Learning in Computer Vision.
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/ContinualAI/avalanche?label=Stars&style=social">
-  pdf: https://sheqi.github.io/pdf/CVPRW2021_avalanche.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPRW21_avalanche.bib.txt
+  pdf: /pdf/CVPRW2021_avalanche.pdf
+  bibtex: /bibtex/CVPRW21_avalanche.bib.txt
   code: https://github.com/ContinualAI/avalanche
   category: workshop
 - title: 'CatNet: Class Incremental 3D ConvNets for Lifelong Egocentric Gesture Recognition'
   url: https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Wang_CatNet_Class_Incremental_3D_ConvNets_for_Lifelong_Egocentric_Gesture_Recognition_CVPRW_2020_paper.html
   authors: Zhengwei Wang, <b> Qi She </b>, Tejo Chalasani, Aljosa Smolic.
   venue: <b>CVPR</b> 2020, Workshop on Continual Learning in Computer Vision.
-  pdf: https://sheqi.github.io/pdf/CVPRW2020_CatNet.pdf
-  bibtex: https://sheqi.github.io/bibtex/CVPRW20_CatNet.bib.txt
+  pdf: /pdf/CVPRW2020_CatNet.pdf
+  bibtex: /bibtex/CVPRW20_CatNet.bib.txt
   category: workshop
 - title: A Neuro-AI Interface for Evaluating Generative Adversarial Networks
   url: https://baicsworkshop.github.io/program/baics_21.html
   authors: Zhengwei Wang, <b> Qi She </b>, Alan F. Smeaton, Tomas E. Ward, Graham
     Healy.
   venue: <b>ICLR</b> 2020, Workshop on Bridging AI and Cognitive Science.
-  pdf: https://sheqi.github.io/pdf/ICLRW2020_Neuroscore.pdf
-  bibtex: https://sheqi.github.io/bibtex/ICLRW20_Neuroscore.bib.txt
+  pdf: /pdf/ICLRW2020_Neuroscore.pdf
+  bibtex: /bibtex/ICLRW20_Neuroscore.bib.txt
   category: workshop

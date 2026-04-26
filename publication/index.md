@@ -8,7 +8,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 
 ### **Selected Top-tier Publication**
 
-[Note] below peer-reviewed paper are updated by 04/15, 2024, and the full and most updated publication can be found at [Google Scholar Page: Qi She](https://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=zh-CN)
+[Note] Selected peer-reviewed papers listed below. For the full and most up-to-date publication list, see [Google Scholar: Qi She](https://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=zh-CN)
 
 #### **Journal**
 
@@ -231,6 +231,78 @@ arXiv
 {% endif %}
 {% endfor %}
 </ul> 
+</div>
+</div>
+</div>
+
+#### **Preprint**
+
+<div id="container-publications">
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<ul>
+{% for pub in site.data.publications %}
+{% if pub.category == 'preprint' %}
+<li>
+<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+    <span class="pub-emoji">📝</span>
+    <span itemprop="name">
+        {% if pub.url %}<a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>{% else %}<i>{{ pub.title }}</i>{% endif %}
+    </span>
+    {% if pub.authors %}
+    <div class="pub-authors" itemprop="author">
+        {{ pub.authors }}
+    </div>
+    {% endif %}
+    <div class="pub-publication">
+    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
+    </div>
+<p>
+{% if pub.arxiv %}
+<a class="btn btn-default" href="{{ pub.arxiv }}">
+arXiv
+</a>
+{% endif %}
+{% if pub.code %}
+<a class="btn btn-default" href="{{ pub.code }}">
+Code
+</a>
+{% endif %}
+</p>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
+</div>
+</div>
+</div>
+
+#### **Patent**
+
+<div id="container-publications">
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<ul>
+{% for pub in site.data.publications %}
+{% if pub.category == 'patent' %}
+<li>
+<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+    <span class="pub-emoji">📋</span>
+    <span itemprop="name">
+        <i>{{ pub.title }}</i>
+    </span>
+    {% if pub.authors %}
+    <div class="pub-authors" itemprop="author">
+        {{ pub.authors }}
+    </div>
+    {% endif %}
+    <div class="pub-publication">
+    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
+    </div>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
 </div>
 </div>
 </div>
