@@ -53,7 +53,6 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 {% for pub in site.data.publications %}
 {% if pub.category == 'journal' %}
 <li>
-<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span class="pub-emoji">📄</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
@@ -134,7 +133,6 @@ Papers With Code
 {% for pub in site.data.publications %}
 {% if pub.category == 'conference' %}
 <li>
-<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span class="pub-emoji">🎓</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
@@ -215,7 +213,6 @@ Papers With Code
 {% for pub in site.data.publications %}
 {% if pub.category == 'workshop' %}
 <li>
-<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span class="pub-emoji">🔧</span>
     <span itemprop="name">
         <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
@@ -296,7 +293,6 @@ Papers With Code
 {% for pub in site.data.publications %}
 {% if pub.category == 'preprint' %}
 <li>
-<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span class="pub-emoji">📝</span>
     <span itemprop="name">
         {% if pub.url %}<a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>{% else %}<i>{{ pub.title }}</i>{% endif %}
@@ -338,7 +334,6 @@ Code
 {% for pub in site.data.publications %}
 {% if pub.category == 'patent' %}
 <li>
-<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
     <span class="pub-emoji">📋</span>
     <span itemprop="name">
         <i>{{ pub.title }}</i>

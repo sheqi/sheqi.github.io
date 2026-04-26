@@ -2,10 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link rel="stylesheet" href="{{ "/assets/css/hugo-academic.css" | relative_url }}">
+<!-- Preconnect to external domains -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="//cdn.clustrmaps.com">
+
+<!-- Academicons (local, 2.7KB) — only ai-google-scholar and ai-researchgate used -->
+<link rel="stylesheet" href="{{ "/assets/css/academicons.min.css" | relative_url }}">
 
 <link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml" title="{{ site.title }}">
 <link rel="icon" type="image/png" href="/assets/img/icon.png">
@@ -28,12 +31,10 @@
 <meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:image" content="{{ site.url }}/assets/img/portfolio.png">
-<meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.twitter.username }}">
-<meta name="twitter:creator" content="@{{ site.twitter.username }}">
 <meta name="twitter:title" content="{{ page.title | default: site.plainwhite.name }}">
 <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
 <meta name="twitter:image" content="{{ site.url }}/assets/img/portfolio.png">
