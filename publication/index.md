@@ -69,6 +69,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
+    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
     <p>
     {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
     {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
@@ -101,6 +102,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
+    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
     <p>
     {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
     {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
@@ -133,6 +135,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
+    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
     <p>
     {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
     {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
@@ -165,6 +168,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
     </div>
+    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
     <p>
     {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
     {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
@@ -189,6 +193,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
     </div>
+    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
 </li>
 {% endif %}
 {% endfor %}

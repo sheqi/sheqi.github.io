@@ -4,18 +4,21 @@
   venue: International Conference on Learning Representations (<b>ICLR</b>)
   year: 2026
   category: conference
+  tags: [Video, Reasoning, "ICLR'26"]
 - title: 'ThinkGen: Generalized Thinking for Visual Generation'
   url: ''
   authors: S Jiao, Y Lin, Y Zhong, <b>Qi She</b>, W Zhou, X Lan, Z Huang, F Yu, Y Yu, ...
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2026
   category: conference
+  tags: [Generation, MLLM, "CVPR'26"]
 - title: 'CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning'
   url: ''
   authors: Q Song, H Li, Y Yu, H Zhou, L Yang, S Bai, <b>Qi She</b>, Z Huang, Y Zhao
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2026
   category: conference
+  tags: [MLLM, Reasoning, "CVPR'26"]
 - title: 'UniEdit-I: Training-free Image Editing for Unified VLM via Iterative Understanding, Editing and Verifying'
   url: ''
   authors: C Bai, J Chen, X Bai, Y Chen, <b>Qi She</b>, M Lu, S Zhang
@@ -28,6 +31,7 @@
   venue: International Conference on Learning Representations (<b>ICLR</b>)
   year: 2026
   category: conference
+  tags: [Video, Agent, "ICLR'26"]
 - title: 'Branchgrpo: Stable and efficient grpo with structured branching in diffusion models'
   url: ''
   authors: Y Li, Y Wang, Y Zhu, Z Zhao, M Lu, <b>Qi She</b>, S Zhang
@@ -81,6 +85,7 @@
   venue: Neural Information Processing Systems (<b>NeurIPS</b>)
   year: 2025
   category: conference
+  tags: [MLLM, Efficiency, "NeurIPS'25"]
 - title: 'TimeSearch: Hierarchical video search with spotlight and reflection for human-like long video understanding'
   url: 'https://arxiv.org/abs/2504.01407'
   authors: J Pan, R Zhang, X Wan, Y Zhang, M Lu, <b>Qi She</b>
@@ -100,6 +105,7 @@
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2025
   category: conference
+  tags: [VLM, Efficiency, "ICCV'25"]
 - title: 'ASGDiffusion: Parallel High-Resolution Generation with Asynchronous Structure Guidance'
   url: 'https://arxiv.org/abs/2412.06163'
   authors: Y Li, P Jia, D Hong, Y Jia, <b>Qi She</b>, R Zhao, M Lu, S Zhang
@@ -128,6 +134,7 @@
     Yibao Zhang, Qiushi Ren, Yanye Lu
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)
   year: 2023
+  tags: [Localization, TPAMI]
   pdf: /pdf/TPAMI2023_backgroundaware.pdf
   bibtex: /bibtex/TPAMI23_backgroundaware.bib.txt
   code: https://github.com/zh460045050/BCAM
@@ -274,6 +281,7 @@
     Zhang, Qifeng Chen.
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2021
+  tags: [Architecture, CNN, "CVPR'21"]
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/d-li14/involution?label=Stars&style=social">
   pdf: /pdf/CVPR2021_involution.pdf
   bibtex: /bibtex/CVPR21_involution.bib.txt

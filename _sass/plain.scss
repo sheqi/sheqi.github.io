@@ -59,11 +59,11 @@ $leftWidth: 220px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 15.5px;
-  line-height: 1.6;
+  line-height: 1.72;
   font-weight: 300;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   color: #333;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -212,7 +212,7 @@ main {
 
     a {
       display: block;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
       text-align: center;
       padding: 1rem 0;
       text-decoration: none;
@@ -299,7 +299,7 @@ main {
   padding-left: 30px;
 }
 .post {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   color: #333;
   line-height: 1.8;
@@ -322,10 +322,10 @@ main {
   h4,
   h5,
   h6 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 600;
-    color: #1d1d1f;
-    letter-spacing: -0.005em;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.025em;
   }
 }
 
@@ -523,6 +523,84 @@ details[open] summary {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.55;
+}
+
+/* ── Heading base ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* ── Section breathing room ── */
+.post h2, .post h3 {
+  margin-top: 2.4rem;
+  padding-top: 0.2rem;
+}
+
+/* ── Fade-in up for main content ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.content {
+  animation: fadeInUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Publication card hover ── */
+.pub-section > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pub-section > ul > li {
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  transition: background 0.2s ease, transform 0.18s ease, box-shadow 0.2s ease;
+
+  span[itemprop="name"] a {
+    font-weight: 500;
+    position: relative;
+    border-bottom: none !important;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: $linkColor;
+      transition: width 0.25s ease;
+    }
+    &:hover::after { width: 100%; }
+  }
+
+  &:hover {
+    background: #f5f7fb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* ── Publication tag pills ── */
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 5px 0 8px;
+}
+.pub-tag {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: #eef2f7;
+  color: #3b6490;
+  border: 1px solid #cddaeb;
+  white-space: nowrap;
 }
 
 /* Scholar impact stats strip */
@@ -872,6 +950,27 @@ footer {
       border-color: #2997ff;
       color: #fff;
     }
+  }
+
+  .pub-section > ul > li {
+    &:hover {
+      background: #1e1e22;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    }
+    span[itemprop="name"] a::after {
+      background: #2997ff;
+    }
+  }
+
+  .pub-tag {
+    background: #1a2535;
+    color: #7ab8f5;
+    border-color: #2a3f5c;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0f0f5;
+    letter-spacing: -0.02em;
   }
 
   /* Mobile fixed footer dark mode */
