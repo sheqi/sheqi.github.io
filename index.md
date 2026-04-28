@@ -13,15 +13,15 @@ A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting sc
 
 <div class="scholar-stats">
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
-    <span class="scholar-stat-num">2100+</span>
+    <span class="scholar-stat-num">{{ site.data.scholar_stats.citations }}+</span>
     <span class="scholar-stat-label">Citations</span>
   </a>
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
-    <span class="scholar-stat-num">19</span>
+    <span class="scholar-stat-num">{{ site.data.scholar_stats.h_index }}</span>
     <span class="scholar-stat-label">H-index</span>
   </a>
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
-    <span class="scholar-stat-num">25</span>
+    <span class="scholar-stat-num">{{ site.data.scholar_stats.i10_index }}</span>
     <span class="scholar-stat-label">i10-index</span>
   </a>
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
