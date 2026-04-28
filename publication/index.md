@@ -47,7 +47,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 <div class="pub-filter-bar">
   <span class="pub-filter-label">Year:</span>
   <button class="pub-yr-btn active" data-year="all" onclick="filterPubs('all')">All</button>
-  {% assign all_years = site.data.publications | map: "year" | uniq | sort | reverse %}
+  {% assign all_years = site.data.publications | map: "year" | compact | uniq | sort | reverse %}
   {% for yr in all_years %}
   <button class="pub-yr-btn" data-year="{{ yr }}" onclick="filterPubs('{{ yr }}')">{{ yr }}</button>
   {% endfor %}
