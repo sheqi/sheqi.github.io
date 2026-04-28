@@ -25,7 +25,7 @@ A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting sc
     <span class="scholar-stat-label">i10-index</span>
   </a>
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
-    <span class="scholar-stat-num">5</span>
+    <span class="scholar-stat-num">{{ site.data.scholar_stats.us_patents }}</span>
     <span class="scholar-stat-label">US Patents</span>
   </a>
 </div>
@@ -102,11 +102,6 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 </details>
 
 
-<!--
-## **Outcomes**
-- In general, until 2023/10, I hold **2100 citations** from Google Sholar, with **h index: 19, i10 index 25**，publishing at TPAMI, TNNLS, TSP, CSUR, Nature Scientific Reports, ICML, CVPR, ICCV, ICLR, AAAI etc; and holding **5** US patents, and **20+** China patents.
-- At byetedance, I launched several ranking models/computer vision solutions as baselines; and at Intel Labs, I am the first contributor of [Lifelong Robotic Vision].
--->
 
 ## **🏆 Awards / 奖项**
 <div class="news-list">
