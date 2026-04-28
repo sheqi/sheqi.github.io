@@ -24,10 +24,6 @@ A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting sc
     <span class="scholar-stat-num">{{ site.data.scholar_stats.i10_index }}</span>
     <span class="scholar-stat-label">i10-index</span>
   </a>
-  <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
-    <span class="scholar-stat-num">{{ site.data.scholar_stats.us_patents }}</span>
-    <span class="scholar-stat-label">US Patents</span>
-  </a>
 </div>
 
 ### **Recent Focus / 工作方向**
