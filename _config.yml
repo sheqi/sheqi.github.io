@@ -47,7 +47,7 @@ plainwhite:
     - title: About me
       url: "/aboutme"
     - title: Blog
-      url: https://qishe.wordpress.com/
+      url: "/blog"
     #- title: CV
     #  url: "/cv"
   # generate social links in footer

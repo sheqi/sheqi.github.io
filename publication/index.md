@@ -44,304 +44,147 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 
 [Note] Selected peer-reviewed papers listed below. For the full and most up-to-date publication list, see [Google Scholar: Qi She](https://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=zh-CN)
 
-#### **Journal**
+<div class="pub-filter-bar">
+  <span class="pub-filter-label">Year:</span>
+  <button class="pub-yr-btn active" data-year="all" onclick="filterPubs('all')">All</button>
+  {% assign all_years = site.data.publications | map: "year" | uniq | sort | reverse %}
+  {% for yr in all_years %}
+  <button class="pub-yr-btn" data-year="{{ yr }}" onclick="filterPubs('{{ yr }}')">{{ yr }}</button>
+  {% endfor %}
+</div>
 
-<div id="container-publications">
-<div class="row">
-<div class="col-xs-12 col-md-12">
+<div class="pub-section" id="pub-sec-journal">
+<h4>Journal</h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'journal' %}
-<li>
+<li data-year="{{ pub.year }}">
     <span class="pub-emoji">📄</span>
     <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
+        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
     </span>
     {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">
-        {{ pub.authors }}
-    </div>
+    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
     {% endif %}
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
-
-<p>
-{% if pub.oral %}
-<a class="btn btn-default" href="{{ pub.oral }}">
-Oral
-</a>
-{% endif %}
-
-{% if pub.pdf %}
-<a class="btn btn-default" href="{{ pub.pdf }}">
-PDF
-</a>
-{% endif %}
-
-{% if pub.bibtex %}
-<a class="btn btn-default" href="{{ pub.bibtex }}">
-BibTex
-</a>
-{% endif %}
-
-{% if pub.project_page %}
-<a class="btn btn-default" href="{{ pub.project_page }}">
-{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}
-</a>
-{% endif %}
-
-{% if pub.code %}
-<a class="btn btn-default" href="{{ pub.code }}">
-Code
-</a>
-{% endif %}
-
-{% if pub.supp %}
-<a class="btn btn-default" href="{{ pub.supp }}">
-Supp. Materials
-</a>
-{% endif %}
-
-{% if pub.arxiv %}
-<a class="btn btn-default" href="{{ pub.arxiv }}">
-arXiv
-</a>
-{% endif %}
-
-{% if pub.papers_with_code %}
-<a class="btn btn-default" href="{{ pub.papers_with_code }}">
-Papers With Code
-</a>
-{% endif %}
-
-</p>
+    <p>
+    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
+    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
+    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
+    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
+    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
+    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
+    </p>
 </li>
 {% endif %}
 {% endfor %}
 </ul>
 </div>
-</div>
-</div>
 
-#### **Conference**
-
-<div id="container-publications">
-<div class="row">
-<div class="col-xs-12 col-md-12">
+<div class="pub-section" id="pub-sec-conference">
+<h4>Conference</h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'conference' %}
-<li>
+<li data-year="{{ pub.year }}">
     <span class="pub-emoji">🎓</span>
     <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
+        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
     </span>
     {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">
-        {{ pub.authors }}
-    </div>
+    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
     {% endif %}
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
-
-<p>
-{% if pub.oral %}
-<a class="btn btn-default" href="{{ pub.oral }}">
-Oral
-</a>
-{% endif %}
-
-{% if pub.pdf %}
-<a class="btn btn-default" href="{{ pub.pdf }}">
-PDF
-</a>
-{% endif %}
-
-{% if pub.bibtex %}
-<a class="btn btn-default" href="{{ pub.bibtex }}">
-BibTex
-</a>
-{% endif %}
-
-{% if pub.project_page %}
-<a class="btn btn-default" href="{{ pub.project_page }}">
-{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}
-</a>
-{% endif %}
-
-{% if pub.code %}
-<a class="btn btn-default" href="{{ pub.code }}">
-Code
-</a>
-{% endif %}
-
-{% if pub.supp %}
-<a class="btn btn-default" href="{{ pub.supp }}">
-Supp. Materials
-</a>
-{% endif %}
-
-{% if pub.arxiv %}
-<a class="btn btn-default" href="{{ pub.arxiv }}">
-arXiv
-</a>
-{% endif %}
-
-{% if pub.papers_with_code %}
-<a class="btn btn-default" href="{{ pub.papers_with_code }}">
-Papers With Code
-</a>
-{% endif %}
-
-</p>
+    <p>
+    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
+    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
+    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
+    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
+    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
+    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
+    </p>
 </li>
 {% endif %}
 {% endfor %}
 </ul>
 </div>
-</div>
-</div>
 
-#### **Workshop**
-
-<div id="container-publications">
-<div class="row">
-<div class="col-xs-12 col-md-12">
+<div class="pub-section" id="pub-sec-workshop">
+<h4>Workshop</h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'workshop' %}
-<li>
+<li data-year="{{ pub.year }}">
     <span class="pub-emoji">🔧</span>
     <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>  
+        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
     </span>
     {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">
-        {{ pub.authors }}
-    </div>
+    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
     {% endif %}
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
     </div>
-
-<p>
-{% if pub.oral %}
-<a class="btn btn-default" href="{{ pub.oral }}">
-Oral
-</a>
-{% endif %}
-
-{% if pub.pdf %}
-<a class="btn btn-default" href="{{ pub.pdf }}">
-PDF
-</a>
-{% endif %}
-
-{% if pub.bibtex %}
-<a class="btn btn-default" href="{{ pub.bibtex }}">
-BibTex
-</a>
-{% endif %}
-
-{% if pub.project_page %}
-<a class="btn btn-default" href="{{ pub.project_page }}">
-{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}
-</a>
-{% endif %}
-
-{% if pub.code %}
-<a class="btn btn-default" href="{{ pub.code }}">
-Code
-</a>
-{% endif %}
-
-{% if pub.supp %}
-<a class="btn btn-default" href="{{ pub.supp }}">
-Supp. Materials
-</a>
-{% endif %}
-
-{% if pub.arxiv %}
-<a class="btn btn-default" href="{{ pub.arxiv }}">
-arXiv
-</a>
-{% endif %}
-
-{% if pub.papers_with_code %}
-<a class="btn btn-default" href="{{ pub.papers_with_code }}">
-Papers With Code
-</a>
-{% endif %}
-
-</p>
+    <p>
+    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
+    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
+    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
+    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
+    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
+    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
+    </p>
 </li>
 {% endif %}
 {% endfor %}
 </ul>
 </div>
-</div>
-</div>
 
-#### **Preprint**
-
-<div id="container-publications">
-<div class="row">
-<div class="col-xs-12 col-md-12">
+<div class="pub-section" id="pub-sec-preprint">
+<h4>Preprint</h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'preprint' %}
-<li>
+<li data-year="{{ pub.year }}">
     <span class="pub-emoji">📝</span>
     <span itemprop="name">
         {% if pub.url %}<a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>{% else %}<i>{{ pub.title }}</i>{% endif %}
     </span>
     {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">
-        {{ pub.authors }}
-    </div>
+    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
     {% endif %}
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
     </div>
-<p>
-{% if pub.arxiv %}
-<a class="btn btn-default" href="{{ pub.arxiv }}">
-arXiv
-</a>
-{% endif %}
-{% if pub.code %}
-<a class="btn btn-default" href="{{ pub.code }}">
-Code
-</a>
-{% endif %}
-</p>
+    <p>
+    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+    </p>
 </li>
 {% endif %}
 {% endfor %}
 </ul>
 </div>
-</div>
-</div>
 
-#### **Patent**
-
-<div id="container-publications">
-<div class="row">
-<div class="col-xs-12 col-md-12">
+<div class="pub-section" id="pub-sec-patent">
+<h4>Patent</h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'patent' %}
-<li>
+<li data-year="{{ pub.year }}">
     <span class="pub-emoji">📋</span>
-    <span itemprop="name">
-        <i>{{ pub.title }}</i>
-    </span>
+    <span itemprop="name"><i>{{ pub.title }}</i></span>
     {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">
-        {{ pub.authors }}
-    </div>
+    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
     {% endif %}
     <div class="pub-publication">
     {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
@@ -351,5 +194,20 @@ Code
 {% endfor %}
 </ul>
 </div>
-</div>
-</div>
+
+<script>
+function filterPubs(year) {
+  document.querySelectorAll('.pub-yr-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.year === year);
+  });
+  document.querySelectorAll('.pub-section li').forEach(function(li) {
+    li.style.display = (year === 'all' || li.dataset.year === year) ? '' : 'none';
+  });
+  document.querySelectorAll('.pub-section').forEach(function(section) {
+    var hasVisible = Array.from(section.querySelectorAll('li')).some(function(li) {
+      return li.style.display !== 'none';
+    });
+    section.style.display = hasVisible ? '' : 'none';
+  });
+}
+</script>

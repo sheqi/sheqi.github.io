@@ -11,6 +11,25 @@ Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Busin
 
 A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR，ICML, CVPR, and ICCV**.
 
+<div class="scholar-stats">
+  <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
+    <span class="scholar-stat-num">2100+</span>
+    <span class="scholar-stat-label">Citations</span>
+  </a>
+  <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
+    <span class="scholar-stat-num">19</span>
+    <span class="scholar-stat-label">H-index</span>
+  </a>
+  <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
+    <span class="scholar-stat-num">25</span>
+    <span class="scholar-stat-label">i10-index</span>
+  </a>
+  <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
+    <span class="scholar-stat-num">5</span>
+    <span class="scholar-stat-label">US Patents</span>
+  </a>
+</div>
+
 ### **Recent Focus / 工作方向**
 Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s Business Integrity ecosystem:
 - **Architecting Agentic Foundations**: Developing specialized (M)LLMs optimized for reasoning, planning, and autonomous decision-making in high-stakes security scenarios.
