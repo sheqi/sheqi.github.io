@@ -32,9 +32,13 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
 - **Advancing MLLM-Agent Synergy**: Pioneering the fusion of (M)LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
 
-[**<span style="color:#dd0000">Hiring!</span>**] Recruiting scientists, engineers, and research/engineering interns in Multi Modal Large Language Model & Agentic AI Foundation at Beijing, Shanghai, Singapore and San Jose～ Feel free to [**contact me**](mailto:sheqi.roger@bytedance.com) . 和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化，寻找具备出色问题分析与解决能力的候选人:
-- [正式] 多模态大模型算法工程师/应用研究员（SFT/RM/RLHF/Pretrain, Agent框架+应用）招聘中（长期有效）
-- [实习] 多模态大模型、计算机视觉、自然语言处理等「算法研究实习生」招聘中（长期有效）
+<div class="callout">
+  <span class="callout-eyebrow">We're hiring</span>
+  <strong>Multimodal LLM & Agentic AI Foundation</strong> roles in Beijing, Shanghai, Singapore, and San Jose. <a href="mailto:sheqi.roger@bytedance.com">Get in touch →</a>
+  <br>和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化：
+  <br>· [正式] 多模态大模型算法工程师 / 应用研究员（SFT、RM、RLHF、Pretrain、Agent 框架与应用）
+  <br>· [实习] 多模态大模型、计算机视觉、自然语言处理「算法研究实习生」
+</div>
 
 ### **News / 动态**
 - Selected recent news and activities since 2020.

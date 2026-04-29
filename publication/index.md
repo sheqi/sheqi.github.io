@@ -54,7 +54,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </div>
 
 <div class="pub-section" id="pub-sec-journal">
-<h4>Journal</h4>
+<h4>Journal <span class="pub-count">{{ site.data.publications | where: "category", "journal" | size }}</span></h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'journal' %}
@@ -87,7 +87,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </div>
 
 <div class="pub-section" id="pub-sec-conference">
-<h4>Conference</h4>
+<h4>Conference <span class="pub-count">{{ site.data.publications | where: "category", "conference" | size }}</span></h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'conference' %}
@@ -120,7 +120,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </div>
 
 <div class="pub-section" id="pub-sec-workshop">
-<h4>Workshop</h4>
+<h4>Workshop <span class="pub-count">{{ site.data.publications | where: "category", "workshop" | size }}</span></h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'workshop' %}
@@ -153,7 +153,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </div>
 
 <div class="pub-section" id="pub-sec-preprint">
-<h4>Preprint</h4>
+<h4>Preprint <span class="pub-count">{{ site.data.publications | where: "category", "preprint" | size }}</span></h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'preprint' %}
@@ -180,7 +180,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </div>
 
 <div class="pub-section" id="pub-sec-patent">
-<h4>Patent</h4>
+<h4>Patent <span class="pub-count">{{ site.data.publications | where: "category", "patent" | size }}</span></h4>
 <ul>
 {% for pub in site.data.publications %}
 {% if pub.category == 'patent' %}
