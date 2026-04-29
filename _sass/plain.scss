@@ -159,7 +159,12 @@ main {
       line-height: normal;
     }
     img {
-      max-width: 150px;
+      width: 130px;
+      height: 130px;
+      max-width: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 1px $color-line, 0 6px 18px rgba(0, 0, 0, 0.05);
     }
     img.dark {
       display: none;
@@ -187,12 +192,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.6rem;
   a {
-    margin-bottom: .5em;
+    margin-bottom: 0;
+    color: $color-ink-2;
+    transition: color 0.2s ease;
+    &:hover { color: $color-accent; }
   }
   li {
     i, .ai {
-      font-size: 34px;
+      font-size: 22px;
     }
   }
 }
@@ -559,9 +568,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Section breathing room ── */
-.post h2, .post h3 {
+.post h2 {
+  margin-top: 3.2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid $color-line-soft;
+  font-size: 1.4rem;
+}
+.post h2:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 1.6rem;
+}
+.post h3 {
   margin-top: 2.4rem;
   padding-top: 0.2rem;
+  font-size: 1.1rem;
 }
 
 /* ── Fade-in up for main content ── */
@@ -734,6 +755,37 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
+/* Inline text-link styling for publication action buttons */
+.pub-section p {
+  margin: 0.35rem 0 0;
+  line-height: 1.6;
+}
+.pub-section p .btn-default {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: $color-ink-3;
+  letter-spacing: 0;
+  transition: color 0.15s ease;
+
+  &:hover {
+    background: none;
+    border: none;
+    color: $color-accent;
+    text-decoration: none;
+  }
+}
+.pub-section p .btn + .btn::before {
+  content: "·";
+  display: inline-block;
+  margin: 0 0.45em;
+  color: $color-line;
+  pointer-events: none;
+}
+
 /* ── Callout (hiring, notice, etc.) ── */
 .callout {
   display: block;
@@ -778,6 +830,46 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+/* ── Theme toggle (icon button) ── */
+.theme-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid $color-line;
+  border-radius: 50%;
+  color: $color-ink-2;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  .theme-icon-sun { display: none; }
+  .theme-icon-moon { display: inline-block; }
+}
+body.dark .theme-toggle {
+  border-color: #2a2a2e;
+  color: #d1d1d6;
+  &:hover { border-color: #4da3ff; color: #4da3ff; }
+  .theme-icon-moon { display: none; }
+  .theme-icon-sun { display: inline-block; }
+}
+
 footer {
   display: none;
 }
@@ -800,6 +892,9 @@ footer {
         flex-direction: row;
         margin-bottom: 10px;
         img {
+          width: 40px;
+          height: 40px;
+          max-width: 40px;
           max-height: 40px;
         }
         h2 {
@@ -1068,6 +1163,17 @@ footer {
   .callout-eyebrow { color: #4da3ff; }
 
   .about .affiliation { color: #86868b; }
+  .about img { box-shadow: 0 0 0 1px #2a2a2e, 0 6px 18px rgba(0, 0, 0, 0.3); }
+  .post h2 { border-top-color: #2a2a2e; }
+  .pub-section p .btn-default {
+    color: #86868b;
+    &:hover { color: #4da3ff; }
+  }
+  .pub-section p .btn + .btn::before { color: #2a2a2e; }
+  .social a {
+    color: #d1d1d6;
+    &:hover { color: #4da3ff; }
+  }
 
   .pub-tag {
     background: #1a2535;
