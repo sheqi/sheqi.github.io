@@ -1,0 +1,70 @@
+{%- assign pub = include.pub -%}
+
+{%- comment -%}-- Topic tags: filter out venue-like ("CVPR'26") and bare venue names --{%- endcomment -%}
+{%- assign venue_blacklist = "CVPR,ICCV,ICLR,NEURIPS,ICML,AAAI,TPAMI,TNNLS,TSP,CSUR,ICASSP,UAI,ICRA" | split: "," -%}
+{%- assign clean_tag_str = "" -%}
+{%- if pub.tags -%}
+  {%- for tag in pub.tags -%}
+    {%- assign tag_upper = tag | upcase -%}
+    {%- assign skip_tag = false -%}
+    {%- if tag contains "'" -%}{%- assign skip_tag = true -%}{%- endif -%}
+    {%- if venue_blacklist contains tag_upper -%}{%- assign skip_tag = true -%}{%- endif -%}
+    {%- unless skip_tag -%}
+      {%- assign clean_tag_str = clean_tag_str | append: tag | append: "|" -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- assign clean_tags = clean_tag_str | split: "|" -%}
+
+{%- comment -%}-- Auto-detect venue_short from venue text (only for conference/journal) --{%- endcomment -%}
+{%- assign venue_short = pub.venue_short -%}
+{%- unless venue_short -%}
+  {%- if pub.category == 'conference' or pub.category == 'journal' -%}
+    {%- assign vlist = "CVPR,ICCV,ICLR,NeurIPS,ICML,AAAI,UAI,ICRA,TPAMI,TNNLS,TSP,CSUR,ICASSP" | split: "," -%}
+    {%- for vn in vlist -%}
+      {%- unless venue_short -%}
+        {%- if pub.venue contains vn -%}
+          {%- assign venue_short = vn -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endunless -%}
+
+{%- assign topic_attr = clean_tags | join: " " | downcase | strip -%}
+
+{%- assign best_link = pub.url -%}
+{%- if best_link == nil or best_link == "" -%}{%- assign best_link = pub.arxiv -%}{%- endif -%}
+
+<li class="pub-item{% if pub.highlight %} pub-item-featured{% endif %}" data-year="{{ pub.year }}" data-topics="{{ topic_attr }}">
+  {%- if pub.thumbnail -%}
+    <a class="pub-thumb" href="{% if best_link %}{{ best_link }}{% else %}#{% endif %}">
+      <img src="{{ pub.thumbnail }}" alt="{{ pub.title | strip_html | escape }}" loading="lazy">
+    </a>
+  {%- else -%}
+    <span class="pub-emoji" aria-hidden="true">{% case pub.category %}{% when 'journal' %}📄{% when 'conference' %}🎓{% when 'workshop' %}🔧{% when 'preprint' %}📝{% when 'patent' %}📋{% else %}📄{% endcase %}</span>
+  {%- endif -%}
+  <div class="pub-body">
+    <span itemprop="name">
+      {% if pub.url and pub.url != '' %}<a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>{% else %}<i>{{ pub.title }}</i>{% endif %}
+      {% if venue_short %}<span class="pub-venue-chip pub-venue-{{ venue_short | downcase }}">{{ venue_short }}</span>{% endif %}
+    </span>
+    {% if pub.authors %}<div class="pub-authors" itemprop="author">{{ pub.authors }}</div>{% endif %}
+    <div class="pub-publication">
+      {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.{% if pub.badges %} {{ pub.badges }}{% endif %}
+    </div>
+    {% if clean_tags.size > 0 %}<div class="pub-tags">{% for tag in clean_tags %}{% if tag != "" %}<span class="pub-tag">{{ tag }}</span>{% endif %}{% endfor %}</div>{% endif %}
+    {% if pub.oral or pub.pdf or pub.bibtex or pub.project_page or pub.code or pub.supp or pub.arxiv or pub.papers_with_code %}
+    <p>
+      {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
+      {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
+      {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
+      {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
+      {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+      {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
+      {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+      {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
+    </p>
+    {% endif %}
+  </div>
+</li>

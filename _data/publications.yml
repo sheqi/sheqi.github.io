@@ -51,6 +51,7 @@
   year: 2025
   arxiv: 'https://arxiv.org/abs/2511.18262'
   category: preprint
+  highlight: true
 - title: 'ChainV: Atomic Visual Hints Make Multimodal Reasoning Shorter and Better'
   url: 'https://arxiv.org/abs/2511.17106'
   authors: Y Zhang, M Lu, J Pan, T Huang, K Cheng, <b>Qi She</b>, S Zhang
@@ -105,6 +106,7 @@
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2025
   category: conference
+  highlight: true
   tags: [VLM, Efficiency, "ICCV'25"]
 - title: 'ASGDiffusion: Parallel High-Resolution Generation with Asynchronous Structure Guidance'
   url: 'https://arxiv.org/abs/2412.06163'
@@ -127,6 +129,7 @@
   year: 2024
   arxiv: 'https://arxiv.org/abs/2406.18193'
   category: preprint
+  highlight: true
 - title: Background-aware Classification Activation Map for Weakly Supervised Object
     Localization
   url: https://ieeexplore.ieee.org/abstract/document/10234096
@@ -169,6 +172,7 @@
   arxiv: https://arxiv.org/abs/1906.01529
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/sheqi/GAN_Review?label=Stars&style=social">
   category: journal
+  highlight: true
 - title: An Efficient and Flexible Spike Train Model via Empirical Bayes
   url: https://ieeexplore.ieee.org/abstract/document/9420306
   authors: <b> Qi She </b>, Xiaoli Wu, Beth Jelfs, Adam S. Charles, Rosa H. M. Chan.
@@ -230,6 +234,7 @@
   bibtex: /bibtex/CVPR22_noisylabel.bib.txt
   arxiv: https://arxiv.org/abs/2203.01785
   category: conference
+  highlight: true
 - title: Learning from Temporal Gradient for Semi-supervised Action Recognition
   url: https://openaccess.thecvf.com/content/CVPR2022/html/Xiao_Learning_From_Temporal_Gradient_for_Semi-Supervised_Action_Recognition_CVPR_2022_paper.html
   authors: Junfei Xiao, Longlong Jing, Lin Zhang, Ju He, <b>Qi She</b>, Zongwei Zhou,
@@ -239,6 +244,7 @@
   pdf: /pdf/CVPR2022_temporalgradient.pdf
   bibtex: /bibtex/CVPR22_temporalgradient.bib.txt
   category: conference
+  highlight: true
 - title: Unifying Nonlocal Blocks for Neural Networks
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Unifying_Nonlocal_Blocks_for_Neural_Networks_ICCV_2021_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Duo Li, Yanye Lu, Xuejing Kang, Jie Hu, Changhu
@@ -275,6 +281,7 @@
   arxiv: https://arxiv.org/abs/2103.14910
   papers_with_code: https://paperswithcode.com/paper/mine-towards-continuous-depth-mpi-with-nerf
   category: conference
+  highlight: true
 - title: 'Involution: Inverting the Inherence of Convolution for Visual Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Li_Involution_Inverting_the_Inherence_of_Convolution_for_Visual_Recognition_CVPR_2021_paper.html
   authors: Duo Li, Jie Hu, Changhu Wang, Xiangtai Li, <b>Qi She</b>, Lei Zhu, Tong
@@ -289,6 +296,7 @@
   arxiv: https://arxiv.org/abs/2103.06255
   papers_with_code: https://paperswithcode.com/paper/involution-inverting-the-inherence-of
   category: conference
+  highlight: true
 - title: 'ACTION-Net: Multipath Excitation for Action Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Wang_ACTION-Net_Multipath_Excitation_for_Action_Recognition_CVPR_2021_paper.html
   authors: Zhengwei Wang, <b>Qi She</b>, Aljosa Smolic.
@@ -300,6 +308,7 @@
   code: https://github.com/V-Sense/ACTION-Net
   arxiv: https://arxiv.org/abs/2103.07372
   category: conference
+  highlight: true
 - title: Learning the Superpixel in a Non-iterative and Lifelong Manner
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Zhu_Learning_the_Superpixel_in_a_Non-Iterative_and_Lifelong_Manner_CVPR_2021_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Bin Zhang, Yanye Lu, Zhilin Lu, Duo Li, Jie Hu.
@@ -325,6 +334,7 @@
   code: https://github.com/lifelong-robotic-vision/OpenLORIS-Object
   arxiv: https://arxiv.org/abs/1911.06487
   category: conference
+  highlight: true
 - title: Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong
     SLAM
   url: https://ieeexplore.ieee.org/abstract/document/9196638
@@ -339,6 +349,7 @@
   project_page: https://lifelong-robotic-vision.github.io/dataset/scene
   arxiv: https://arxiv.org/abs/1911.05603
   category: conference
+  highlight: true
 - title: Neural Dynamics Discovery via Gaussian Process Recurrent Neural Networks
   url: https://proceedings.mlr.press/v115/she20a.html
   authors: <b> Qi She </b>, Anqi Wu.

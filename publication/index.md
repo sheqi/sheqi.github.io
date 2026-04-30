@@ -44,175 +44,124 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 
 [Note] Selected peer-reviewed papers listed below. For the full and most up-to-date publication list, see [Google Scholar: Qi She](https://scholar.google.com/citations?user=iHoGTt4AAAAJ&hl=zh-CN)
 
+{% assign highlights = site.data.publications | where: "highlight", true %}
+{% if highlights.size > 0 %}
+<section class="pub-highlights" aria-label="Selected highlights">
+  <h4 class="pub-highlights-title">★ Selected Highlights</h4>
+  <div class="pub-highlights-grid">
+    {% for pub in highlights %}{% include pub_card.html pub=pub %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <div class="pub-filter-bar">
   <span class="pub-filter-label">Year:</span>
-  <button class="pub-yr-btn active" data-year="all" onclick="filterPubs('all')">All</button>
+  <button class="pub-yr-btn active" data-year="all" onclick="filterPubsYear('all')">All</button>
   {% assign all_years = site.data.publications | map: "year" | compact | uniq | sort | reverse %}
   {% for yr in all_years %}
-  <button class="pub-yr-btn" data-year="{{ yr }}" onclick="filterPubs('{{ yr }}')">{{ yr }}</button>
+  <button class="pub-yr-btn" data-year="{{ yr }}" onclick="filterPubsYear('{{ yr }}')">{{ yr }}</button>
   {% endfor %}
 </div>
+
+{%- comment -%}-- Compute distinct topic tags (drops "CVPR'26" / bare venue names) --{%- endcomment -%}
+{%- assign venue_blacklist = "CVPR,ICCV,ICLR,NEURIPS,ICML,AAAI,TPAMI,TNNLS,TSP,CSUR,ICASSP,UAI,ICRA" | split: "," -%}
+{%- assign all_topic_str = "" -%}
+{%- for pub in site.data.publications -%}
+  {%- if pub.tags -%}
+    {%- for tag in pub.tags -%}
+      {%- assign tag_upper = tag | upcase -%}
+      {%- assign skip_tag = false -%}
+      {%- if tag contains "'" -%}{%- assign skip_tag = true -%}{%- endif -%}
+      {%- if venue_blacklist contains tag_upper -%}{%- assign skip_tag = true -%}{%- endif -%}
+      {%- unless skip_tag -%}
+        {%- assign all_topic_str = all_topic_str | append: tag | append: "|" -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign all_topics = all_topic_str | split: "|" | uniq | sort -%}
+
+{% if all_topics.size > 0 %}
+<div class="pub-filter-bar">
+  <span class="pub-filter-label">Topic:</span>
+  <button class="pub-tp-btn active" data-topic="all" onclick="filterPubsTopic('all')">All</button>
+  {% for tp in all_topics %}{% if tp != "" %}<button class="pub-tp-btn" data-topic="{{ tp | downcase }}" onclick="filterPubsTopic('{{ tp | downcase }}')">{{ tp }}</button>{% endif %}{% endfor %}
+</div>
+{% endif %}
 
 <div class="pub-section" id="pub-sec-journal">
 <h4>Journal <span class="pub-count">{{ site.data.publications | where: "category", "journal" | size }}</span></h4>
 <ul>
-{% for pub in site.data.publications %}
-{% if pub.category == 'journal' %}
-<li data-year="{{ pub.year }}">
-    <span class="pub-emoji">📄</span>
-    <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
-    </span>
-    {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
-    {% endif %}
-    <div class="pub-publication">
-    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
-    </div>
-    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-    <p>
-    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
-    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
-    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
-    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
-    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
-    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
-    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
-    </p>
-</li>
-{% endif %}
-{% endfor %}
+{% for pub in site.data.publications %}{% if pub.category == 'journal' %}{% include pub_item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 </div>
 
 <div class="pub-section" id="pub-sec-conference">
 <h4>Conference <span class="pub-count">{{ site.data.publications | where: "category", "conference" | size }}</span></h4>
 <ul>
-{% for pub in site.data.publications %}
-{% if pub.category == 'conference' %}
-<li data-year="{{ pub.year }}">
-    <span class="pub-emoji">🎓</span>
-    <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
-    </span>
-    {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
-    {% endif %}
-    <div class="pub-publication">
-    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
-    </div>
-    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-    <p>
-    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
-    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
-    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
-    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
-    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
-    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
-    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
-    </p>
-</li>
-{% endif %}
-{% endfor %}
+{% for pub in site.data.publications %}{% if pub.category == 'conference' %}{% include pub_item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 </div>
 
 <div class="pub-section" id="pub-sec-workshop">
 <h4>Workshop <span class="pub-count">{{ site.data.publications | where: "category", "workshop" | size }}</span></h4>
 <ul>
-{% for pub in site.data.publications %}
-{% if pub.category == 'workshop' %}
-<li data-year="{{ pub.year }}">
-    <span class="pub-emoji">🔧</span>
-    <span itemprop="name">
-        <a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>
-    </span>
-    {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
-    {% endif %}
-    <div class="pub-publication">
-    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}. {{ pub.badges }}
-    </div>
-    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-    <p>
-    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
-    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
-    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
-    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{% if pub.project_page_title %}{{ pub.project_page_title }}{% else %}Project page{% endif %}</a>{% endif %}
-    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
-    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
-    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-    {% if pub.papers_with_code %}<a class="btn btn-default" href="{{ pub.papers_with_code }}">Papers With Code</a>{% endif %}
-    </p>
-</li>
-{% endif %}
-{% endfor %}
+{% for pub in site.data.publications %}{% if pub.category == 'workshop' %}{% include pub_item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 </div>
 
 <div class="pub-section" id="pub-sec-preprint">
 <h4>Preprint <span class="pub-count">{{ site.data.publications | where: "category", "preprint" | size }}</span></h4>
 <ul>
-{% for pub in site.data.publications %}
-{% if pub.category == 'preprint' %}
-<li data-year="{{ pub.year }}">
-    <span class="pub-emoji">📝</span>
-    <span itemprop="name">
-        {% if pub.url %}<a href="{{ pub.url }}"><i>{{ pub.title }}</i></a>{% else %}<i>{{ pub.title }}</i>{% endif %}
-    </span>
-    {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
-    {% endif %}
-    <div class="pub-publication">
-    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
-    </div>
-    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-    <p>
-    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
-    </p>
-</li>
-{% endif %}
-{% endfor %}
+{% for pub in site.data.publications %}{% if pub.category == 'preprint' %}{% include pub_item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 </div>
 
 <div class="pub-section" id="pub-sec-patent">
 <h4>Patent <span class="pub-count">{{ site.data.publications | where: "category", "patent" | size }}</span></h4>
 <ul>
-{% for pub in site.data.publications %}
-{% if pub.category == 'patent' %}
-<li data-year="{{ pub.year }}">
-    <span class="pub-emoji">📋</span>
-    <span itemprop="name"><i>{{ pub.title }}</i></span>
-    {% if pub.authors %}
-    <div class="pub-authors" itemprop="author">{{ pub.authors }}</div>
-    {% endif %}
-    <div class="pub-publication">
-    {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}.
-    </div>
-    {% if pub.tags %}<div class="pub-tags">{% for tag in pub.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-</li>
-{% endif %}
-{% endfor %}
+{% for pub in site.data.publications %}{% if pub.category == 'patent' %}{% include pub_item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 </div>
 
 <script>
-function filterPubs(year) {
-  document.querySelectorAll('.pub-yr-btn').forEach(function(btn) {
-    btn.classList.toggle('active', btn.dataset.year === year);
-  });
-  document.querySelectorAll('.pub-section li').forEach(function(li) {
-    li.style.display = (year === 'all' || li.dataset.year === year) ? '' : 'none';
-  });
-  document.querySelectorAll('.pub-section').forEach(function(section) {
-    var hasVisible = Array.from(section.querySelectorAll('li')).some(function(li) {
-      return li.style.display !== 'none';
+(function() {
+  var activeYear = 'all';
+  var activeTopic = 'all';
+
+  function applyFilters() {
+    document.querySelectorAll('.pub-item').forEach(function(li) {
+      var yrMatch = activeYear === 'all' || li.dataset.year === activeYear;
+      var topicAttr = (li.dataset.topics || '').toLowerCase().trim();
+      var topics = topicAttr.length ? topicAttr.split(/\s+/) : [];
+      var tpMatch = activeTopic === 'all' || topics.indexOf(activeTopic) !== -1;
+      li.style.display = (yrMatch && tpMatch) ? '' : 'none';
     });
-    section.style.display = hasVisible ? '' : 'none';
-  });
-}
+    document.querySelectorAll('.pub-section').forEach(function(section) {
+      var hasVisible = Array.from(section.querySelectorAll('.pub-item')).some(function(li) {
+        return li.style.display !== 'none';
+      });
+      section.style.display = hasVisible ? '' : 'none';
+    });
+  }
+
+  window.filterPubsYear = function(year) {
+    activeYear = year;
+    document.querySelectorAll('.pub-yr-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.year === year);
+    });
+    applyFilters();
+  };
+
+  window.filterPubsTopic = function(topic) {
+    activeTopic = (topic || 'all').toLowerCase();
+    document.querySelectorAll('.pub-tp-btn').forEach(function(btn) {
+      btn.classList.toggle('active', (btn.dataset.topic || '').toLowerCase() === activeTopic);
+    });
+    applyFilters();
+  };
+
+  // Back-compat alias
+  window.filterPubs = window.filterPubsYear;
+})();
 </script>
