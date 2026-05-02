@@ -2,14 +2,14 @@
 layout: page
 title:  Qi She (佘琪)
 date:   2026-03-01 21:03:36 +0530
-description: "Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundationteam in Business Integrity. Expert in Multimodal LLMs, Agentic AI, Machine Learning, Computer Vision, and Robotics."
+description: "Qi She (佘琪) is a Research Scientist at ByteDance leading the Applied Algorithm & Foundation team in Business Integrity. Expert in Multimodal LLMs, Agentic AI, Machine Learning, Computer Vision, and Robotics."
 keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal Large Language Model, Machine Learning, Computer Vision, AI, Research Scientist, Intel Labs, LLM, MLLM, VLM, Seed, I2V, T2V, T2I, Video Generation, Generative AI, AIGC"
 ---
 
-### **About / 关于我**
+### About / 关于我
 Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Business Integrity, where he spearheads the large-scale industrialization of **Multimodal Large Language Models (MLLMs)** and **Agentic Foundation** capabilities. Since 2023, his work has focused on the end-to-end deployment of AI Agents.
 
-A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR，ICML, CVPR, and ICCV**.
+A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
 
 <div class="scholar-stats">
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
@@ -26,7 +26,7 @@ A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting sc
   </a>
 </div>
 
-### **Recent Focus / 工作方向**
+### Recent Focus / 工作方向
 Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s Business Integrity ecosystem:
 - **Architecting Agentic Foundations**: Developing specialized (M)LLMs optimized for reasoning, planning, and autonomous decision-making in high-stakes security scenarios.
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
@@ -35,12 +35,14 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 <div class="callout">
   <span class="callout-eyebrow">We're hiring</span>
   <strong>Multimodal LLM & Agentic AI Foundation</strong> roles in Beijing, Shanghai, Singapore, and San Jose. <a href="mailto:sheqi.roger@bytedance.com">Get in touch →</a>
-  <br>和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化：
-  <br>· [正式] 多模态大模型算法工程师 / 应用研究员（SFT、RM、RLHF、Pretrain、Agent 框架与应用）
-  <br>· [实习] 多模态大模型、计算机视觉、自然语言处理「算法研究实习生」
+  <p class="callout-cn">和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化：</p>
+  <ul class="callout-roles">
+    <li><span class="role-tag">正式</span>多模态大模型算法工程师 / 应用研究员（SFT、RM、RLHF、Pretrain、Agent 框架与应用）</li>
+    <li><span class="role-tag">实习</span>多模态大模型、计算机视觉、自然语言处理「算法研究实习生」</li>
+  </ul>
 </div>
 
-### **News / 动态**
+### News / 动态
 - Selected recent news and activities since 2020.
 
 <div class="news-list">
@@ -103,7 +105,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 
 
 
-## **🏆 Awards / 奖项**
+## 🏆 Awards / 奖项
 <div class="news-list">
   <ul>
     <li><span class="news-date">2024</span> ByteDance Monetization Product and Technology Q4 Inspire Award (<b>团队奖</b>).</li>
@@ -124,7 +126,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 [AI hackathon]: https://www.youtube.com/watch?v=u0RCcuZpmxg
 [Lifelong Robotic Vision]: https://lifelong-robotic-vision.github.io/
 
-## **📝 Blog / 博文**
+## 📝 Blog / 博文
 
 <div class="blog-list">
 {% for post in site.posts %}

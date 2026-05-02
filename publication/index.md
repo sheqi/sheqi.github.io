@@ -56,10 +56,10 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 
 <div class="pub-filter-bar">
   <span class="pub-filter-label">Year:</span>
-  <button class="pub-yr-btn active" data-year="all" onclick="filterPubsYear('all')">All</button>
+  <button type="button" class="pub-yr-btn active" data-year="all">All</button>
   {% assign all_years = site.data.publications | map: "year" | compact | uniq | sort | reverse %}
   {% for yr in all_years %}
-  <button class="pub-yr-btn" data-year="{{ yr }}" onclick="filterPubsYear('{{ yr }}')">{{ yr }}</button>
+  <button type="button" class="pub-yr-btn" data-year="{{ yr }}">{{ yr }}</button>
   {% endfor %}
 </div>
 
@@ -84,8 +84,8 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 {% if all_topics.size > 0 %}
 <div class="pub-filter-bar">
   <span class="pub-filter-label">Topic:</span>
-  <button class="pub-tp-btn active" data-topic="all" onclick="filterPubsTopic('all')">All</button>
-  {% for tp in all_topics %}{% if tp != "" %}<button class="pub-tp-btn" data-topic="{{ tp | downcase }}" onclick="filterPubsTopic('{{ tp | downcase }}')">{{ tp }}</button>{% endif %}{% endfor %}
+  <button type="button" class="pub-tp-btn active" data-topic="all">All</button>
+  {% for tp in all_topics %}{% if tp != "" %}<button type="button" class="pub-tp-btn" data-topic="{{ tp | downcase }}">{{ tp }}</button>{% endif %}{% endfor %}
 </div>
 {% endif %}
 
@@ -124,18 +124,26 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
 </ul>
 </div>
 
+<div id="pub-empty-state" class="pub-empty-state" hidden>
+  <p>No publications match these filters.</p>
+  <button type="button" class="pub-yr-btn" id="pub-clear-filters">Clear filters</button>
+</div>
+
 <script>
 (function() {
   var activeYear = 'all';
   var activeTopic = 'all';
 
   function applyFilters() {
+    var totalVisible = 0;
     document.querySelectorAll('.pub-item').forEach(function(li) {
       var yrMatch = activeYear === 'all' || li.dataset.year === activeYear;
       var topicAttr = (li.dataset.topics || '').toLowerCase().trim();
       var topics = topicAttr.length ? topicAttr.split(/\s+/) : [];
       var tpMatch = activeTopic === 'all' || topics.indexOf(activeTopic) !== -1;
-      li.style.display = (yrMatch && tpMatch) ? '' : 'none';
+      var show = yrMatch && tpMatch;
+      li.style.display = show ? '' : 'none';
+      if (show) totalVisible++;
     });
     document.querySelectorAll('.pub-section').forEach(function(section) {
       var hasVisible = Array.from(section.querySelectorAll('.pub-item')).some(function(li) {
@@ -143,25 +151,40 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
       });
       section.style.display = hasVisible ? '' : 'none';
     });
+    var empty = document.getElementById('pub-empty-state');
+    if (empty) empty.hidden = totalVisible !== 0;
   }
 
-  window.filterPubsYear = function(year) {
+  function setActiveYear(year) {
     activeYear = year;
-    document.querySelectorAll('.pub-yr-btn').forEach(function(btn) {
+    document.querySelectorAll('.pub-yr-btn[data-year]').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.year === year);
     });
     applyFilters();
-  };
+  }
 
-  window.filterPubsTopic = function(topic) {
+  function setActiveTopic(topic) {
     activeTopic = (topic || 'all').toLowerCase();
     document.querySelectorAll('.pub-tp-btn').forEach(function(btn) {
       btn.classList.toggle('active', (btn.dataset.topic || '').toLowerCase() === activeTopic);
     });
     applyFilters();
-  };
+  }
 
-  // Back-compat alias
-  window.filterPubs = window.filterPubsYear;
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.pub-yr-btn[data-year]').forEach(function(btn) {
+      btn.addEventListener('click', function() { setActiveYear(btn.dataset.year); });
+    });
+    document.querySelectorAll('.pub-tp-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() { setActiveTopic(btn.dataset.topic); });
+    });
+    var clearBtn = document.getElementById('pub-clear-filters');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        setActiveYear('all');
+        setActiveTopic('all');
+      });
+    }
+  });
 })();
 </script>

@@ -126,10 +126,10 @@ main {
   }
   .about {
     display: flex;
-    height: 100vh;
-    padding-bottom: 15vh;
+    min-height: 100vh;
+    padding: 4vh 0 4vh;
     @media screen and (max-width: $mobileW) {
-      height: auto;
+      min-height: auto;
       padding: 5vh 30px;
     }
     @media screen and (max-width: $smallMobileW) {
@@ -138,6 +138,8 @@ main {
     @media screen and (min-width: #{$mobileW + 1}) {
       position: fixed;
       max-width: 280px;
+      max-height: 100vh;
+      overflow-y: auto;
     }
     min-width: $leftWidth;
     justify-content: center;
@@ -452,21 +454,6 @@ main {
   }
 }
 
-.news-tag {
-  display: inline-block;
-  margin-right: 0.35rem;
-  padding: 0 0.35rem;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  border-radius: 999px;
-  background-color: #f0f0f0;
-  color: #555;
-}
-
-.news-tag-paper {
-  background-color: #fdecec;
-  color: #b30000;
-}
 .posts-labelgroup {
   margin: 0 0 0.67em 0;
   display: flex;
@@ -1186,6 +1173,21 @@ footer {
       display: none;
     }
 
+    /* Keep theme toggle reachable on mobile, anchored to the bottom-bar's right edge */
+    div.about-footer.theme-toggle-wrap {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    .theme-toggle {
+      width: 28px;
+      height: 28px;
+    }
+
     div.about-footer {
       margin-top: 5px;
       padding-top: 5px;
@@ -1564,4 +1566,106 @@ body.dark .back-to-top:hover {
     height: 48px;
     font-size: 22px;
   }
+}
+
+/* ── Skip-to-content link (a11y) ── */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  background: $color-accent;
+  color: #fff !important;
+  padding: 10px 16px;
+  border-radius: 0 0 6px 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: none !important;
+
+  &:focus {
+    left: 0;
+  }
+}
+
+/* ── Hiring callout — role list ── */
+.callout-cn {
+  margin: 0.5rem 0 0.5rem;
+  font-size: 0.92rem;
+  color: $color-ink-2;
+}
+.callout-roles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+}
+.role-tag {
+  flex: 0 0 auto;
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: rgba(29, 78, 216, 0.10);
+  color: $color-accent;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ── Scholar stats — keep one row on small phones ── */
+@media screen and (max-width: $smallMobileW) {
+  .scholar-stats {
+    gap: 0.4rem;
+  }
+  .scholar-stat {
+    flex: 1;
+    min-width: 0;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  }
+  .scholar-stat-num { font-size: 1.25rem; }
+  .scholar-stat-label { font-size: 0.65rem; }
+}
+
+/* ── Respect users' motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
+  .content { animation: none !important; }
+  .back-to-top:hover { transform: none; }
+  .pub-h-card:hover { transform: none; }
+  .pub-item .pub-thumb:hover img { transform: none; }
+}
+
+/* ── FOUC guard: paint dark background before JS class lands on <body> ── */
+html.pre-dark { background-color: #121212; }
+html.pre-dark body { background-color: #121212; color: #f5f5f7; }
+
+/* ── Publication empty-state ── */
+.pub-empty-state {
+  margin: 1.5rem 0;
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  border: 1px dashed $color-line;
+  border-radius: 8px;
+  color: $color-ink-3;
+
+  p { margin: 0 0 0.6rem; }
+}
+body.dark .pub-empty-state {
+  border-color: #2a2a2e;
+  color: #86868b;
 }
