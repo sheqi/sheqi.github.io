@@ -173,6 +173,7 @@
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/sheqi/GAN_Review?label=Stars&style=social">
   category: journal
   highlight: true
+  thumbnail: /assets/img/papers/gan_review.png
 - title: An Efficient and Flexible Spike Train Model via Empirical Bayes
   url: https://ieeexplore.ieee.org/abstract/document/9420306
   authors: <b> Qi She </b>, Xiaoli Wu, Beth Jelfs, Adam S. Charles, Rosa H. M. Chan.
@@ -282,6 +283,7 @@
   papers_with_code: https://paperswithcode.com/paper/mine-towards-continuous-depth-mpi-with-nerf
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/mine.gif
 - title: 'Involution: Inverting the Inherence of Convolution for Visual Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Li_Involution_Inverting_the_Inherence_of_Convolution_for_Visual_Recognition_CVPR_2021_paper.html
   authors: Duo Li, Jie Hu, Changhu Wang, Xiangtai Li, <b>Qi She</b>, Lei Zhu, Tong
@@ -297,6 +299,7 @@
   papers_with_code: https://paperswithcode.com/paper/involution-inverting-the-inherence-of
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/involution.png
 - title: 'ACTION-Net: Multipath Excitation for Action Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Wang_ACTION-Net_Multipath_Excitation_for_Action_Recognition_CVPR_2021_paper.html
   authors: Zhengwei Wang, <b>Qi She</b>, Aljosa Smolic.
@@ -309,6 +312,7 @@
   arxiv: https://arxiv.org/abs/2103.07372
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/actionnet.png
 - title: Learning the Superpixel in a Non-iterative and Lifelong Manner
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Zhu_Learning_the_Superpixel_in_a_Non-Iterative_and_Lifelong_Manner_CVPR_2021_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Bin Zhang, Yanye Lu, Zhilin Lu, Duo Li, Jie Hu.
@@ -335,6 +339,7 @@
   arxiv: https://arxiv.org/abs/1911.06487
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/openloris.gif
 - title: Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong
     SLAM
   url: https://ieeexplore.ieee.org/abstract/document/9196638
