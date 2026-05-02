@@ -12,6 +12,7 @@
   year: 2026
   category: conference
   tags: [Generation, MLLM, "CVPR'26"]
+  thumbnail: /assets/img/papers/thinkgen_generalized_thinking.png
 - title: 'CodeDance: A Dynamic Tool-integrated MLLM for Executable Visual Reasoning'
   url: ''
   authors: Q Song, H Li, Y Yu, H Zhou, L Yang, S Bai, <b>Qi She</b>, Z Huang, Y Zhao
@@ -25,6 +26,7 @@
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2026
   category: conference
+  thumbnail: /assets/img/papers/uniedit_training_free.png
 - title: 'TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning'
   url: ''
   authors: J Pan, Q Zhang, R Zhang, M Lu, X Wan, Y Zhang, C Liu, <b>Qi She</b>
@@ -32,12 +34,14 @@
   year: 2026
   category: conference
   tags: [Video, Agent, "ICLR'26"]
+  thumbnail: /assets/img/papers/timesearch_adaptive_temporal.png
 - title: 'Branchgrpo: Stable and efficient grpo with structured branching in diffusion models'
   url: ''
   authors: Y Li, Y Wang, Y Zhu, Z Zhao, M Lu, <b>Qi She</b>, S Zhang
   venue: International Conference on Learning Representations (<b>ICLR</b>)
   year: 2026
   category: conference
+  thumbnail: /assets/img/papers/branchgrpo_stable_efficient.png
 - title: 'Object identification based on adaptive learning'
   url: ''
   authors: SG Manepalli, SW Chin, P Guo, <b>Qi She</b>, Y Shen, L ZHANG, Y Zhang
@@ -52,6 +56,7 @@
   arxiv: 'https://arxiv.org/abs/2511.18262'
   category: preprint
   highlight: true
+  thumbnail: /assets/img/papers/mammothmoda2.png
 - title: 'ChainV: Atomic Visual Hints Make Multimodal Reasoning Shorter and Better'
   url: 'https://arxiv.org/abs/2511.17106'
   authors: Y Zhang, M Lu, J Pan, T Huang, K Cheng, <b>Qi She</b>, S Zhang
@@ -59,6 +64,7 @@
   year: 2025
   arxiv: 'https://arxiv.org/abs/2511.17106'
   category: preprint
+  thumbnail: /assets/img/papers/chainv_atomic_visual.png
 - title: 'On the Faithfulness of Visual Thinking: Measurement and Enhancement'
   url: 'https://arxiv.org/abs/2510.23482'
   authors: Z Liu, J Pan, <b>Qi She</b>, Y Gao, G Xia
@@ -80,6 +86,7 @@
   year: 2025
   arxiv: 'https://arxiv.org/abs/2506.16119'
   category: preprint
+  thumbnail: /assets/img/papers/fastinit_fast_noise.png
 - title: 'Beyond Attention or Similarity: Maximizing Conditional Diversity for Token Pruning in MLLMs'
   url: ''
   authors: Q Zhang, M Liu, L Li, M Lu, Y Zhang, J Pan, <b>Qi She</b>, S Zhang
@@ -94,6 +101,7 @@
   year: 2025
   arxiv: 'https://arxiv.org/abs/2504.01407'
   category: preprint
+  thumbnail: /assets/img/papers/timesearch_hierarchical_video.png
 - title: 'Trajectory prediction using directed graph and destination features'
   url: ''
   authors: L ZHANG, <b>Qi She</b>, P Guo
@@ -108,6 +116,7 @@
   category: conference
   highlight: true
   tags: [VLM, Efficiency, "ICCV'25"]
+  thumbnail: /assets/img/papers/beyond_text_visual.png
 - title: 'ASGDiffusion: Parallel High-Resolution Generation with Asynchronous Structure Guidance'
   url: 'https://arxiv.org/abs/2412.06163'
   authors: Y Li, P Jia, D Hong, Y Jia, <b>Qi She</b>, R Zhao, M Lu, S Zhang
@@ -115,6 +124,7 @@
   year: 2024
   arxiv: 'https://arxiv.org/abs/2412.06163'
   category: preprint
+  thumbnail: /assets/img/papers/asgdiffusion_parallel_high.png
 - title: 'MC-LLaVA: Multi-concept personalized vision-language model'
   url: 'https://arxiv.org/abs/2411.11706'
   authors: R An, S Yang, M Lu, R Zhang, K Zeng, Y Luo, J Cao, H Liang, Y Chen, ...
@@ -122,6 +132,7 @@
   year: 2024
   arxiv: 'https://arxiv.org/abs/2411.11706'
   category: preprint
+  thumbnail: /assets/img/papers/mc_llava_multi.png
 - title: 'Mammothmoda: Multi-modal large language model'
   url: 'https://arxiv.org/abs/2406.18193'
   authors: <b>Qi She</b>, J Pan, X Wan, R Zhang, D Lu, K Huang
@@ -130,11 +141,10 @@
   arxiv: 'https://arxiv.org/abs/2406.18193'
   category: preprint
   highlight: true
-- title: Background-aware Classification Activation Map for Weakly Supervised Object
-    Localization
+  thumbnail: /assets/img/papers/mammothmoda_multi_modal.png
+- title: Background-aware Classification Activation Map for Weakly Supervised Object Localization
   url: https://ieeexplore.ieee.org/abstract/document/10234096
-  authors: Lei Zhu, <b>Qi She</b>, Qian Chen, Xiangxi Meng, Mufeng Geng, Lujia Jin,
-    Yibao Zhang, Qiushi Ren, Yanye Lu
+  authors: Lei Zhu, <b>Qi She</b>, Qian Chen, Xiangxi Meng, Mufeng Geng, Lujia Jin, Yibao Zhang, Qiushi Ren, Yanye Lu
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)
   year: 2023
   tags: [Localization, TPAMI]
@@ -142,8 +152,8 @@
   bibtex: /bibtex/TPAMI23_backgroundaware.bib.txt
   code: https://github.com/zh460045050/BCAM
   category: journal
-- title: 'Generative Adversarial Networks in <b>Time Series</b>: A Systematic Literature
-    Review'
+  thumbnail: /assets/img/papers/background_aware_classification.png
+- title: 'Generative Adversarial Networks in <b>Time Series</b>: A Systematic Literature Review'
   url: https://dl.acm.org/doi/full/10.1145/3559540
   authors: Eoin Brophy, Zhengwei Wang, <b> Qi She </b>, Tomas E Ward.
   venue: ACM Computing Surveys (<b>CSUR</b>)
@@ -152,16 +162,14 @@
   bibtex: /bibtex/CSUR23.bib.txt
   arxiv: https://arxiv.org/abs/2107.11098
   category: journal
-- title: 'Power Law in Deep Neural Networks: Sparse Network Generation and Continual
-    Learning With Preferential Attachment'
+- title: 'Power Law in Deep Neural Networks: Sparse Network Generation and Continual Learning With Preferential Attachment'
   url: https://ieeexplore.ieee.org/abstract/document/9941061
   authors: Fan Feng, Lu Hou, <b> Qi She </b>, Rosa H. M. Chan, James T Kwok
   venue: IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>)
   year: 2022
   bibtex: /bibtex/TNNLS22_powerlaw.bib.txt
   category: journal
-- title: 'Generative Adversarial Networks in <b>Computer Vision</b>: A Survey and
-    Taxonomy'
+- title: 'Generative Adversarial Networks in <b>Computer Vision</b>: A Survey and Taxonomy'
   url: https://dl.acm.org/doi/abs/10.1145/3439723
   authors: Zhengwei Wang, <b> Qi She </b>, Tomas E Ward.
   venue: ACM Computing Surveys (<b>CSUR</b>)
@@ -184,8 +192,8 @@
   code: https://github.com/cuckoong/EB_spikes_trains
   arxiv: https://arxiv.org/abs/1605.02869
   category: journal
-- title: 'Synthetic-Neuroscore: Using a Neuro-AI Interface for Evaluating Generative
-    Adversarial Networks'
+  thumbnail: /assets/img/papers/efficient_flexible_spike.png
+- title: 'Synthetic-Neuroscore: Using a Neuro-AI Interface for Evaluating Generative Adversarial Networks'
   url: https://www.sciencedirect.com/science/article/abs/pii/S0925231220306548
   authors: Zhengwei Wang, <b> Qi She </b>, Alan F Smeaton, Tomas E Ward, Graham Healy.
   venue: Neurocomputing
@@ -195,8 +203,8 @@
   code: https://github.com/villawang/Neuro-AI-Interface
   arxiv: https://arxiv.org/abs/1905.04243
   category: journal
-- title: 'Evaluating the Small-World-Ness of a Sampled Network: Functional Connectivity
-    of Entorhinal-Hippocampal Circuitry'
+  thumbnail: /assets/img/papers/synthetic_neuroscore_neuro.png
+- title: 'Evaluating the Small-World-Ness of a Sampled Network: Functional Connectivity of Entorhinal-Hippocampal Circuitry'
   url: https://www.nature.com/articles/srep21468
   authors: <b> Qi She </b>, Guanrong Chen, Rosa H. M. Chan.
   venue: <b>Nature Scientific Reports</b>
@@ -207,6 +215,7 @@
   project_page_title: Nature Scientific Reports
   category: journal
 
+  thumbnail: /assets/img/papers/evaluating_small_world.png
 - title: 'PDO-s3DCNNs: Partial Differential Operator Based Steerable 3D CNNs'
   url: https://proceedings.mlr.press/v162/shen22c.html
   authors: Zhenyang Shen, Tao Hong, <b>Qi She</b>, Jinwei Ma, Zhouchen Lin
@@ -216,6 +225,7 @@
   bibtex: /bibtex/ICML22_PDO.bib.txt
   arxiv: https://arxiv.org/pdf/2208.03720
   category: conference
+  thumbnail: /assets/img/papers/pdo_s3dcnns_partial.png
 - title: Weakly Supervised Object Localization as Domain Adaption
   url: https://openaccess.thecvf.com/content/CVPR2022/html/Zhu_Weakly_Supervised_Object_Localization_As_Domain_Adaption_CVPR_2022_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Qian Chen, Yunfei You, Boyu Wang, Yanye Lu
@@ -226,6 +236,7 @@
   bibtex: /bibtex/CVPR22_WDA.bib.txt
   code: https://github.com/zh460045050/DA-WSOL_CVPR2022
   category: conference
+  thumbnail: /assets/img/papers/weakly_supervised_object.png
 - title: On Learning Contrastive Representations for Learning with Noisy Labels
   url: https://openaccess.thecvf.com/content/CVPR2022/html/Yi_On_Learning_Contrastive_Representations_for_Learning_With_Noisy_Labels_CVPR_2022_paper.html
   authors: Li Yi, Sheng Liu, <b>Qi She</b>, Lei Zhu, A. Ian McLeod, Boyu Wang
@@ -236,20 +247,20 @@
   arxiv: https://arxiv.org/abs/2203.01785
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/learning_contrastive_representat.png
 - title: Learning from Temporal Gradient for Semi-supervised Action Recognition
   url: https://openaccess.thecvf.com/content/CVPR2022/html/Xiao_Learning_From_Temporal_Gradient_for_Semi-Supervised_Action_Recognition_CVPR_2022_paper.html
-  authors: Junfei Xiao, Longlong Jing, Lin Zhang, Ju He, <b>Qi She</b>, Zongwei Zhou,
-    Alan Yuille, Yingwei Li
+  authors: Junfei Xiao, Longlong Jing, Lin Zhang, Ju He, <b>Qi She</b>, Zongwei Zhou, Alan Yuille, Yingwei Li
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2022
   pdf: /pdf/CVPR2022_temporalgradient.pdf
   bibtex: /bibtex/CVPR22_temporalgradient.bib.txt
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/learning_temporal_gradient.png
 - title: Unifying Nonlocal Blocks for Neural Networks
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Unifying_Nonlocal_Blocks_for_Neural_Networks_ICCV_2021_paper.html
-  authors: Lei Zhu, <b>Qi She</b>, Duo Li, Yanye Lu, Xuejing Kang, Jie Hu, Changhu
-    Wang
+  authors: Lei Zhu, <b>Qi She</b>, Duo Li, Yanye Lu, Xuejing Kang, Jie Hu, Changhu Wang
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/zh460045050/SNL_ICCV2021?label=Stars&style=social">
@@ -258,10 +269,10 @@
   code: https://github.com/zh460045050/SNL_ICCV2021
   arxiv: https://arxiv.org/abs/2108.02451
   category: conference
+  thumbnail: /assets/img/papers/unifying_nonlocal_blocks.png
 - title: 'MT-ORL: Multi-Task Occlusion Relationship Learning'
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Feng_MT-ORL_Multi-Task_Occlusion_Relationship_Learning_ICCV_2021_paper.html
-  authors: Panhe Feng, <b>Qi She</b>, Lei Zhu, Jiaxin Li, Lin ZHANG, Zijian Feng,
-    Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming.
+  authors: Panhe Feng, <b>Qi She</b>, Lei Zhu, Jiaxin Li, Lin ZHANG, Zijian Feng, Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming.
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
   pdf: /pdf/ICCV2021_mtorl.pdf
@@ -269,10 +280,10 @@
   code: https://github.com/fengpanhe/MT-ORL
   arxiv: https://arxiv.org/abs/2108.05722
   category: conference
+  thumbnail: /assets/img/papers/mt_orl_multi.png
 - title: 'MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis'
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Li_MINE_Towards_Continuous_Depth_MPI_With_NeRF_for_Novel_View_ICCV_2021_paper.html
-  authors: Jiaxin Li, Zijian Feng, <b>Qi She</b>, Henghui Ding, Changhu Wang, Gim
-    Hee Lee.
+  authors: Jiaxin Li, Zijian Feng, <b>Qi She</b>, Henghui Ding, Changhu Wang, Gim Hee Lee.
   venue: International Conference on Computer Vision (<b>ICCV</b>)
   year: 2021
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/vincentfung13/MINE?label=Stars&style=social">
@@ -286,8 +297,7 @@
   thumbnail: /assets/img/papers/mine.gif
 - title: 'Involution: Inverting the Inherence of Convolution for Visual Recognition'
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Li_Involution_Inverting_the_Inherence_of_Convolution_for_Visual_Recognition_CVPR_2021_paper.html
-  authors: Duo Li, Jie Hu, Changhu Wang, Xiangtai Li, <b>Qi She</b>, Lei Zhu, Tong
-    Zhang, Qifeng Chen.
+  authors: Duo Li, Jie Hu, Changhu Wang, Xiangtai Li, <b>Qi She</b>, Lei Zhu, Tong Zhang, Qifeng Chen.
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
   year: 2021
   tags: [Architecture, CNN, "CVPR'21"]
@@ -323,12 +333,10 @@
   bibtex: /bibtex/CVPR21_superpixel.bib.txt
   code: https://github.com/zh460045050/LNSNet
   category: conference
-- title: 'OpenLORIS-Object: A Robotic Vision Dataset and Benchmark for Lifelong Deep
-    Learning'
+  thumbnail: /assets/img/papers/learning_superpixel_non.png
+- title: 'OpenLORIS-Object: A Robotic Vision Dataset and Benchmark for Lifelong Deep Learning'
   url: https://ieeexplore.ieee.org/abstract/document/9196887
-  authors: <b>Qi She</b>, Fan Feng, Xinyue Hao, Qihan Yang, Chuanlin Lan, Vincenzo
-    Lomonaco, Xuesong Shi, Zhengwei Wang, Yao Guo, Yimin Zhang, Fei Qiao, Rosa H.
-    M. Chan.
+  authors: <b>Qi She</b>, Fan Feng, Xinyue Hao, Qihan Yang, Chuanlin Lan, Vincenzo Lomonaco, Xuesong Shi, Zhengwei Wang, Yao Guo, Yimin Zhang, Fei Qiao, Rosa H. M. Chan.
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
   year: 2020
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/lifelong-robotic-vision/lifelong-robotic-vision.github.io?label=Stars&style=social">
@@ -340,12 +348,9 @@
   category: conference
   highlight: true
   thumbnail: /assets/img/papers/openloris.gif
-- title: Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong
-    SLAM
+- title: Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM
   url: https://ieeexplore.ieee.org/abstract/document/9196638
-  authors: Xuesong Shi, Dongjiang Li, Pengpeng Zhao, Qinbin Tian, Yuxin Tian, Qiwei
-    Long, Chunhao Zhu, Jingwei Song, Fei Qiao, Le Song, Yangquan Guo, Zhigang Wang,
-    Yimin Zhang, Baoxing Qin, Wei Yang, Fangshi Wang, Rosa H. M. Chan, <b>Qi She</b>
+  authors: Xuesong Shi, Dongjiang Li, Pengpeng Zhao, Qinbin Tian, Yuxin Tian, Qiwei Long, Chunhao Zhu, Jingwei Song, Fei Qiao, Le Song, Yangquan Guo, Zhigang Wang, Yimin Zhang, Baoxing Qin, Wei Yang, Fangshi Wang, Rosa H. M. Chan, <b>Qi She</b>
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
   year: 2020
   badges: <img alt="GitHub stars" src="https://img.shields.io/github/stars/lifelong-robotic-vision/lifelong-robotic-vision.github.io?label=Stars&style=social">
@@ -355,6 +360,7 @@
   arxiv: https://arxiv.org/abs/1911.05603
   category: conference
   highlight: true
+  thumbnail: /assets/img/papers/are_we_ready.png
 - title: Neural Dynamics Discovery via Gaussian Process Recurrent Neural Networks
   url: https://proceedings.mlr.press/v115/she20a.html
   authors: <b> Qi She </b>, Anqi Wu.
@@ -376,14 +382,14 @@
   pdf: /pdf/AAAI2018.pdf
   bibtex: /bibtex/AAAI18.bib.txt
   category: conference
-- title: Stochastic Dynamical Systems Based Latent Structure Discovery in High-dimensional
-    Time Series
+- title: Stochastic Dynamical Systems Based Latent Structure Discovery in High-dimensional Time Series
   url: https://ieeexplore.ieee.org/abstract/document/8461755/
   authors: <b> Qi She </b>, Rosa H.M. Chan.
   venue: The international Conference on Acoustics, Speech, & Signal Processing (<b>ICASSP</b>)
   year: 2018
   bibtex: /bibtex/ICASSP18.bib.txt
   category: conference
+  thumbnail: /assets/img/papers/stochastic_dynamical_systems.png
 - title: 'Avalanche: an End-to-End Library for Continual Learning'
   url: https://openaccess.thecvf.com/content/CVPR2021W/CLVision/html/Lomonaco_Avalanche_An_End-to-End_Library_for_Continual_Learning_CVPRW_2021_paper.html
   venue: <b>CVPR</b> 2021, Workshop on Continual Learning in Computer Vision.
@@ -392,6 +398,7 @@
   bibtex: /bibtex/CVPRW21_avalanche.bib.txt
   code: https://github.com/ContinualAI/avalanche
   category: workshop
+  thumbnail: /assets/img/papers/avalanche_end_end.png
 - title: 'CatNet: Class Incremental 3D ConvNets for Lifelong Egocentric Gesture Recognition'
   url: https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Wang_CatNet_Class_Incremental_3D_ConvNets_for_Lifelong_Egocentric_Gesture_Recognition_CVPRW_2020_paper.html
   authors: Zhengwei Wang, <b> Qi She </b>, Tejo Chalasani, Aljosa Smolic.
@@ -399,10 +406,10 @@
   pdf: /pdf/CVPRW2020_CatNet.pdf
   bibtex: /bibtex/CVPRW20_CatNet.bib.txt
   category: workshop
+  thumbnail: /assets/img/papers/catnet_class_incremental.png
 - title: A Neuro-AI Interface for Evaluating Generative Adversarial Networks
   url: https://baicsworkshop.github.io/program/baics_21.html
-  authors: Zhengwei Wang, <b> Qi She </b>, Alan F. Smeaton, Tomas E. Ward, Graham
-    Healy.
+  authors: Zhengwei Wang, <b> Qi She </b>, Alan F. Smeaton, Tomas E. Ward, Graham Healy.
   venue: <b>ICLR</b> 2020, Workshop on Bridging AI and Cognitive Science.
   pdf: /pdf/ICLRW2020_Neuroscore.pdf
   bibtex: /bibtex/ICLRW20_Neuroscore.bib.txt
