@@ -1,4 +1,19 @@
-Qi She (佘琪)'s webiste
+Qi She (佘琪)'s website
+
+## Local development
+
+This site is built with Jekyll and Bundler.
+
+```bash
+bundle install
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+
+Then open http://127.0.0.1:4000.
+
+If `bundle exec jekyll serve` reports that the `jekyll` executable is missing,
+rerun `bundle install` and make sure the generated `Gemfile.lock` is kept in the
+workspace so future installs resolve the same dependency set.
 
 <!-- # plainwhite
 

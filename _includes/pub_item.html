@@ -38,9 +38,15 @@
 
 <li class="pub-item{% if pub.highlight %} pub-item-featured{% endif %}" data-year="{{ pub.year }}" data-topics="{{ topic_attr }}">
   {%- if pub.thumbnail -%}
-    <a class="pub-thumb" href="{% if best_link %}{{ best_link }}{% else %}#{% endif %}">
+    {% if best_link %}
+    <a class="pub-thumb" href="{{ best_link }}">
       <img src="{{ pub.thumbnail }}" alt="{{ pub.title | strip_html | escape }}" loading="lazy">
     </a>
+    {% else %}
+    <div class="pub-thumb pub-thumb-static">
+      <img src="{{ pub.thumbnail }}" alt="{{ pub.title | strip_html | escape }}" loading="lazy">
+    </div>
+    {% endif %}
   {%- else -%}
     <span class="pub-emoji" aria-hidden="true">{% case pub.category %}{% when 'journal' %}📄{% when 'conference' %}🎓{% when 'workshop' %}🔧{% when 'preprint' %}📝{% when 'patent' %}📋{% else %}📄{% endcase %}</span>
   {%- endif -%}

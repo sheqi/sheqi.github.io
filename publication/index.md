@@ -134,25 +134,83 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
   var activeYear = 'all';
   var activeTopic = 'all';
 
+  function matchesActiveFilters(el) {
+    var yrMatch = activeYear === 'all' || el.dataset.year === activeYear;
+    var topicAttr = (el.dataset.topics || '').toLowerCase().trim();
+    var topics = topicAttr.length ? topicAttr.split(/\s+/) : [];
+    var tpMatch = activeTopic === 'all' || topics.indexOf(activeTopic) !== -1;
+    return yrMatch && tpMatch;
+  }
+
   function applyFilters() {
     var totalVisible = 0;
     document.querySelectorAll('.pub-item').forEach(function(li) {
-      var yrMatch = activeYear === 'all' || li.dataset.year === activeYear;
-      var topicAttr = (li.dataset.topics || '').toLowerCase().trim();
-      var topics = topicAttr.length ? topicAttr.split(/\s+/) : [];
-      var tpMatch = activeTopic === 'all' || topics.indexOf(activeTopic) !== -1;
-      var show = yrMatch && tpMatch;
+      var show = matchesActiveFilters(li);
       li.style.display = show ? '' : 'none';
       if (show) totalVisible++;
     });
     document.querySelectorAll('.pub-section').forEach(function(section) {
-      var hasVisible = Array.from(section.querySelectorAll('.pub-item')).some(function(li) {
+      var visibleCount = Array.from(section.querySelectorAll('.pub-item')).filter(function(li) {
         return li.style.display !== 'none';
-      });
-      section.style.display = hasVisible ? '' : 'none';
+      }).length;
+      var count = section.querySelector('.pub-count');
+      if (count) count.textContent = visibleCount;
+      section.style.display = visibleCount ? '' : 'none';
+    });
+    var visibleHighlights = 0;
+    document.querySelectorAll('.pub-h-card').forEach(function(card) {
+      var show = matchesActiveFilters(card);
+      card.style.display = show ? '' : 'none';
+      if (show) visibleHighlights++;
+    });
+    document.querySelectorAll('.pub-highlights').forEach(function(section) {
+      section.style.display = visibleHighlights ? '' : 'none';
+    });
+    document.querySelectorAll('.pub-filter-bar').forEach(function(bar) {
+      bar.style.marginTop = '';
+    });
+    var firstVisibleBar = Array.from(document.querySelectorAll('.pub-filter-bar')).find(function(bar) {
+      return bar.offsetParent !== null;
+    });
+    if (!visibleHighlights && firstVisibleBar) {
+      firstVisibleBar.style.marginTop = '1.4rem';
+    }
+    var empty = document.getElementById('pub-empty-state');
+    if (empty) {
+      empty.hidden = totalVisible !== 0;
+      empty.style.display = totalVisible === 0 ? '' : 'none';
+    }
+  }
+
+  function restoreCounts() {
+    document.querySelectorAll('.pub-section').forEach(function(section) {
+      var count = section.querySelector('.pub-count');
+      if (!count) return;
+      count.textContent = section.querySelectorAll('.pub-item').length;
+    });
+  }
+
+  function ensureInitialState() {
+    restoreCounts();
+    document.querySelectorAll('.pub-h-card, .pub-item, .pub-section, .pub-highlights').forEach(function(el) {
+      el.style.display = '';
+    });
+    document.querySelectorAll('.pub-filter-bar').forEach(function(bar) {
+      bar.style.marginTop = '';
     });
     var empty = document.getElementById('pub-empty-state');
-    if (empty) empty.hidden = totalVisible !== 0;
+    if (empty) {
+      empty.hidden = true;
+      empty.style.display = 'none';
+    }
+  }
+
+  function applyOrResetFilters() {
+    if (activeYear === 'all' && activeTopic === 'all') {
+      ensureInitialState();
+      return;
+    }
+    applyFilters();
   }
 
   function setActiveYear(year) {
@@ -160,7 +218,7 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     document.querySelectorAll('.pub-yr-btn[data-year]').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.year === year);
     });
-    applyFilters();
+    applyOrResetFilters();
   }
 
   function setActiveTopic(topic) {
@@ -168,10 +226,11 @@ keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep
     document.querySelectorAll('.pub-tp-btn').forEach(function(btn) {
       btn.classList.toggle('active', (btn.dataset.topic || '').toLowerCase() === activeTopic);
     });
-    applyFilters();
+    applyOrResetFilters();
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+    ensureInitialState();
     document.querySelectorAll('.pub-yr-btn[data-year]').forEach(function(btn) {
       btn.addEventListener('click', function() { setActiveYear(btn.dataset.year); });
     });

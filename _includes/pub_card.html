@@ -1,5 +1,20 @@
 {%- assign pub = include.pub -%}
 
+{%- assign venue_blacklist = "CVPR,ICCV,ICLR,NEURIPS,ICML,AAAI,TPAMI,TNNLS,TSP,CSUR,ICASSP,UAI,ICRA" | split: "," -%}
+{%- assign clean_tag_str = "" -%}
+{%- if pub.tags -%}
+  {%- for tag in pub.tags -%}
+    {%- assign tag_upper = tag | upcase -%}
+    {%- assign skip_tag = false -%}
+    {%- if tag contains "'" -%}{%- assign skip_tag = true -%}{%- endif -%}
+    {%- if venue_blacklist contains tag_upper -%}{%- assign skip_tag = true -%}{%- endif -%}
+    {%- unless skip_tag -%}
+      {%- assign clean_tag_str = clean_tag_str | append: tag | append: "|" -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- assign topic_attr = clean_tag_str | split: "|" | join: " " | downcase | strip -%}
+
 {%- assign hvshort = pub.venue_short -%}
 {%- unless hvshort -%}
   {%- assign vlist = "CVPR,ICCV,ICLR,NeurIPS,ICML,AAAI,UAI,ICRA,TPAMI,TNNLS,TSP,CSUR,ICASSP" | split: "," -%}
@@ -16,7 +31,11 @@
 {%- if best_link == nil or best_link == "" -%}{%- assign best_link = pub.arxiv -%}{%- endif -%}
 {%- if best_link == nil or best_link == "" -%}{%- assign best_link = pub.project_page -%}{%- endif -%}
 
-<a class="pub-h-card{% if hvshort %} pub-h-{{ hvshort | downcase }}{% endif %}" href="{% if best_link %}{{ best_link }}{% else %}#{% endif %}">
+{% if best_link %}
+<a class="pub-h-card{% if hvshort %} pub-h-{{ hvshort | downcase }}{% endif %}" href="{{ best_link }}" data-year="{{ pub.year }}" data-topics="{{ topic_attr }}">
+{% else %}
+<div class="pub-h-card pub-h-card-static{% if hvshort %} pub-h-{{ hvshort | downcase }}{% endif %}" data-year="{{ pub.year }}" data-topics="{{ topic_attr }}">
+{% endif %}
   {%- if pub.thumbnail -%}
     <div class="pub-h-thumb"><img src="{{ pub.thumbnail }}" alt="{{ pub.title | strip_html | escape }}" loading="lazy"></div>
   {%- else -%}
@@ -29,4 +48,8 @@
   <div class="pub-h-title">{{ pub.title | strip_html }}</div>
   {% if pub.tldr %}<div class="pub-h-tldr">{{ pub.tldr }}</div>{% endif %}
   {% if pub.authors %}<div class="pub-h-authors">{{ pub.authors | strip_html }}</div>{% endif %}
+{% if best_link %}
 </a>
+{% else %}
+</div>
+{% endif %}
