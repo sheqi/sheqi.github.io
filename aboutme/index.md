@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: Brief Introduction
+description: "PhD from City University of Hong Kong, Princeton VSRC, former Intel Labs Research Scientist (2018–2020). Now leads MLLM & Agentic AI at ByteDance Business Integrity. 50+ papers in CVPR, ICCV, ICML, TPAMI; 25 patents."
 ---
 
 ### **About me**
