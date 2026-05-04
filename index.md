@@ -43,7 +43,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 </div>
 
 ### News / 动态
-- Selected recent news and activities since 2020.
+- Latest 10 selected news and activities.
 
 <div class="news-list">
   <h4 class="news-year">2025</h4>
@@ -72,6 +72,12 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2022-02</span> 📄 "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
   </ul>
 
+</div>
+
+
+<details>
+  <summary>Older News / 更早的动态（2016–2021）</summary>
+  <div class="news-list">
   <h4 class="news-year">2021</h4>
   <ul>
     <li><span class="news-date">2021-07</span> 📄 We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
@@ -87,12 +93,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2020-11</span> 📄 Our survey "Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy" is accepted by <b>ACM Computing Surveys</b>.</li>
     <li><span class="news-date">2020-08</span> 📢 Joined <b>ByteDance AI Lab</b> as a Research Scientist.</li>
   </ul>
-</div>
 
-
-<details>
-  <summary>Older News / 更早的动态（2016–2020）</summary>
-  <div class="news-list">
   <ul>
     <li><span class="news-date">2020-06</span> 📢 We have successfully organized the 1st "Continual Learning in Computer Vision" workshop at <b>CVPR 2020</b>.</li>
     <li><span class="news-date">2020-06</span> 📄 Our paper "IROS 2019 Lifelong Robotic Vision: Object Recognition Challenge [Competitions]" has been published at IEEE Robotics & Automation Magazine (IEEE RAM). The journal is one of four top-tier journals in robotics field.</li>
