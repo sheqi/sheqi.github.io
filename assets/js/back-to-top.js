@@ -11,6 +11,28 @@
   updateProgress();
 })();
 
+// Publication image shimmer: mark images loaded when they finish fetching
+(function () {
+  function markLoaded(img) {
+    img.classList.add('loaded');
+  }
+  function initPubImages() {
+    document.querySelectorAll('.pub-h-thumb img, .pub-thumb img').forEach(function (img) {
+      if (img.complete && img.naturalWidth > 0) {
+        markLoaded(img);
+      } else {
+        img.addEventListener('load', function () { markLoaded(img); });
+        img.addEventListener('error', function () { markLoaded(img); }); // hide shimmer even on 404
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPubImages);
+  } else {
+    initPubImages();
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     const backToTopButton = document.createElement('button');
     backToTopButton.className = 'back-to-top';

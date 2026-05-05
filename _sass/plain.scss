@@ -1768,25 +1768,20 @@ body.dark .about .tagline {
   color: #86868b !important;
 }
 
-/* ── 4. Affiliation badge ── */
+/* ── 4. Affiliation — plain text, no pill ── */
 .about .affiliation {
-  display: inline-block;
+  display: block;
   margin-top: 5px;
-  padding: 2px 10px;
-  background: $color-accent-soft;
-  color: $color-accent;
-  border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  padding: 0;
+  background: none;
+  color: $color-ink-3;
+  border-radius: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid rgba(29, 78, 216, 0.18);
-}
-body.dark .about .affiliation {
-  background: rgba(77, 163, 255, 0.12);
-  color: #4da3ff;
-  border-color: rgba(77, 163, 255, 0.25);
+  border: none;
 }
 
 /* ── 5. Scholar stats — card group ── */
@@ -1973,4 +1968,57 @@ body.dark .about img {
 }
 body.dark .pub-h-card:hover {
   box-shadow: 0 6px 22px rgba(77, 163, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ── 15. Publication image — shimmer skeleton while loading ── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+.pub-h-thumb,
+.pub-item .pub-thumb {
+  background: linear-gradient(90deg, #f0f1f4 25%, #e4e6eb 50%, #f0f1f4 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+
+  img {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  img.loaded {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.pub-h-thumb:has(img.loaded),
+.pub-item .pub-thumb:has(img.loaded) {
+  background: none;
+  animation: none;
+}
+
+body.dark .pub-h-thumb,
+body.dark .pub-item .pub-thumb {
+  background: linear-gradient(90deg, #1e1e22 25%, #2a2a2e 50%, #1e1e22 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+body.dark .pub-h-thumb:has(img.loaded),
+body.dark .pub-item .pub-thumb:has(img.loaded) {
+  background: none;
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-h-thumb, .pub-item .pub-thumb {
+    animation: none;
+    background: #f0f1f4;
+  }
+  body.dark .pub-h-thumb, body.dark .pub-item .pub-thumb {
+    background: #1e1e22;
+  }
 }
