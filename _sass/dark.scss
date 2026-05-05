@@ -115,3 +115,24 @@
 		background-color: #0d0d0d;
 	}
 }
+
+.dark {
+	.about img {
+		border-color: #60a5fa;
+		box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12), 0 8px 24px rgba(0, 0, 0, 0.4);
+
+		&:hover {
+			box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2), 0 12px 32px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.navigation ul a {
+		color: #a0a0b0;
+		border-bottom-color: #1f1f1f;
+
+		&:hover, &.active {
+			color: #60a5fa;
+			border-left-color: #60a5fa;
+		}
+	}
+}

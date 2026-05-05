@@ -1708,3 +1708,267 @@ body.dark .pub-empty-state {
   border-color: #2a2a2e;
   color: #86868b;
 }
+
+/* ═══════════════════════════════════════════════════════
+   DESIGN ENHANCEMENTS — v2
+   ═══════════════════════════════════════════════════════ */
+
+/* ── 1. Scroll progress bar ── */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(to right, $color-accent, #6366f1);
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 0 2px 2px 0;
+}
+body.dark #scroll-progress {
+  background: linear-gradient(to right, #4da3ff, #818cf8);
+}
+
+/* ── 2. Sidebar name — bolder, cleaner ── */
+.about h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em;
+  color: $color-ink;
+}
+.about h2 a {
+  color: $color-ink;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  &:hover { color: $color-accent; }
+}
+body.dark .about h2 {
+  color: #f5f5f7;
+}
+body.dark .about h2 a {
+  color: #f5f5f7;
+  &:hover { color: #4da3ff; }
+}
+
+/* ── 3. Tagline — refined badge style ── */
+.about .tagline {
+  font-size: 0.72rem !important;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-ink-3 !important;
+  text-align: center;
+  margin-top: 7px !important;
+  line-height: 1.5;
+  white-space: normal !important;
+}
+body.dark .about .tagline {
+  color: #86868b !important;
+}
+
+/* ── 4. Affiliation badge ── */
+.about .affiliation {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 10px;
+  background: $color-accent-soft;
+  color: $color-accent;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(29, 78, 216, 0.18);
+}
+body.dark .about .affiliation {
+  background: rgba(77, 163, 255, 0.12);
+  color: #4da3ff;
+  border-color: rgba(77, 163, 255, 0.25);
+}
+
+/* ── 5. Scholar stats — card group ── */
+.scholar-stats {
+  background: $color-surface;
+  border: 1px solid $color-line;
+  border-radius: 10px;
+  padding: 0;
+  gap: 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 1.4rem 0 1.8rem;
+}
+.scholar-stat {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  border-left: none;
+  border-right: 1px solid $color-line;
+  border-radius: 0;
+  padding: 0.65rem 0.5rem;
+  min-width: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: background 0.2s ease;
+
+  &:last-child { border-right: none; }
+  &:hover {
+    background: $color-accent-soft;
+    border-left-color: transparent;
+    transform: none;
+    box-shadow: none;
+  }
+}
+.scholar-stat-num {
+  font-size: 1.45rem !important;
+}
+body.dark .scholar-stats {
+  background: #1a1a1d;
+  border-color: #2a2a2e;
+}
+body.dark .scholar-stat {
+  border-right-color: #2a2a2e;
+  &:hover { background: rgba(77, 163, 255, 0.08); }
+}
+
+/* ── 6. Section h3 headings — accent left border ── */
+.post h3 {
+  border-left: 3px solid $color-accent;
+  padding-left: 0.65rem;
+  margin-left: 0;
+}
+body.dark .post h3 {
+  border-left-color: #4da3ff;
+}
+
+/* ── 7. Details/summary — custom chevron ── */
+details summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  user-select: none;
+  font-weight: 500;
+  font-style: normal;
+  color: $color-ink-2;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+
+  &::-webkit-details-marker { display: none; }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5px 0 4.5px 7px;
+    border-color: transparent transparent transparent $color-ink-3;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    color: $color-accent;
+    &::before { border-color: transparent transparent transparent $color-accent; }
+  }
+}
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+body.dark details summary {
+  color: #a1a1a6;
+  &::before { border-color: transparent transparent transparent #86868b; }
+  &:hover {
+    color: #4da3ff;
+    &::before { border-color: transparent transparent transparent #4da3ff; }
+  }
+}
+
+/* ── 8. Social icon hover — scale effect ── */
+.social li {
+  i, .ai {
+    display: inline-block;
+    transition: transform 0.18s ease, color 0.18s ease;
+  }
+}
+.social li a:hover i,
+.social li a:hover .ai {
+  transform: scale(1.2);
+}
+
+/* ── 9. Navigation — active indicator ── */
+.navigation ul a.active {
+  color: $color-accent;
+  border-left-color: $color-accent;
+  font-weight: 600;
+}
+body.dark .navigation ul a.active {
+  color: #4da3ff;
+  border-left-color: #4da3ff;
+}
+
+/* ── 10. Callout — gradient background ── */
+.callout {
+  border-left: 3px solid $color-accent;
+  background: linear-gradient(135deg, $color-accent-soft 0%, rgba(99, 102, 241, 0.06) 100%);
+}
+body.dark .callout {
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.10) 0%, rgba(99, 102, 241, 0.06) 100%);
+}
+
+/* ── 11. Profile image — refined ring ── */
+.about img {
+  box-shadow: 0 0 0 3px $color-accent, 0 8px 28px rgba(29, 78, 216, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 0 4px $color-accent, 0 12px 36px rgba(29, 78, 216, 0.22);
+    transform: translateY(-2px);
+  }
+}
+body.dark .about img {
+  box-shadow: 0 0 0 2px #4da3ff, 0 8px 28px rgba(0, 0, 0, 0.4);
+  &:hover {
+    box-shadow: 0 0 0 3px #4da3ff, 0 12px 36px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+/* ── 12. Sidebar stagger entrance ── */
+@keyframes sidebarFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.about-title { animation: sidebarFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.about .tagline { animation: sidebarFadeIn 0.5s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.social.about-footer { animation: sidebarFadeIn 0.5s 0.16s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.navigation.about-footer { animation: sidebarFadeIn 0.5s 0.22s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .about-title, .about .tagline, .social.about-footer, .navigation.about-footer {
+    animation: none !important;
+  }
+}
+
+/* ── 13. Mobile: bottom bar depth ── */
+@media screen and (max-width: $mobileW) {
+  footer.condensed {
+    box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.10), 0 -1px 4px rgba(0, 0, 0, 0.06) !important;
+    border-top-width: 1px !important;
+  }
+  body.dark footer.condensed {
+    box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.45), 0 -1px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+/* ── 14. Publication highlights — subtle inner glow on hover ── */
+.pub-h-card:hover {
+  box-shadow: 0 6px 22px rgba(29, 78, 216, 0.10), 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+body.dark .pub-h-card:hover {
+  box-shadow: 0 6px 22px rgba(77, 163, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.3);
+}

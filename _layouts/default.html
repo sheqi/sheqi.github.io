@@ -12,6 +12,7 @@
 {%- endif -%}
 
 <body>
+  <div id="scroll-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <main class="container">
     <section class="about">
@@ -121,6 +122,13 @@
           </a>
         </li>
         {%- endif -%}
+        {%- if site.plainwhite.social_links.github -%}
+        <li>
+          <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="icon-github-circled"></i>
+          </a>
+        </li>
+        {%- endif -%}
       </ul>
       {%- endif -%}
       {%- if site.plainwhite.navigation -%}
@@ -128,7 +136,13 @@
         <ul>
           {% for link in site.plainwhite.navigation %}
           <li>
-            <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+            {% assign nav_active = false %}
+            {% if link.url == "/" %}
+              {% if page.url == "/" or page.url == "/index.html" %}{% assign nav_active = true %}{% endif %}
+            {% elsif page.url contains link.url %}
+              {% assign nav_active = true %}
+            {% endif %}
+            <a href="{{ link.url | relative_url }}"{% if nav_active %} class="active"{% endif %}>{{ link.title }}</a>
           </li>
           {% endfor %}
         </ul>
