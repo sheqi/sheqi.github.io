@@ -155,11 +155,13 @@ main {
     }
     .tagline {
       text-align: center;
-      font-size: 22px;
-      margin-top: 0px;
+      font-size: 0.72rem;
+      margin-top: 6px;
       color: #aaa;
-      white-space: pre-wrap;
-      line-height: normal;
+      white-space: normal;
+      line-height: 1.5;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
     img {
       width: 130px;
@@ -1141,8 +1143,8 @@ footer {
         }
       }
       .tagline {
-        font-size: 18px;
-        margin-bottom: 0px;
+        font-size: 0.68rem;
+        margin-bottom: 0;
       }
     }
     .about-footer.condensed {
