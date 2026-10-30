@@ -2,7 +2,7 @@
 layout: page
 title:  Qi She (佘琪)
 date:   2026-03-01 21:03:36 +0530
-description: "Qi She — Research Scientist at ByteDance. Multimodal LLMs & Agentic AI at scale. PhD CityU HK. 4,637+ citations, H-index 25. 2025 CityU Young Alumni Award."
+description: "Qi She — Research Scientist at ByteDance. Multimodal LLMs & Agentic AI at scale. PhD CityU HK. 5,000+ citations. 2025 CityU Young Alumni Award."
 keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal Large Language Model, Machine Learning, Computer Vision, AI, Research Scientist, Intel Labs, LLM, MLLM, VLM, Seed, I2V, T2V, T2I, Video Generation, Generative AI, AIGC"
 ---
 
@@ -43,13 +43,21 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 </div>
 
 ### News / 动态
-- Latest 10 selected news and activities.
 
 <div class="news-list">
+  <h4 class="news-year">2026</h4>
+  <ul>
+    <li><span class="news-date">2026-02</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2026</b>: ThinkGen, CodeDance, and UniEdit-I.</li>
+    <li><span class="news-date">2026-01</span> 📄 We have <b>3</b> papers accepted into <b>ICLR 2026</b>: Video-KTR, TimeSearch-R, and BranchGRPO.</li>
+  </ul>
+
   <h4 class="news-year">2025</h4>
   <ul>
+    <li><span class="news-date">2025-11</span> 🚀 Released <b>MammothModa2</b>, a unified AR-Diffusion framework for multimodal understanding and generation.</li>
+    <li><span class="news-date">2025-09</span> 📄 Our work on conditional-diversity token pruning for MLLMs is accepted into <b>NeurIPS 2025</b>.</li>
     <li><span class="news-date">2025-08</span> 🚀 Our team has been advancing <b>Agentic AI</b> foundations at scale, driving the large-scale industrialization of autonomous agents and MLLMs for complex Business Integrity scenarios.</li>
     <li><span class="news-date">2025-06</span> 🎉 Honored to receive the <b>2025 CityU Young Alumni Award</b>! Grateful to my alma mater, CityU EE, for this recognition of my journey from research to industry.</li>
+    <li><span class="news-date">2025-06</span> 📄 Our work on exploiting visual cues for token pruning in VLMs is accepted into <b>ICCV 2025</b>.</li>
   </ul>
 
   <h4 class="news-year">2024</h4>
@@ -64,6 +72,12 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2023-08</span> 📢 Reviewer service: <b>ICLR 2024</b>, <b>NeurIPS 2023</b>, <b>ICML 2023</b>.</li>
   </ul>
 
+</div>
+
+
+<details>
+  <summary>Older News / 更早的动态（2016–2022）</summary>
+  <div class="news-list">
   <h4 class="news-year">2022</h4>
   <ul>
     <li><span class="news-date">2022-11</span> 📢 Reviewer service: <b>CVPR 2023</b>, <b>ICLR 2023</b>.</li>
@@ -72,12 +86,6 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2022-02</span> 📄 "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
   </ul>
 
-</div>
-
-
-<details>
-  <summary>Older News / 更早的动态（2016–2021）</summary>
-  <div class="news-list">
   <h4 class="news-year">2021</h4>
   <ul>
     <li><span class="news-date">2021-07</span> 📄 We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
