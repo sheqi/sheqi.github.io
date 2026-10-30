@@ -150,7 +150,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 ## 📝 Blog / 博文
 
 <div class="blog-list">
-{% for post in site.posts %}
+{% for post in site.posts %}{% if post.noindex %}{% continue %}{% endif %}
 <div class="blog-card">
   <div class="blog-card-header">
     <a class="blog-card-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>

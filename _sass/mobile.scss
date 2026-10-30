@@ -1,0 +1,119 @@
+/* ═══════════════════════════════════════════════════════
+   Typography and rhythm pass, tuned for phones.
+   One type scale (16 / 14.5 / 12.5px), spacing instead of rules and
+   timelines, shallow list indents. Imported last so it wins without
+   !important.
+   ═══════════════════════════════════════════════════════ */
+
+/* ── T1. Horizontal rules: one hairline instead of the browser's inset bevel ── */
+.post hr {
+  height: 1px;
+  margin: 2rem 0;
+  border: 0;
+  background: $color-line;
+}
+body.dark .post hr { background: #2a2a2e; }
+
+/* ── T1b. Dark mode: keep the hiring callout's tinted background behind its children
+   (`.dark *` in dark.scss would paint each of them solid #171717) ── */
+body.dark .callout *:not(.role-tag) { background-color: transparent; }
+body.dark .role-tag { background: rgba(77, 163, 255, 0.16); color: #4da3ff; }
+
+/* ── T2. Dates: the body font with even-width digits, not a monospace face ── */
+.news-date,
+.blog-card-date {
+  font-family: inherit;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (max-width: $mobileW) {
+
+  /* ── T3. Body copy: 16px / 1.65, paragraph spacing from the line height ── */
+  .post p,
+  .post li {
+    line-height: 1.65;
+  }
+  .post p { margin: 0 0 0.85em; }
+  .post .bio-zh { font-size: 0.94rem; line-height: 1.8; }   // CJK reads better a little looser
+
+  /* ── T4. Lists: shallow indents so nested lists don't squeeze the text.
+     (Not `:not([class])`: reveal.js adds classes to homepage blocks.) ── */
+  .post ul,
+  .post ol { padding-left: 1.15rem; margin: 0.6em 0 1em; }
+  .post li > ul,
+  .post li > ol { padding-left: 1rem; margin: 0.25em 0 0.4em; }
+  .post li + li { margin-top: 0.3em; }
+  .post li::marker { color: $color-ink-3; }
+  // Styled lists keep their own layout
+  .post .pub-section > ul,
+  .post .callout-roles { padding-left: 0; margin: 0; }
+  .post .pub-section > ul > li + li,
+  .post .callout-roles li + li { margin-top: 0; }
+
+  /* ── T5. Headings: tighter leading, no rule above h2 ── */
+  .post h2,
+  .post h3 { line-height: 1.3; }
+  .post h2 {
+    margin-top: 2.6rem;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* ── T6. News & awards: date on its own line above the text, no timeline.
+     `.post` prefix so these outrank the plain-list rules in T4. ── */
+  .post .news-list ul {
+    margin: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .post .news-list ul > li {
+    padding: 0.55rem 0;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    &::before { display: none; }
+  }
+  .post .news-list ul > li + li { margin-top: 0; }
+  .news-date {
+    display: block;
+    min-width: 0;
+    margin: 0 0 0.1rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+  .news-year { margin: 1.8rem 0 0.2rem; }
+
+  /* ── T7. Publications: upright titles, one size for the meta lines ── */
+  .pub-item .pub-emoji { display: none; }        // the placeholder file icon sat on its own line
+  .pub-item .pub-body > span > a i,
+  .pub-item .pub-body > span > i {
+    font-style: normal;
+    line-height: 1.45;
+  }
+  .pub-item .pub-authors,
+  .pub-item .pub-publication {
+    font-size: 0.875rem;
+    line-height: 1.55;
+  }
+
+  /* ── T8. Blog cards: date under the title, quieter excerpt ── */
+  .blog-card-header { gap: 0.2rem 0.8rem; }
+  .blog-card-excerpt { font-size: 0.875rem; line-height: 1.6; }
+
+  /* ── T9. Back-to-top: a light floating button instead of a solid dark disc ── */
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.92);
+    color: $color-ink;
+    box-shadow: 0 4px 14px rgba(26, 26, 46, 0.12), inset 0 0 0 1px rgba(26, 26, 46, 0.08);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  body.dark .back-to-top {
+    background-color: rgba(40, 40, 44, 0.92);
+    color: #f5f5f7;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+}

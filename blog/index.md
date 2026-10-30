@@ -6,7 +6,7 @@ keywords: "Qi She, blog, MLLM, Agentic AI, computer vision, research, ByteDance"
 ---
 
 <div class="blog-list">
-{% for post in site.posts %}
+{% for post in site.posts %}{% if post.noindex %}{% continue %}{% endif %}
 <div class="blog-card">
   <div class="blog-card-header">
     <a class="blog-card-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
