@@ -39,6 +39,7 @@ plainwhite:
     - home
     - page
     - post
+    - paper
   navigation:
     - title: Homepage
       url: "/"
@@ -87,6 +88,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Share image for every page (read by jekyll-seo-tag for og:image / twitter:image)
 defaults:
@@ -94,3 +96,18 @@ defaults:
       path: ""
     values:
       image: /assets/img/portfolio.png
+  # Clean, space-free post URLs; old category/date URLs are kept alive via redirect_from in each post
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:title/
+  # Search-engine ownership files and the IndexNow key are not content pages
+  - scope:
+      path: "google1a9c7a0a64b88f51.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "baidu_verify_codeva-r4vQcIsXQn.html"
+    values:
+      sitemap: false

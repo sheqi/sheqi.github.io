@@ -170,6 +170,7 @@
   bibtex: /bibtex/TNNLS22_powerlaw.bib.txt
   category: journal
 - title: 'Generative Adversarial Networks in <b>Computer Vision</b>: A Survey and Taxonomy'
+  detail: /publication/csur20/
   url: https://dl.acm.org/doi/abs/10.1145/3439723
   authors: Zhengwei Wang, <b> Qi She </b>, Tomas E Ward.
   venue: ACM Computing Surveys (<b>CSUR</b>)
@@ -194,6 +195,7 @@
   category: journal
   thumbnail: /assets/img/papers/efficient_flexible_spike.png
 - title: 'Synthetic-Neuroscore: Using a Neuro-AI Interface for Evaluating Generative Adversarial Networks'
+  detail: /publication/nc20/
   url: https://www.sciencedirect.com/science/article/abs/pii/S0925231220306548
   authors: Zhengwei Wang, <b> Qi She </b>, Alan F Smeaton, Tomas E Ward, Graham Healy.
   venue: Neurocomputing
@@ -238,6 +240,7 @@
   category: conference
   thumbnail: /assets/img/papers/weakly_supervised_object.png
 - title: On Learning Contrastive Representations for Learning with Noisy Labels
+  detail: /publication/cvpr22_noisylabel/
   url: https://openaccess.thecvf.com/content/CVPR2022/html/Yi_On_Learning_Contrastive_Representations_for_Learning_With_Noisy_Labels_CVPR_2022_paper.html
   authors: Li Yi, Sheng Liu, <b>Qi She</b>, Lei Zhu, A. Ian McLeod, Boyu Wang
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
@@ -259,6 +262,7 @@
   highlight: true
   thumbnail: /assets/img/papers/learning_temporal_gradient.png
 - title: Unifying Nonlocal Blocks for Neural Networks
+  detail: /publication/iccv21_nonlocal/
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Unifying_Nonlocal_Blocks_for_Neural_Networks_ICCV_2021_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Duo Li, Yanye Lu, Xuejing Kang, Jie Hu, Changhu Wang
   venue: International Conference on Computer Vision (<b>ICCV</b>)
@@ -271,6 +275,7 @@
   category: conference
   thumbnail: /assets/img/papers/unifying_nonlocal_blocks.png
 - title: 'MT-ORL: Multi-Task Occlusion Relationship Learning'
+  detail: /publication/iccv21_mtorl/
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Feng_MT-ORL_Multi-Task_Occlusion_Relationship_Learning_ICCV_2021_paper.html
   authors: Panhe Feng, <b>Qi She</b>, Lei Zhu, Jiaxin Li, Lin ZHANG, Zijian Feng, Changhu Wang, Chunpeng Li, Xuejing Kang, Anlong Ming.
   venue: International Conference on Computer Vision (<b>ICCV</b>)
@@ -282,6 +287,7 @@
   category: conference
   thumbnail: /assets/img/papers/mt_orl_multi.png
 - title: 'MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis'
+  detail: /publication/iccv21_mine/
   url: https://openaccess.thecvf.com/content/ICCV2021/html/Li_MINE_Towards_Continuous_Depth_MPI_With_NeRF_for_Novel_View_ICCV_2021_paper.html
   authors: Jiaxin Li, Zijian Feng, <b>Qi She</b>, Henghui Ding, Changhu Wang, Gim Hee Lee.
   venue: International Conference on Computer Vision (<b>ICCV</b>)
@@ -296,6 +302,7 @@
   highlight: true
   thumbnail: /assets/img/papers/mine.gif
 - title: 'Involution: Inverting the Inherence of Convolution for Visual Recognition'
+  detail: /publication/cvpr21_involution/
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Li_Involution_Inverting_the_Inherence_of_Convolution_for_Visual_Recognition_CVPR_2021_paper.html
   authors: Duo Li, Jie Hu, Changhu Wang, Xiangtai Li, <b>Qi She</b>, Lei Zhu, Tong Zhang, Qifeng Chen.
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
@@ -311,6 +318,7 @@
   highlight: true
   thumbnail: /assets/img/papers/involution.png
 - title: 'ACTION-Net: Multipath Excitation for Action Recognition'
+  detail: /publication/cvpr21_actionnet/
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Wang_ACTION-Net_Multipath_Excitation_for_Action_Recognition_CVPR_2021_paper.html
   authors: Zhengwei Wang, <b>Qi She</b>, Aljosa Smolic.
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
@@ -324,6 +332,7 @@
   highlight: true
   thumbnail: /assets/img/papers/actionnet.png
 - title: Learning the Superpixel in a Non-iterative and Lifelong Manner
+  detail: /publication/cvpr21_superpixel/
   url: https://openaccess.thecvf.com/content/CVPR2021/html/Zhu_Learning_the_Superpixel_in_a_Non-Iterative_and_Lifelong_Manner_CVPR_2021_paper.html
   authors: Lei Zhu, <b>Qi She</b>, Bin Zhang, Yanye Lu, Zhilin Lu, Duo Li, Jie Hu.
   venue: Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)
@@ -335,6 +344,7 @@
   category: conference
   thumbnail: /assets/img/papers/learning_superpixel_non.png
 - title: 'OpenLORIS-Object: A Robotic Vision Dataset and Benchmark for Lifelong Deep Learning'
+  detail: /publication/icra20_openloris_obj/
   url: https://ieeexplore.ieee.org/abstract/document/9196887
   authors: <b>Qi She</b>, Fan Feng, Xinyue Hao, Qihan Yang, Chuanlin Lan, Vincenzo Lomonaco, Xuesong Shi, Zhengwei Wang, Yao Guo, Yimin Zhang, Fei Qiao, Rosa H. M. Chan.
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
@@ -349,6 +359,7 @@
   highlight: true
   thumbnail: /assets/img/papers/openloris.gif
 - title: Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM
+  detail: /publication/icra20_openloris_scene/
   url: https://ieeexplore.ieee.org/abstract/document/9196638
   authors: Xuesong Shi, Dongjiang Li, Pengpeng Zhao, Qinbin Tian, Yuxin Tian, Qiwei Long, Chunhao Zhu, Jingwei Song, Fei Qiao, Le Song, Yangquan Guo, Zhigang Wang, Yimin Zhang, Baoxing Qin, Wei Yang, Fangshi Wang, Rosa H. M. Chan, <b>Qi She</b>
   venue: The International Conference on Robotics and Automation (<b>ICRA</b>)
@@ -362,6 +373,7 @@
   highlight: true
   thumbnail: /assets/img/papers/are_we_ready.png
 - title: Neural Dynamics Discovery via Gaussian Process Recurrent Neural Networks
+  detail: /publication/uai19/
   url: https://proceedings.mlr.press/v115/she20a.html
   authors: <b> Qi She </b>, Anqi Wu.
   venue: Uncertainty in Artificial Intelligence (<b>UAI</b>)
@@ -375,6 +387,7 @@
   arxiv: https://arxiv.org/abs/1907.00650
   category: conference
 - title: Reduced-Rank Linear Dynamical Systems
+  detail: /publication/aaai18/
   url: https://ojs.aaai.org/index.php/AAAI/article/view/11666
   authors: <b> Qi She </b>, Yuan Gao, Kai Xu, and Rosa H.M. Chan.
   venue: AAAI Conference on Artificial Intelligence (<b>AAAI</b>)

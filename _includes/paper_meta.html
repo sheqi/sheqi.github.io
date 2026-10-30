@@ -1,0 +1,69 @@
+{%- comment -%}
+  Highwire Press tags (what Google Scholar reads to index a paper page) and
+  ScholarlyArticle JSON-LD for pages using layout: paper.
+{%- endcomment -%}
+{%- assign pub = site.data.publications | where: "detail", page.url | first -%}
+{%- if pub -%}
+{%- assign author_str = pub.authors | strip_html | replace: "  ", " " | strip -%}
+{%- assign last_char = author_str | slice: -1 -%}
+{%- if last_char == "." -%}{%- assign len = author_str.size | minus: 1 -%}{%- assign author_str = author_str | slice: 0, len -%}{%- endif -%}
+{%- assign authors = author_str | split: "," -%}
+{%- assign venue = pub.venue | strip_html | strip -%}
+{%- assign page_abs = page.url | absolute_url %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{%- for a in authors -%}
+{%- assign name = a | strip | remove_first: "and " | strip -%}
+{%- if name != "" and name != "..." %}
+<meta name="citation_author" content="{{ name | escape }}">
+{%- endif -%}
+{%- endfor %}
+<meta name="citation_publication_date" content="{{ pub.year }}">
+{%- if pub.category == "journal" %}
+<meta name="citation_journal_title" content="{{ venue | escape }}">
+{%- else %}
+<meta name="citation_conference_title" content="{{ venue | escape }}">
+{%- endif %}
+{%- if pub.pdf %}
+<meta name="citation_pdf_url" content="{{ pub.pdf | absolute_url }}">
+{%- endif %}
+<meta name="citation_abstract_html_url" content="{{ page_abs }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": {{ page_abs | append: "#article" | jsonify }},
+  "headline": {{ page.title | truncate: 110 | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "url": {{ page_abs | jsonify }},
+  "datePublished": {{ pub.year | append: "" | jsonify }},
+  "isPartOf": { "@type": "CreativeWork", "name": {{ venue | jsonify }} },
+  "abstract": {{ page.content | strip_html | strip | jsonify }},
+  {%- if pub.thumbnail %}
+  "image": {{ pub.thumbnail | absolute_url | jsonify }},
+  {%- endif %}
+  {%- assign same = "" -%}
+  {%- if pub.url and pub.url != "" -%}{%- assign same = same | append: pub.url | append: "|" -%}{%- endif -%}
+  {%- if pub.arxiv -%}{%- assign same = same | append: pub.arxiv | append: "|" -%}{%- endif -%}
+  {%- if pub.code -%}{%- assign same = same | append: pub.code | append: "|" -%}{%- endif -%}
+  {%- assign same = same | split: "|" %}
+  {%- if same.size > 0 %}
+  "sameAs": {{ same | jsonify }},
+  {%- endif %}
+  "author": [
+    {%- assign first = true -%}
+    {%- for a in authors -%}
+    {%- assign name = a | strip | remove_first: "and " | strip -%}
+    {%- if name != "" and name != "..." -%}
+    {%- unless first %},{% endunless %}
+    {%- if name == "Qi She" %}
+    { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Qi She", "url": "{{ site.url }}/" }
+    {%- else %}
+    { "@type": "Person", "name": {{ name | jsonify }} }
+    {%- endif -%}
+    {%- assign first = false -%}
+    {%- endif -%}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif -%}

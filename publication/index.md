@@ -1,41 +1,38 @@
 ---
 layout: page
-title: Qi She（佘琪）'s Publications
+title: Publications
 subtitle: publication
-description: "A comprehensive list of publications by Qi She (佘琪) in Machine Learning, Computer Vision, and Robotics. Includes top-tier conference papers (CVPR, ICCV, ICML) and journal articles (TPAMI, TNNLS)."
-keywords: "Qi She, 佘琪, Publications, Machine Learning, Computer Vision, Deep Learning, Robotics, CVPR, ICCV, TPAMI"
+description: "Publications by Qi She (佘琪), Research Scientist at ByteDance: multimodal LLMs, video reasoning, visual generation, efficient VLMs and continual learning, at CVPR, ICCV, ICLR, NeurIPS, ICML and TPAMI."
+keywords: "Qi She, 佘琪, Publications, Multimodal LLM, MLLM, Video Understanding, Visual Generation, Computer Vision, Machine Learning, CVPR, ICCV, ICLR, NeurIPS, ICML, TPAMI"
 ---
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Publications by Qi She",
-  "author": {
-    "@type": "Person",
-    "name": "Qi She",
-    "url": "https://qi-she.net"
-  },
   "itemListElement": [
-    {% assign idx = 1 %}
-    {% for pub in site.data.publications %}
-    {% if pub.category == 'journal' or pub.category == 'conference' %}
+    {%- assign idx = 0 -%}
+    {%- for pub in site.data.publications -%}
+    {%- if pub.category == 'journal' or pub.category == 'conference' -%}
+    {%- assign idx = idx | plus: 1 -%}
+    {%- assign item_url = pub.detail | absolute_url -%}
+    {%- unless pub.detail -%}{%- assign item_url = pub.url | default: pub.arxiv -%}{%- endunless -%}
+    {% if idx > 1 %},{% endif %}
     {
       "@type": "ListItem",
       "position": {{ idx }},
       "item": {
         "@type": "ScholarlyArticle",
-        "name": "{{ pub.title | strip_html | escape }}",
-        "author": "{{ pub.authors | strip_html | escape }}",
-        "isPartOf": "{{ pub.venue | strip_html | escape }}",
+        "name": {{ pub.title | strip_html | jsonify }},
+        "author": {{ pub.authors | strip_html | strip | jsonify }},
+        "isPartOf": {{ pub.venue | strip_html | strip | jsonify }},
         "datePublished": "{{ pub.year }}"
-        {% if pub.url %}, "url": "{{ pub.url }}"{% endif %}
-        {% if pub.arxiv %}, "sameAs": "{{ pub.arxiv }}"{% endif %}
+        {%- if item_url and item_url != "" %}, "url": {{ item_url | jsonify }}{% endif %}
+        {%- if pub.arxiv %}, "sameAs": {{ pub.arxiv | jsonify }}{% endif %}
       }
-    }{% unless forloop.last %},{% endunless %}
-    {% assign idx = idx | plus: 1 %}
-    {% endif %}
-    {% endfor %}
+    }
+    {%- endif -%}
+    {%- endfor %}
   ]
 }
 </script>

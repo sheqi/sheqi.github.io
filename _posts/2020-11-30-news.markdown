@@ -3,6 +3,10 @@ layout: post
 title:  "News"
 date:   2020-12-14 21:03:36 +0530
 #categories: Javascript NodeJS
+# Old news digest, superseded by the News list on the homepage: keep the URL, keep it out of search results
+permalink: /2020/12/14/news.html
+noindex: true
+sitemap: false
 ---
 📄 [2020-03] We have 3 paper accepted into CVPR 2021, congradulations for our collaborators. Codes will be released soon.  
 

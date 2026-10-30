@@ -27,7 +27,7 @@
   {%- endfor -%}
 {%- endunless -%}
 
-{%- assign best_link = pub.url -%}
+{%- assign best_link = pub.detail | default: pub.url -%}
 {%- if best_link == nil or best_link == "" -%}{%- assign best_link = pub.arxiv -%}{%- endif -%}
 {%- if best_link == nil or best_link == "" -%}{%- assign best_link = pub.project_page -%}{%- endif -%}
 

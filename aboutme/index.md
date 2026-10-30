@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About me
+title: Biography
 subtitle: Brief Introduction
-description: "PhD from City University of Hong Kong, Princeton VSRC, former Intel Labs Research Scientist (2018–2020). Now leads MLLM & Agentic AI at ByteDance Business Integrity. 50+ papers in CVPR, ICCV, ICML, TPAMI; 25 patents."
+description: "Qi She (佘琪): PhD from City University of Hong Kong, Princeton VSRC, former Intel Labs Research Scientist (2018–2020). Now leads MLLM & Agentic AI at ByteDance Business Integrity. 50+ papers in CVPR, ICCV, ICML, TPAMI; 25 patents."
 ---
 
 ### **About me**

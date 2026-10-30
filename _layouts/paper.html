@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{%- comment -%}
+  One page per paper. Metadata (authors, venue, links) lives in
+  _data/publications.yml on the entry whose `detail:` equals this page's URL;
+  the page body is the abstract. Scholar/SEO meta comes from _includes/paper_meta.html.
+{%- endcomment -%}
+{%- assign pub = site.data.publications | where: "detail", page.url | first -%}
+<div class="post-container paper-page">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {%- if pub.authors %}
+  <p class="pub-authors">{{ pub.authors }}</p>
+  {%- endif %}
+  <p class="paper-venue">{{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}</p>
+  <p class="paper-links">
+    {% if pub.url and pub.url != '' %}<a class="btn btn-default" href="{{ pub.url }}">Paper</a>{% endif %}
+    {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
+    {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+    {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
+    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">Project page</a>{% endif %}
+    {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
+    {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
+    {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTeX</a>{% endif %}
+  </p>
+  {%- if pub.thumbnail %}
+  <img class="paper-figure" src="{{ pub.thumbnail }}" alt="{{ page.title | escape }}" loading="lazy" decoding="async">
+  {%- endif %}
+  <div class="post">
+    <h2>Abstract</h2>
+    {{ content }}
+  </div>
+  <p class="paper-back"><a href="{{ "/publication/" | relative_url }}">← All publications by Qi She</a></p>
+</div>

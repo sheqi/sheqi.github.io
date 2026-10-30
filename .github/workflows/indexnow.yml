@@ -1,0 +1,40 @@
+name: Ping IndexNow
+
+# After each successful GitHub Pages deploy, tell IndexNow-enabled engines
+# (Bing — which also feeds DuckDuckGo, Copilot and ChatGPT search — Yandex,
+# Naver, Seznam) to recrawl the site. Google does not use IndexNow; it relies
+# on the sitemap submitted in Search Console.
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    env:
+      HOST: qi-she.net
+      KEY: fbb5be12d05ce7e265e33acc986eb1f1   # public by design; served at /<key>.txt
+    steps:
+      - name: Submit sitemap URLs
+        run: |
+          # The CDN can lag the deploy by a minute; wait until the key file is live.
+          for i in 1 2 3 4 5 6; do
+            curl -fsS "https://$HOST/$KEY.txt" >/dev/null && break
+            sleep 20
+          done
+          urls=$(curl -fsS "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' | grep -v '\.pdf$')
+          payload=$(python3 -c '
+          import json, os, sys
+          host, key = os.environ["HOST"], os.environ["KEY"]
+          print(json.dumps({"host": host, "key": key,
+                            "keyLocation": "https://%s/%s.txt" % (host, key),
+                            "urlList": sys.stdin.read().split()}))' <<< "$urls")
+          echo "Submitting $(wc -w <<< "$urls") URLs"
+          code=$(curl -sS -o /dev/stderr -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+                 -H 'Content-Type: application/json; charset=utf-8' -d "$payload")
+          echo "IndexNow responded $code"
+          # 200 = accepted, 202 = accepted pending key validation
+          [ "$code" = 200 ] || [ "$code" = 202 ]

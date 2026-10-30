@@ -1427,6 +1427,12 @@ footer {
     &:hover { color: #4da3ff; }
   }
   .pub-section p .btn + .btn::before { color: #2a2a2e; }
+  .paper-page {
+    .paper-venue, .bio-zh { color: #86868b; }
+    .paper-links .btn-default { color: #4da3ff; }
+    .paper-links .btn + .btn::before { color: #48484a; }
+  }
+  .bio-zh { color: #a1a1a6; }
   .social a {
     color: #d1d1d6;
     &:hover { color: #4da3ff; }
@@ -2202,4 +2208,41 @@ body.dark {
     .tagline { text-align: left; }
   }
   .content .post > h3:first-of-type { margin-top: 0.8em; }
+}
+
+/* ── 17. Chinese bio paragraph under the English About ── */
+.bio-zh {
+  color: $color-ink-2;
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+/* ── 18. Paper detail pages (_layouts/paper.html) ── */
+.paper-page {
+  .pub-authors { font-size: 1rem; margin-top: 4px; }
+  .paper-venue { color: $color-ink-2; font-style: italic; margin: 2px 0 10px; }
+  .paper-links { margin: 0 0 18px; line-height: 1.6; }
+  .paper-links .btn-default {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $color-accent;
+    &:hover { background: none; text-decoration: underline; }
+  }
+  .paper-links .btn + .btn::before {
+    content: "·";
+    display: inline-block;
+    margin: 0 0.5em;
+    color: $color-ink-3;
+  }
+  .paper-figure {
+    display: block;
+    max-width: 100%;
+    max-height: 360px;
+    margin: 0 0 8px;
+    border-radius: 6px;
+  }
+  .paper-back { margin-top: 28px; font-size: 0.92rem; }
 }

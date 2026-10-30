@@ -53,6 +53,12 @@
 <title>{{ meta_title }}</title>
 
 {% seo title=false %}
+{%- if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+{%- if page.layout == "paper" %}
+{% include paper_meta.html %}
+{%- endif %}
 
 {%- comment -%}
   Open Graph / Twitter tags come from jekyll-seo-tag above; don't hand-write them
