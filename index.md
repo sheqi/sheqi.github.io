@@ -9,9 +9,9 @@ keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal 
 ### About / 关于我
 Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Business Integrity, where he spearheads the large-scale industrialization of **Multimodal Large Language Models (MLLMs)** and **Agentic Foundation** capabilities. Since 2023, his work has focused on the end-to-end deployment of AI Agents.
 
-A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting scholar at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
+A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting Ph.D. student at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
 
-<p class="bio-zh" lang="zh-CN">佘琪，字节跳动研究科学家，现于字节跳动 Business Integrity 负责应用算法与基座团队，主导多模态大模型（MLLM）与智能体（Agentic AI）的大规模工业落地。2018 年博士毕业于香港城市大学，曾任普林斯顿大学访问学者、英特尔研究院（Intel Labs）研究科学家，获 2020 年英特尔 Gordy Award 与 2025 年香港城市大学 Young Alumni Award。研究成果发表于 TPAMI、NeurIPS、ICLR、ICML、CVPR、ICCV 等顶级期刊与会议。</p>
+<p class="bio-zh" lang="zh-CN">佘琪，字节跳动研究科学家，现于字节跳动 Business Integrity 负责应用算法与基座团队，主导多模态大模型（MLLM）与智能体（Agentic AI）的大规模工业落地。2018 年博士毕业于香港城市大学，其间曾赴普林斯顿大学做访问博士生；后任英特尔研究院（Intel Labs）研究科学家，获 2020 年英特尔 Gordy Award 与 2025 年香港城市大学 Young Alumni Award。研究成果发表于 TPAMI、NeurIPS、ICLR、ICML、CVPR、ICCV 等顶级期刊与会议。</p>
 
 <div class="scholar-stats">
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">
