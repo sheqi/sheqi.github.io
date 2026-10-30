@@ -6,7 +6,7 @@ description: "Involution introduces a new atomic operation for deep neural netwo
 keywords: "Involution, convolution, CVPR 2021, neural network, computer vision, deep learning, self-attention, visual recognition"
 categories: [Research, Computer Vision]
 redirect_from:
-  - "/research/computer vision/2021/06/19/involution.html"
+  - "/research/computer vision/2021/06/20/involution.html"
 ---
 
 Standard convolution has dominated visual recognition for nearly a decade. But its two core design principles — **spatial-agnostic** (the same kernel across all positions) and **channel-specific** (different kernels per channel) — may not be the right inductive biases for vision.

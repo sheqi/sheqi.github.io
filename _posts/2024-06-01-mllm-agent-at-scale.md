@@ -6,7 +6,7 @@ description: "Key lessons from deploying Multimodal Large Language Model agents 
 keywords: "MLLM, Multimodal Large Language Model, AI Agent, Agentic AI, ByteDance, Business Integrity, LLM deployment, production AI, content moderation"
 categories: [Research, AI Agents]
 redirect_from:
-  - "/research/ai agents/2024/05/31/mllm-agent-at-scale.html"
+  - "/research/ai agents/2024/06/01/mllm-agent-at-scale.html"
 ---
 
 Over the past two years, my team at ByteDance has been driving the large-scale industrialization of **Multimodal Large Language Model (MLLM) agents** for Business Integrity — the systems that ensure platform safety and content quality at hundreds of millions of requests per day.
