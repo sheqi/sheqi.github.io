@@ -1943,6 +1943,18 @@ body.dark .about img {
 .social.about-footer { animation: sidebarFadeIn 0.5s 0.16s cubic-bezier(0.22, 1, 0.36, 1) both; }
 .navigation.about-footer { animation: sidebarFadeIn 0.5s 0.22s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
+/* Persistent chrome shouldn't re-animate on every page: the sidebar plays its
+   entrance once per visit (.no-intro is set by an inline script in default.html),
+   and the fixed mobile bottom bar never does. */
+.no-intro .about-title,
+.no-intro .about .tagline,
+.no-intro .social.about-footer,
+.no-intro .navigation.about-footer,
+footer .social.about-footer,
+footer .navigation.about-footer {
+  animation: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .about-title, .about .tagline, .social.about-footer, .navigation.about-footer {
     animation: none !important;

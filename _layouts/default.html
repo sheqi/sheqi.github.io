@@ -12,6 +12,12 @@
 {%- endif -%}
 
 <body>
+  {%- if site.plainwhite.dark_mode %}
+  {%- comment -%} Set body.dark before first paint (the head script already decided via .pre-dark); darkmode.js is deferred, and applying it late made nav colors transition from light to dark on every page load. {%- endcomment %}
+  <script>if (document.documentElement.classList.contains('pre-dark')) document.body.classList.add('dark');</script>
+  {%- endif %}
+  {%- comment -%} The sidebar entrance animation plays once per visit; later pages in the same tab skip it (.no-intro) so the nav doesn't re-fade on every click. {%- endcomment %}
+  <script>try { if (sessionStorage.getItem('intro-seen')) document.documentElement.classList.add('no-intro'); else sessionStorage.setItem('intro-seen', '1'); } catch (e) {}</script>
   <div id="scroll-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <main class="container">

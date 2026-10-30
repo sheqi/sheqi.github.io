@@ -48,11 +48,11 @@ plainwhite:
     - title: Homepage
       url: "/"
     - title: Publication
-      url: "/publication"
+      url: "/publication/"
     - title: About me
-      url: "/aboutme"
+      url: "/aboutme/"
     - title: Blog
-      url: "/blog"
+      url: "/blog/"
     #- title: CV
     #  url: "/cv"
   # generate social links in footer
