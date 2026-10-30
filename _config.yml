@@ -1,4 +1,4 @@
-title: Qi She (佘琪) | Research Scientist at ByteDance
+title: Qi She (佘琪) · Research Scientist at ByteDance
 author: Qi She
 email: sheqi1991@gmail.com
 url: "https://qi-she.net"
@@ -8,6 +8,7 @@ lang: en
 image: assets/img/portfolio.png
 twitter:
   username: sheqi1991
+  card: summary
 author:
   name: Qi She
   email: sheqi1991@gmail.com
@@ -86,3 +87,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+
+# Share image for every page (read by jekyll-seo-tag for og:image / twitter:image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/portfolio.png

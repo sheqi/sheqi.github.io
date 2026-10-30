@@ -26,9 +26,11 @@
         <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" fetchpriority="high" />
         {% endif %}
       </a>
-      <h2 id="title">
+      {%- comment -%} The name is the page's h1 on the homepage only; other pages get their own h1. {%- endcomment -%}
+      {%- if page.url == "/" or page.url == "/index.html" -%}{%- assign title_tag = "h1" -%}{%- else -%}{%- assign title_tag = "h2" -%}{%- endif %}
+      <{{ title_tag }} id="title">
         <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
-      </h2>
+      </{{ title_tag }}>
       <span class="affiliation">ByteDance · Research Scientist</span>
       </div>
       {%- if site.plainwhite.tagline -%}

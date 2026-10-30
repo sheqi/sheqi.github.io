@@ -53,20 +53,11 @@
 
 {% seo title=false %}
 
-<!-- Open Graph -->
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:site_name" content="{{ site_display_name }}">
-<meta property="og:title" content="{{ meta_title }}">
-<meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:image" content="{{ site.url }}/assets/img/portfolio.png">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@{{ site.twitter.username }}">
-<meta name="twitter:title" content="{{ meta_title }}">
-<meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 160 }}">
-<meta name="twitter:image" content="{{ site.url }}/assets/img/portfolio.png">
+{%- comment -%}
+  Open Graph / Twitter tags come from jekyll-seo-tag above; don't hand-write them
+  here too, or crawlers see two conflicting og:title values. The share image is
+  set for every page via `defaults` in _config.yml.
+{%- endcomment %}
 
 <!-- Schema.org structured data -->
 {% include schema.html %}
