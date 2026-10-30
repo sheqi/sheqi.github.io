@@ -5,6 +5,7 @@ layout: default
   One page per paper. Metadata (authors, venue, links) lives in
   _data/publications.yml on the entry whose `detail:` equals this page's URL;
   the page body is the abstract. Scholar/SEO meta comes from _includes/paper_meta.html.
+  The stub's `image:` front matter (the share card) mirrors the entry's thumbnail.
 {%- endcomment -%}
 {%- assign pub = site.data.publications | where: "detail", page.url | first -%}
 <div class="post-container paper-page">
@@ -14,11 +15,11 @@ layout: default
   {%- endif %}
   <p class="paper-venue">{{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}</p>
   <p class="paper-links">
-    {% if pub.url and pub.url != '' %}<a class="btn btn-default" href="{{ pub.url }}">Paper</a>{% endif %}
+    {% if pub.url and pub.url != '' and pub.url != pub.arxiv and pub.url != pub.project_page %}<a class="btn btn-default" href="{{ pub.url }}">Paper</a>{% endif %}
     {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
     {% if pub.arxiv %}<a class="btn btn-default" href="{{ pub.arxiv }}">arXiv</a>{% endif %}
     {% if pub.code %}<a class="btn btn-default" href="{{ pub.code }}">Code</a>{% endif %}
-    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">Project page</a>{% endif %}
+    {% if pub.project_page %}<a class="btn btn-default" href="{{ pub.project_page }}">{{ pub.project_page_title | default: "Project page" }}</a>{% endif %}
     {% if pub.supp %}<a class="btn btn-default" href="{{ pub.supp }}">Supp. Materials</a>{% endif %}
     {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
     {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTeX</a>{% endif %}

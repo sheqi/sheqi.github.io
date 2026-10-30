@@ -13,7 +13,8 @@
 <meta name="citation_title" content="{{ page.title | escape }}">
 {%- for a in authors -%}
 {%- assign name = a | strip | remove_first: "and " | strip -%}
-{%- if name != "" and name != "..." %}
+{%- assign dots_only = name | remove: "." | remove: "…" -%}
+{%- if dots_only != "" %}
 <meta name="citation_author" content="{{ name | escape }}">
 {%- endif -%}
 {%- endfor %}
@@ -53,7 +54,8 @@
     {%- assign first = true -%}
     {%- for a in authors -%}
     {%- assign name = a | strip | remove_first: "and " | strip -%}
-    {%- if name != "" and name != "..." -%}
+    {%- assign dots_only = name | remove: "." | remove: "…" -%}
+    {%- if dots_only != "" -%}
     {%- unless first %},{% endunless %}
     {%- if name == "Qi She" %}
     { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Qi She", "url": "{{ site.url }}/" }

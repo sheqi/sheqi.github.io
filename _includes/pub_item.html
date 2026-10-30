@@ -63,7 +63,7 @@
     {% if clean_tags.size > 0 %}<div class="pub-tags">{% for tag in clean_tags %}{% if tag != "" %}<span class="pub-tag">{{ tag }}</span>{% endif %}{% endfor %}</div>{% endif %}
     {% if pub.oral or pub.pdf or pub.bibtex or pub.project_page or pub.code or pub.supp or pub.arxiv or pub.papers_with_code %}
     <p>
-      {% if pub.detail and pub.url and pub.url != '' %}<a class="btn btn-default" href="{{ pub.url }}">Paper</a>{% endif %}
+      {% if pub.detail and pub.url and pub.url != '' and pub.url != pub.arxiv and pub.url != pub.project_page %}<a class="btn btn-default" href="{{ pub.url }}">Paper</a>{% endif %}
       {% if pub.oral %}<a class="btn btn-default" href="{{ pub.oral }}">Oral</a>{% endif %}
       {% if pub.pdf %}<a class="btn btn-default" href="{{ pub.pdf }}">PDF</a>{% endif %}
       {% if pub.bibtex %}<a class="btn btn-default" href="{{ pub.bibtex }}">BibTex</a>{% endif %}
