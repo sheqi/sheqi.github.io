@@ -6,6 +6,16 @@ description: "Qi She — Research Scientist at ByteDance. Multimodal LLMs & Agen
 keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal Large Language Model, Machine Learning, Computer Vision, AI, Research Scientist, Intel Labs, LLM, MLLM, VLM, Seed, I2V, T2V, T2I, Video Generation, Generative AI, AIGC"
 ---
 
+<section class="home-hero" aria-label="Introduction">
+  <p class="home-hero-eyebrow">Research Scientist · ByteDance</p>
+  <p class="home-hero-title">Building multimodal AI agents that work at industrial scale.</p>
+  <p class="home-hero-sub" lang="zh-CN">让多模态大模型与智能体在真实业务中大规模落地</p>
+  <div class="home-hero-actions">
+    <a class="pill pill-dark" href="{{ "/publication/" | relative_url }}">Publications</a>
+    <a class="pill pill-light" href="#hiring">We're hiring</a>
+  </div>
+</section>
+
 ### About / 关于我
 Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Business Integrity, where he spearheads the large-scale industrialization of **Multimodal Large Language Models (MLLMs)** and **Agentic Foundation** capabilities. Since 2023, his work has focused on the end-to-end deployment of AI Agents.
 
@@ -34,7 +44,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
 - **Advancing MLLM-Agent Synergy**: Pioneering the fusion of (M)LLMs with agentic workflows to solve complex, fine-grained content understanding challenges at scale.
 
-<div class="callout">
+<div class="callout" id="hiring">
   <span class="callout-eyebrow">We're hiring</span>
   <strong>Multimodal LLM & Agentic AI Foundation</strong> roles in Beijing, Shanghai, Singapore, and San Jose. <a href="mailto:sheqi.roger@bytedance.com">Get in touch →</a>
   <p class="callout-cn">和优秀人才一起探索并落地多模态大模型，在业务场景做深度适配和极致优化：</p>
@@ -154,3 +164,5 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 <div class="analytics">
 	{% include clastrmap.html %}
 </div>
+
+<script defer src="{{ "/assets/js/reveal.js" | relative_url }}"></script>
