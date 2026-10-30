@@ -32,7 +32,8 @@
 </script>
 {% endif %}
 
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+<!-- ?v= changes every build so browsers never pair new HTML with a cached old stylesheet -->
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}">
