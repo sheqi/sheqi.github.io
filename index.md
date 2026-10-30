@@ -17,11 +17,11 @@ keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal 
 </section>
 
 ### About / 关于我
-Qi She (佘琪) leads the Applied Algorithm & Foundation team at ByteDance Business Integrity, where he spearheads the large-scale industrialization of **Multimodal Large Language Models (MLLMs)** and **Agentic Foundation** capabilities. Since 2023, his work has focused on the end-to-end deployment of AI Agents.
+Qi She (佘琪) is a Research Scientist at ByteDance, where he leads the Applied Algorithms, Foundation, and Strategy Algorithms teams for Business Integrity. He drives the large-scale industrial deployment of **Multimodal Large Language Models (MLLMs)** and **Agentic AI**, taking AI agents from research to production at scale.
 
-A 2018 Ph.D. graduate from City University of Hong Kong and a former visiting Ph.D. student at Princeton, Qi was honored with the 2025 CityU **Young Alumni Award** for his professional excellence. Previously, as a Research Scientist at Intel Labs, he received the 2020 Intel **Gordy Award**—the lab's highest honor named after Gordon Moore. His long-term research in Generative Models and Representation Learning has been extensively published in premier venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
+Qi received his Ph.D. from City University of Hong Kong in 2018, during which he was a visiting Ph.D. student at Princeton University. He then joined Intel Labs as a Research Scientist and received the 2020 Intel **Gordy Award**, the lab's highest research honor, named after Gordon Moore. In 2025 he was honored with the CityU **Young Alumni Award**. His research on generative models and representation learning has been published in leading venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
 
-<p class="bio-zh" lang="zh-CN">佘琪，字节跳动研究科学家，现于字节跳动 Business Integrity 负责应用算法与基座团队，主导多模态大模型（MLLM）与智能体（Agentic AI）的大规模工业落地。2018 年博士毕业于香港城市大学，其间曾赴普林斯顿大学做访问博士生；后任英特尔研究院（Intel Labs）研究科学家，获 2020 年英特尔 Gordy Award 与 2025 年香港城市大学 Young Alumni Award。研究成果发表于 TPAMI、NeurIPS、ICLR、ICML、CVPR、ICCV 等顶级期刊与会议。</p>
+<p class="bio-zh" lang="zh-CN">佘琪，字节跳动研究科学家，现于字节跳动 Business Integrity 负责应用算法、基建与策略算法团队，主导多模态大模型（MLLM）与智能体（Agentic AI）的大规模工业化落地。2018 年博士毕业于香港城市大学，其间赴普林斯顿大学做访问博士生；此后任英特尔研究院（Intel Labs）研究科学家，曾获英特尔研究院最高研究奖 Gordy Award（2020）与香港城市大学 Young Alumni Award（2025）。研究成果发表于 TPAMI、NeurIPS、ICLR、ICML、CVPR、ICCV 等顶级期刊与会议。</p>
 
 <div class="scholar-stats">
   <a href="https://scholar.google.com/citations?user=iHoGTt4AAAAJ" target="_blank" class="scholar-stat">

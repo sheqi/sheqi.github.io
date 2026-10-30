@@ -1,0 +1,23 @@
+Copyright (c) Qi She (佘琪). All rights reserved.
+
+This repository holds the source of https://qi-she.net. It is covered by two
+separate sets of terms:
+
+1. Site content: all rights reserved.
+   The text, biography, news, blog posts, publication descriptions and
+   abstracts written for this site, photographs, figures, images and the data
+   in _data/ are the copyrighted work of Qi She. No part of this content may be
+   copied, republished, mirrored or redistributed without prior written
+   permission. Short quotations with attribution and a link to
+   https://qi-she.net are welcome.
+
+   Research papers, PDFs and BibTeX files linked from the site remain under the
+   copyright of their respective publishers and authors.
+
+2. Theme code: MIT License.
+   The layouts, includes, stylesheets and scripts are derived from the
+   plainwhite Jekyll theme by Samarjeet and are available under the MIT
+   License; see LICENSE-THEME.txt. That license covers the code only, not the
+   site content described above.
+
+Contact: sheqi1991@gmail.com

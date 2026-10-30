@@ -15,6 +15,13 @@ If `bundle exec jekyll serve` reports that the `jekyll` executable is missing,
 rerun `bundle install` and make sure the generated `Gemfile.lock` is kept in the
 workspace so future installs resolve the same dependency set.
 
+## License
+
+Site content (text, images, blog posts, publication pages and data) is
+© Qi She, all rights reserved; see [LICENSE](LICENSE). The theme code is
+derived from plainwhite and remains under the MIT License; see
+[LICENSE-THEME.txt](LICENSE-THEME.txt).
+
 <!-- # plainwhite
 
 Simplistic jekyll portfolio-style theme for writers.
