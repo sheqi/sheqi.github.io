@@ -1,6 +1,7 @@
-// Homepage scroll reveal: blocks after the hero fade up as they enter the
+// Homepage scroll reveal: blocks below the fold fade up as they enter the
 // viewport. Content is only hidden once this script runs, so crawlers,
-// no-JS visitors and reduced-motion users always see everything.
+// no-JS visitors and reduced-motion users always see everything. Blocks already
+// on screen at load are never hidden: fading them in would delay LCP.
 (function () {
   var hero = document.querySelector('.home-hero');
   if (!hero || !('IntersectionObserver' in window)) return;
@@ -13,16 +14,16 @@
 
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
-      if (e.isIntersecting) {
+      var pending = e.target.classList.contains('reveal');
+      if (e.isIntersecting || (!pending && e.boundingClientRect.top < window.innerHeight)) {
         e.target.classList.add('is-visible');
         io.unobserve(e.target);
+      } else {
+        e.target.classList.add('reveal');
       }
     });
   }, { rootMargin: '0px 0px -8% 0px' });
 
-  targets.forEach(function (t) {
-    t.classList.add('reveal');
-    io.observe(t);
-  });
+  targets.forEach(function (t) { io.observe(t); });
   document.documentElement.classList.add('reveal-on');
 })();

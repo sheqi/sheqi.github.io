@@ -29,7 +29,7 @@
         <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" fetchpriority="high" />
         <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}" alt="{{ site.plainwhite.name }}" fetchpriority="high" />
         {% else %}
-        <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" fetchpriority="high" />
+        <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" srcset="{{ site.baseurl }}/assets/img/portfolio-160.jpg 160w, {{site.baseurl }}/{{ site.plainwhite.portfolio_image }} 300w" sizes="(max-width: 768px) 48px, 130px" width="300" height="300" alt="{{ site.plainwhite.name }}" fetchpriority="high" />
         {% endif %}
       </a>
       {%- comment -%} The name is the page's h1 on the homepage only; other pages get their own h1. {%- endcomment -%}

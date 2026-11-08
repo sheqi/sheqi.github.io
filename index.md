@@ -16,7 +16,7 @@ keywords: "Qi She, 佘琪, ByteDance, Applied Algorithm, Agentic AI, Multimodal 
   </div>
 </section>
 
-### About / 关于我
+## About / 关于我
 Qi She (佘琪) is a Research Scientist at ByteDance, where he leads the Applied Algorithms, Foundation, and Strategy Algorithms teams for Business Integrity. He drives the large-scale industrial deployment of **Multimodal Large Language Models (MLLMs)** and **Agentic AI**, taking AI agents from research to production at scale.
 
 Qi received his Ph.D. from City University of Hong Kong in 2018, during which he was a visiting Ph.D. student at Princeton University. He then joined Intel Labs as a Research Scientist and received the 2020 Intel **Gordy Award**, the lab's highest research honor, named after Gordon Moore. In 2025 he was honored with the CityU **Young Alumni Award**. His research on generative models and representation learning has been published in leading venues including **TPAMI, NeurIPS, ICLR, ICML, CVPR, and ICCV**.
@@ -38,7 +38,7 @@ Qi received his Ph.D. from City University of Hong Kong in 2018, during which he
   </a>
 </div>
 
-### Recent Focus / 工作方向
+## Recent Focus / 工作方向
 Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s Business Integrity ecosystem:
 - **Architecting Agentic Foundations**: Developing specialized (M)LLMs optimized for reasoning, planning, and autonomous decision-making in high-stakes security scenarios.
 - **Scaling Autonomous Agents**: Leading the end-to-end integration of Multi-Agent systems to handle massive real-time traffic, ensuring robustness and alignment with evolving safety policies.
@@ -54,16 +54,16 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
   </ul>
 </div>
 
-### News / 动态
+## News / 动态
 
 <div class="news-list">
-  <h4 class="news-year">2026</h4>
+  <h3 class="news-year">2026</h3>
   <ul>
     <li><span class="news-date">2026-02</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2026</b>: ThinkGen, CodeDance, and UniEdit-I.</li>
     <li><span class="news-date">2026-01</span> 📄 We have <b>3</b> papers accepted into <b>ICLR 2026</b>: Video-KTR, TimeSearch-R, and BranchGRPO.</li>
   </ul>
 
-  <h4 class="news-year">2025</h4>
+  <h3 class="news-year">2025</h3>
   <ul>
     <li><span class="news-date">2025-11</span> 🚀 Released <b>MammothModa2</b>, a unified AR-Diffusion framework for multimodal understanding and generation.</li>
     <li><span class="news-date">2025-09</span> 📄 Our work on conditional-diversity token pruning for MLLMs is accepted into <b>NeurIPS 2025</b>.</li>
@@ -72,12 +72,12 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2025-06</span> 📄 Our work on exploiting visual cues for token pruning in VLMs is accepted into <b>ICCV 2025</b>.</li>
   </ul>
 
-  <h4 class="news-year">2024</h4>
+  <h3 class="news-year">2024</h3>
   <ul>
     <li><span class="news-date">2024-02</span> 📢 Invited as a reviewer for <b>ICML 2024</b>.</li>
   </ul>
 
-  <h4 class="news-year">2023</h4>
+  <h3 class="news-year">2023</h3>
   <ul>
     <li><span class="news-date">2023-12</span> 🛠️ Excited to share that I am now leading the <b>Applied Algorithm & Foundation</b> team at ByteDance Business Integrity.</li>
     <li><span class="news-date">2023-08</span> 📄 Our work "Background-aware Classification Activation Map for Weakly Supervised Object Localization" is accepted into <b>IEEE TPAMI 2023</b>.</li>
@@ -90,7 +90,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
 <details>
   <summary>Older News / 更早的动态（2016–2022）</summary>
   <div class="news-list">
-  <h4 class="news-year">2022</h4>
+  <h3 class="news-year">2022</h3>
   <ul>
     <li><span class="news-date">2022-11</span> 📢 Reviewer service: <b>CVPR 2023</b>, <b>ICLR 2023</b>.</li>
     <li><span class="news-date">2022-05</span> 📄 Our work "PDO-e3DCNNs" is accepted into <b>ICML 2022</b>.</li>
@@ -98,7 +98,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2022-02</span> 📄 "Newton Design: Designing CNNs with the Family of Newton's Methods" is accepted into <b>Science China (Information Sciences)</b>.</li>
   </ul>
 
-  <h4 class="news-year">2021</h4>
+  <h3 class="news-year">2021</h3>
   <ul>
     <li><span class="news-date">2021-07</span> 📄 We have <b>3</b> papers accepted into <b>ICCV 2021</b>.</li>
     <li><span class="news-date">2021-07</span> 📢 Reviewer service: <b>ACM MM 2021</b> (industrial track), <b>ICLR 2022</b>, <b>NeurIPS 2021</b>.</li>
@@ -106,7 +106,7 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
     <li><span class="news-date">2021-03</span> 📄 We have <b>3</b> papers accepted into <b>CVPR 2021</b>.</li>
   </ul>
 
-  <h4 class="news-year">2020</h4>
+  <h3 class="news-year">2020</h3>
   <ul>
     <li><span class="news-date">2020-12</span> 📢 Workshop proposal "Continual Learning in Computer Vision" is accepted by <b>CVPR 2021</b> (selected from 109 proposals).</li>
     <li><span class="news-date">2020-12</span> 📢 Invited as an <b>expert reviewer</b> for <b>ICML 2021</b>.</li>
@@ -159,10 +159,6 @@ Focusing on the industrial-scale deployment of Agentic AI within ByteDance’s B
   {% if post.description %}<p class="blog-card-excerpt">{{ post.description | truncate: 200 }}</p>{% endif %}
 </div>
 {% endfor %}
-</div>
-
-<div class="analytics">
-	{% include clastrmap.html %}
 </div>
 
 <script defer src="{{ "/assets/js/reveal.js" | relative_url }}"></script>

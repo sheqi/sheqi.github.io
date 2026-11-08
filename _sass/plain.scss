@@ -365,7 +365,7 @@ main {
   margin-top: 1rem;
 }
 
-.news-year {
+.post .news-year {
   margin: 2.2rem 0 0.8rem;
   font-size: 0.78rem;
   font-weight: 600;
@@ -467,7 +467,7 @@ main {
     font-size: 0.78rem;
   }
 
-  .news-year {
+  .post .news-year {
     margin: 1.6rem 0 0.6rem;
   }
 }
@@ -588,15 +588,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2.4rem;
   padding-top: 0.2rem;
   font-size: 1.1rem;
-}
-
-/* ── Fade-in up for main content ── */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.content {
-  animation: fadeInUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 /* ── Publication list ── */
@@ -1105,11 +1096,6 @@ footer {
   display: none;
 }
 
-.analytics {
-  max-width: 100%;
-  overflow: hidden;
-}
-
 @media screen and (max-width: $mobileW) {
   html {
     scroll-padding-bottom: calc(112px + env(safe-area-inset-bottom));
@@ -1536,19 +1522,6 @@ footer {
       }
     }
   }
-
-  .analytics {
-    background-color: #000000 !important;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-    margin-top: 20px;
-    filter: invert(1) hue-rotate(180deg) !important;
-    display: block;
-    max-width: 100%;
-    overflow: hidden;
-    color: #ffffff !important;
-  }
 }
 
 /* Explicit Dark Mode Toggle Class (if JS toggle is used) */
@@ -1686,7 +1659,6 @@ body.dark .back-to-top:hover {
     transition-duration: 0.001s !important;
     scroll-behavior: auto !important;
   }
-  .content { animation: none !important; }
   .back-to-top:hover { transform: none; }
   .pub-h-card:hover { transform: none; }
   .pub-item .pub-thumb:hover img { transform: none; }

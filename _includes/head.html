@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="dns-prefetch" href="//cdn.clustrmaps.com">
 
 <!-- Academicons (local, 2.7KB) — only ai-google-scholar and ai-researchgate used -->
 <link rel="stylesheet" href="{{ "/assets/css/academicons.min.css" | relative_url }}">
@@ -16,7 +15,7 @@
 <link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml" title="{{ site.title }}">
 <link rel="icon" type="image/png" href="/assets/img/icon.png">
 <link rel="apple-touch-icon" type="image/png" href="/assets/img/apple-touch-icon.png">
-<link rel="preload" as="image" href="{{ site.baseurl }}/{{ site.plainwhite.portfolio_image }}">
+<link rel="preload" as="image" href="{{ site.baseurl }}/{{ site.plainwhite.portfolio_image }}" imagesrcset="{{ site.baseurl }}/assets/img/portfolio-160.jpg 160w, {{ site.baseurl }}/{{ site.plainwhite.portfolio_image }} 300w" imagesizes="(max-width: 768px) 48px, 130px">
 <meta name="author" content="{{ site.plainwhite.name | default: site.author.name }}">
 
 {% if site.plainwhite.dark_mode %}
